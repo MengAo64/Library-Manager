@@ -26,8 +26,8 @@
             <div class="card1">
                 <img src="img/b.ind.jpg" alt=""  style="width: 130px; margin: 10px 0 0 2em;">
                 <div class="deskripsi" style="margin: 10px 0 0 1em;">
-                    <h4 class="title">Matematika</h4>
-                    <p class="author">Bangke</p>
+                    <h4 class="title">tes</h4>
+                    <p class="author">tes</p>
                     <br>
                     <a href="#" class="button">Update book</a>
                 </div>
@@ -35,8 +35,8 @@
             <div class="card1">
                 <img src="img/biologi.jpg" alt=""  style="width: 130px; margin: 10px 0 0 2em;">
                 <div class="deskripsi" style="margin: 10px 0 0 1em;">
-                    <h4 class="title">Cocok tanam</h4>
-                    <p class="author">Bangke</p>
+                    <h4 class="title">tes</h4>
+                    <p class="author">tes</p>
                     <br>
                     <a href="#" class="button">Update book</a>
                 </div>
@@ -44,8 +44,8 @@
             <div class="card1">
                 <img src="img/b.ind.jpg" alt=""  style="width: 130px; margin: 10px 0 0 2em;">
                 <div class="deskripsi" style="margin: 10px 0 0 1em;">
-                    <h4 class="title">indo abixz</h4>
-                    <p class="author">Bangke</p>
+                    <h4 class="title">tes</h4>
+                    <p class="author">tes</p>
                       <br>
                     <a href="#" class="button">Update book</a>
                 </div>
@@ -53,8 +53,8 @@
             <div class="card1">
                 <img src="img/pkn.jpeg" alt=""  style="width: 130px; margin: 10px 0 0 2em;">
                 <div class="deskripsi" style="margin: 10px 0 0 1em;">
-                    <h4 class="title">nasionalis abiz</h4>
-                    <p class="author">Bangke</p>  
+                    <h4 class="title">tes</h4>
+                    <p class="author">tes</p>  
                     <br>
                     <a href="#" class="button">Update book</a>
                 </div>
@@ -63,8 +63,8 @@
             <div class="card1">
                 <img src="img/biologi.jpg" alt=""  style="width: 130px; margin: 10px 0 0 2em;">
                 <div class="deskripsi" style="margin: 10px 0 0 1em;">
-                    <h4 class="title">Matematika</h4>
-                    <p class="author">Bangke</p>
+                    <h4 class="title">tes</h4>
+                    <p class="author">tes</p>
                     <br>
                     <a href="#" class="button">Update book</a>
                 </div>
@@ -72,8 +72,8 @@
             <div class="card1">
                 <img src="img/biologi.jpg" alt=""  style="width: 130px; margin: 10px 0 0 2em;">
                 <div class="deskripsi" style="margin: 10px 0 0 1em;">
-                    <h4 class="title">Cocok tanam</h4>
-                    <p class="author">Bangke</p>
+                    <h4 class="title">tes</h4>
+                    <p class="author">tes</p>
                     <br>
                     <a href="#" class="button">Update book</a>
                 </div>
@@ -81,8 +81,8 @@
             <div class="card1">
                 <img src="img/b.ind.jpg" alt=""  style="width: 130px; margin: 10px 0 0 2em;">
                 <div class="deskripsi" style="margin: 10px 0 0 1em;">
-                    <h4 class="title">indo abixz</h4>
-                    <p class="author">Bangke</p>
+                    <h4 class="title">tes</h4>
+                    <p class="author">tes</p>
                     <br>
                     <a href="#" class="button">Update book</a>
                 </div>
@@ -90,8 +90,8 @@
             <div class="card1">
                 <img src="img/pkn.jpeg" alt=""  style="width: 130px; margin: 10px 0 0 2em;">
                 <div class="deskripsi" style="margin: 10px 0 0 1em;">
-                    <h4 class="title">nasionalis abiz</h4>
-                    <p class="author">Bangke</p>
+                    <h4 class="title">tes</h4>
+                    <p class="author">tes</p>
                     <br>
                     <a href="#" class="button">Update book</a>
                 </div>
