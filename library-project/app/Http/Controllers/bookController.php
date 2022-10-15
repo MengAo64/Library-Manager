@@ -17,7 +17,7 @@ class bookController extends Controller
         $buku = [
             'buku' => Book::all()
         ];
-        return view('index', $buku);
+        return view('indexbook', $buku);
     }
 
     /**

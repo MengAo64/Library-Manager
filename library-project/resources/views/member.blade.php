@@ -18,28 +18,7 @@
             <li><a href="#">Records</a></li>
         </ul>
     </nav>
-<div class="kotak">
-        <div class="judul"><b>Members</b></div> 
-        <div class="addbook">
-            <a href="#">AddMember</a>
-        </div>
-        <table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">No</th>
-      <th scope="col">Name</th>
-      <th scope="col">Join Date</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-    </tr>
-  </tbody>
-</table>
-</div>
 
+    @yield('container')
 </body>
 </html>
