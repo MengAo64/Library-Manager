@@ -12,9 +12,12 @@ class bookController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function h()
     {
-        //
+        $buku = [
+            'buku' => Book::all()
+        ];
+        return view('index', $buku);
     }
 
     /**

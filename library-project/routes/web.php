@@ -3,6 +3,7 @@
 use App\Models\member;
 use App\Models\record;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\bookController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,5 @@ Route::get('/index', function () {
     dd($member);
     return view('index');
 });
+
+Route::get('/', [bookController::class, 'h']);
