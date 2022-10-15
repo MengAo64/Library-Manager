@@ -1,6 +1,9 @@
 <?php
 
+use App\Models\member;
+use App\Models\record;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\bookController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +19,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('member');
 });
+
+Route::get('/index', function () {
+    $member = member::with(["record"])->get();
+    $record = record::with(["member" , "book"])->get()[0];
+    dd($member);
+    return view('index');
+});
+
+Route::get('/', [bookController::class, 'h']);
