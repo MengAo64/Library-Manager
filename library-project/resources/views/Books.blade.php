@@ -18,87 +18,10 @@
             <li><a href="#">Records</a></li>
         </ul>
     </nav>
-    <div class="kotak">
-        <div class="judul"><b>Books</b></div> <div class="addbook">
-            <a href="#">AddBook</a>
-        </div>
-        <div class="isi">
-            <div class="card1">
-                <img src="img/b.ind.jpg" alt=""  style="width: 130px; margin: 10px 0 0 2em;">
-                <div class="deskripsi" style="margin: 10px 0 0 1em;">
-                    <h4 class="title">Matematika</h4>
-                    <p class="author">Bangke</p>
-                    <br>
-                    <a href="#" class="button">Update book</a>
-                </div>
-            </div>
-            <div class="card1">
-                <img src="img/biologi.jpg" alt=""  style="width: 130px; margin: 10px 0 0 2em;">
-                <div class="deskripsi" style="margin: 10px 0 0 1em;">
-                    <h4 class="title">Cocok tanam</h4>
-                    <p class="author">Bangke</p>
-                    <br>
-                    <a href="#" class="button">Update book</a>
-                </div>
-            </div>
-            <div class="card1">
-                <img src="img/b.ind.jpg" alt=""  style="width: 130px; margin: 10px 0 0 2em;">
-                <div class="deskripsi" style="margin: 10px 0 0 1em;">
-                    <h4 class="title">indo abixz</h4>
-                    <p class="author">Bangke</p>
-                      <br>
-                    <a href="#" class="button">Update book</a>
-                </div>
-            </div>
-            <div class="card1">
-                <img src="img/pkn.jpeg" alt=""  style="width: 130px; margin: 10px 0 0 2em;">
-                <div class="deskripsi" style="margin: 10px 0 0 1em;">
-                    <h4 class="title">nasionalis abiz</h4>
-                    <p class="author">Bangke</p>  
-                    <br>
-                    <a href="#" class="button">Update book</a>
-                </div>
-            </div>
-            
-            <div class="card1">
-                <img src="img/biologi.jpg" alt=""  style="width: 130px; margin: 10px 0 0 2em;">
-                <div class="deskripsi" style="margin: 10px 0 0 1em;">
-                    <h4 class="title">Matematika</h4>
-                    <p class="author">Bangke</p>
-                    <br>
-                    <a href="#" class="button">Update book</a>
-                </div>
-            </div>
-            <div class="card1">
-                <img src="img/biologi.jpg" alt=""  style="width: 130px; margin: 10px 0 0 2em;">
-                <div class="deskripsi" style="margin: 10px 0 0 1em;">
-                    <h4 class="title">Cocok tanam</h4>
-                    <p class="author">Bangke</p>
-                    <br>
-                    <a href="#" class="button">Update book</a>
-                </div>
-            </div>
-            <div class="card1">
-                <img src="img/b.ind.jpg" alt=""  style="width: 130px; margin: 10px 0 0 2em;">
-                <div class="deskripsi" style="margin: 10px 0 0 1em;">
-                    <h4 class="title">indo abixz</h4>
-                    <p class="author">Bangke</p>
-                    <br>
-                    <a href="#" class="button">Update book</a>
-                </div>
-            </div>
-            <div class="card1">
-                <img src="img/pkn.jpeg" alt=""  style="width: 130px; margin: 10px 0 0 2em;">
-                <div class="deskripsi" style="margin: 10px 0 0 1em;">
-                    <h4 class="title">nasionalis abiz</h4>
-                    <p class="author">Bangke</p>
-                    <br>
-                    <a href="#" class="button">Update book</a>
-                </div>
-            </div>
 
-    </div>
-     
-    </div>
+    @yield('container')
+
+
+    <script src="{{ URL::to('/index.js') }}"></script>
 </body>
 </html>
