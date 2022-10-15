@@ -17,7 +17,7 @@ use App\Http\Controllers\bookController;
 */
 
 Route::get('/', function () {
-    return view('Books');
+    return view('member');
 });
 
 Route::get('/index', function () {
