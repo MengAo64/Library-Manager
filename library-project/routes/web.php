@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\member;
+use App\Models\record;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,5 +20,8 @@ Route::get('/', function () {
 });
 
 Route::get('/index', function () {
+    $member = member::with(["record"])->get();
+    $record = record::with(["member" , "book"])->get()[0];
+    dd($member);
     return view('index');
 });
