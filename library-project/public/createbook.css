@@ -51,57 +51,54 @@ nav ul li a:hover{
     height: 100%;
     margin: auto;
     border-radius: 5px;
-    padding-bottom: 15px;
+    padding: 15px;
+    display: flex;
+    gap: 10px;
 }
+
+.kotak-left{
+    display: flex;
+    flex-direction: column;
+    border-right: 3px solid black;
+    /* align-items: center; */
+    /* justify-content: center; */
+    gap: 10px;
+}
+
+#preview-img{
+    width: 200px;
+}
+
 .judul{
     color: black;
     font-size: 35px;
-   padding: 20px 0 0 25px;
+   padding: 25px 0 0 2em;
 }
-.card1{
-    margin-top: 3px;
-    width: 200px;
-    height: 19em;
-    border: #000000 solid 5px;
-    margin: auto;
-    margin-top: 15px;
-    border-radius: 5px;
-
+.isiimg{
+    border: 2px solid;
+    width: 210px;
+    height: 100%;
+    margin: 10px 0 5px 57px;
+    padding: 10px 18px;
+    border-radius: 10px;
 }
-.isi{
-    display: flex;
-    gap: 5em 25px;
-    flex-wrap: wrap;
-    width: 90%;
-   margin: auto;
+.garis{
+    border-left: 4px solid;
+    border-radius: 15px;
+    height: 16em;
+    /* margin: 2em 0 0 21em; */
 }
-.button{
-    border: #080808 solid 2px;
-    border-radius: 7px;
-    background-color: #caa26b;
-    text-decoration: none;
-    color: #000000;
-    margin-left: 2em;
-    padding: 4px;
+.inputdatabook{
+    margin: -4em 0 0 15em;
+    padding-bottom: 10px;
+    font-size: 20px;
 }
-.addbook{
+.input{
+    background-color: rgb(238, 237, 236) ;
     width: 20em;
     height: 30px;
-    text-align: center;
-    margin-left: 45em;
-    margin-top: -20px;
-    margin-bottom: 25px;
-    
+    border-radius: 5px;
 }
-.addbook a{
-    text-decoration: none;
-    border: #000000 solid 3px;
-    color: black;
-    font-size: 20px;
-    border-radius: 20px;
-    padding: 10px 70px ;
-}
-.addbook :hover{
-    color:#000000;
-    background-color: #caa26b;
+.kotak-right{
+    font-size: 25px;
 }

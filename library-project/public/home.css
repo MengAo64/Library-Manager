@@ -18,12 +18,13 @@ nav{
     top: 0;
 
 }
+nav h2{
+    color: red;
+}
 nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    /* background-color: blue; */
 
 }
 nav ul li{
@@ -55,45 +56,18 @@ nav ul li a:hover{
 }
 .judul{
     color: black;
-    font-size: 35px;
-   padding: 20px 0 0 25px;
+    font-size: 15px;
+   padding: 13px 0 3em 35em;
 }
-.card1{
-    margin-top: 3px;
-    width: 200px;
-    height: 19em;
-    border: #000000 solid 5px;
-    margin: auto;
-    margin-top: 15px;
-    border-radius: 5px;
-
-}
-.isi{
-    display: flex;
-    gap: 5em 25px;
-    flex-wrap: wrap;
-    width: 90%;
-   margin: auto;
-}
-.button{
-    border: #080808 solid 2px;
-    border-radius: 7px;
-    background-color: #caa26b;
-    text-decoration: none;
-    color: #000000;
-    margin-left: 2em;
-    padding: 4px;
-}
-.addbook{
+.addbook1{
     width: 20em;
     height: 30px;
     text-align: center;
     margin-left: 45em;
-    margin-top: -20px;
-    margin-bottom: 25px;
+    margin-bottom: 21px;
     
 }
-.addbook a{
+.addbook1 a{
     text-decoration: none;
     border: #000000 solid 3px;
     color: black;
@@ -101,7 +75,36 @@ nav ul li a:hover{
     border-radius: 20px;
     padding: 10px 70px ;
 }
-.addbook :hover{
+.addbook1 :hover{
     color:#000000;
     background-color: #caa26b;
 }
+
+
+.addbook2{
+    width: 20em;
+    height: 30px;
+    text-align: center;
+   margin: -3em 0 25px 2em;
+    
+}
+.addbook2 a{
+    text-decoration: none;
+    border: #000000 solid 3px;
+    color: black;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px 70px ;
+}
+.addbook2 :hover{
+    color:#000000;
+    background-color: #caa26b;
+}
+.tabel{
+    display: flex;
+    padding: 17px;
+    gap: 4em;
+
+}
+
+

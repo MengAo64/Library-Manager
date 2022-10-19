@@ -20,8 +20,5 @@
     </nav>
 
     @yield('container')
-
-
-    <script src="{{ URL::to('/index.js') }}"></script>
 </body>
 </html>
