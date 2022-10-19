@@ -29,14 +29,14 @@ Route::get('/index', function () {
 });
 
 Route::get('/', [bookController::class, 'h']);
-// Route::get('/', [memberController::class, 'member']);
+Route::get('/', [memberController::class, 'member']);
 
 
-// Route::get('/', function () {
-//     return view('Home');
-// });
-// Route::get('/', function () {
-//     return view('createbook');
-// });
+Route::get('/', function () {
+    return view('Home');
+});
+Route::get('/', function () {
+    return view('createbook');
+});
 
 
