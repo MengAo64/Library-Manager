@@ -17,7 +17,7 @@ use App\Http\Controllers\memberController;
 |
 */
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('Home');
 });
 
@@ -28,15 +28,22 @@ Route::get('/index', function () {
     return view('index');
 });
 
-Route::get('/', [bookController::class, 'h']);
+Route::get('/book', [bookController::class, 'h']);
 // Route::get('/', [memberController::class, 'member']);
 
 
+Route::get('/member', function () {
+    return view('indexmember');
+});
 // Route::get('/', function () {
 //     return view('Home');
 // });
-// Route::get('/', function () {
-//     return view('createbook');
-// });
+Route::get('/c', function () {
+    return view('createbook');
+});
+
+Route::get('/indexbook', function () {
+    return view('indexbook');
+});
 
 
