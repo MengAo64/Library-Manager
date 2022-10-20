@@ -17,7 +17,8 @@ class memberFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => fake()->name(),
+            'join_date' => fake()->date()
         ];
     }
 }

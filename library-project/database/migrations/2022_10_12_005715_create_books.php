@@ -18,9 +18,9 @@ return new class extends Migration
             $table->string('name');
             $table->string('author');
             $table->string('cover_image')->nullable();
-            // $table->string ('publisher');
+            $table->string ('publisher');
             $table->date('publication_date');
-            // $table->string('status');
+            $table->string('status');
             $table->timestamps();
         });
     }

@@ -15,9 +15,10 @@
                 <div class="deskripsi" style="margin: 10px 0 0 1em;">
                     <h4 class="title">{{ $b -> name }}</h4>
                     <p class="author">{{ $b -> author }}</p>
+                    <p class="author">{{ $b -> publisher }}</p>
                     <p class="author">{{ $b -> publication_date }}</p>
-                    <!-- <p class="author">{{ $b -> author }}</p>
-                    <p class="author">{{ $b -> author }}</p> -->
+                    <p class="author">{{ $b -> status }}</p>
+                    
                     <br>
                     <a href="#" class="button">Update book</a>
                 </div>
