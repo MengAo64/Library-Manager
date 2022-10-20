@@ -29,21 +29,18 @@ Route::get('/index', function () {
 });
 
 Route::get('/book', [bookController::class, 'h']);
-// Route::get('/', [memberController::class, 'member']);
+Route::get('/member', [memberController::class, 'member']);
 
 
-Route::get('/member', function () {
-    return view('indexmember');
+
+Route::get('/', function () {
+    return view('Home');
 });
-// Route::get('/', function () {
-//     return view('Home');
-// });
+
 Route::get('/c', function () {
     return view('createbook');
 });
 
-Route::get('/indexbook', function () {
-    return view('indexbook');
-});
+
 
 
