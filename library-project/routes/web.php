@@ -17,27 +17,29 @@ use App\Http\Controllers\memberController;
 |
 */
 
-Route::get('/home', function () {
-    return view('Home');
-});
-
-Route::get('/index', function () {
-    $member = member::with(["record"])->get();
-    $record = record::with(["member" , "book"])->get()[0];
-    dd($member);
-    return view('index');
-});
-
-Route::get('/book', [bookController::class, 'h']);
-Route::get('/member', [memberController::class, 'member']);
-
-
+// Route::get('/index', function () {
+//     $member = member::with(["record"])->get();
+//     $record = record::with(["member" , "book"])->get()[0];
+//     dd($member);
+//     return view('index');
+// });
 
 Route::get('/', function () {
     return view('Home');
 });
 
-Route::get('/c', function () {
+Route::get('/home', function () {
+    return view('Home');
+});
+
+
+Route::get('/book', [bookController::class, 'h']);
+Route::get('/member', [memberController::class, 'member']);
+// Route::get('/record', [memberController::class, '']);
+
+
+
+Route::get('/addbook', function () {
     return view('createbook');
 });
 
