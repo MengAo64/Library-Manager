@@ -5,11 +5,11 @@
     
 }
 body{
-    background-color: #ff9900;
+    background-color: #665a48;
 }
 nav{
     width: 100%;
-    background-color: #800970;
+    background-color: #665a48;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -46,7 +46,7 @@ nav ul li a:hover{
     
 }
 .kotak{
-    background-color: #89da5e;
+    background-color: #c8dbbe;
     width: 73em;
     height: 100%;
     margin: auto;
