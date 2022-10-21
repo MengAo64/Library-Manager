@@ -28,3 +28,7 @@ Route::get('/index', function () {
 });
 
 Route::get('/', [bookController::class, 'h']);
+
+Route::get('/addmember', function () {
+    return view('addmember');
+});
