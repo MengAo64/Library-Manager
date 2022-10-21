@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class book extends Model
 {
     use HasFactory;
-    protected $fillable = ['name', 'author','publication_date'];
+    protected $fillable = ['title', 'author','publisher','publication_date','status'];
 
     public function record(){
         return $this->hasMany(record::class,'book_id');

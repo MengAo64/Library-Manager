@@ -16,13 +16,15 @@ class BookFactory extends Factory
      */
     public function definition()
     {
+        $status = ["Dipinjam", "Tidak Dipinjam"];
+
         return [
             
-            'name' => fake()->name(),
+            'title' => fake()->title(),
             'author' => fake()->name(),
-            // 'publisher' => fake()->name(),
+            'publisher' => fake()->name(),
             'publication_date' => fake()->date(),
-            // 'status' => fake()->name()
+            'status' => $status[fake()->numberBetween(0 , (count($status) - 1))]
         ];
     }
 }
