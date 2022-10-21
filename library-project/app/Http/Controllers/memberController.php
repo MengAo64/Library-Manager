@@ -12,9 +12,12 @@ class memberController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function member()
     {
-        //
+        $member = [
+            'member' => member::all()
+        ];
+        return view('indexmember', $member);
     }
 
     /**

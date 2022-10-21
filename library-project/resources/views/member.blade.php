@@ -12,34 +12,13 @@
 <nav>
         <a href="#"><img src="img/logo.jpeg" alt="logo" width="240px"></a>
         <ul>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Manage Books</a></li>
-            <li><a href="#">Manage Members</a></li>
-            <li><a href="#">Records</a></li>
+            <li><a href="/home">Dashboard</a></li>
+            <li><a href="/book">Manage Books</a></li>
+            <li><a href="/member">Manage Members</a></li>
+            <li><a href="/record">Records</a></li>
         </ul>
     </nav>
-<div class="kotak">
-        <div class="judul"><b>Members</b></div> 
-        <div class="addbook">
-            <a href="#">AddMember</a>
-        </div>
-        <table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">No</th>
-      <th scope="col">Name</th>
-      <th scope="col">Join Date</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-    </tr>
-  </tbody>
-</table>
-</div>
 
+    @yield('container')
 </body>
 </html>
