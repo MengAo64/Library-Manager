@@ -20,12 +20,7 @@
     </nav>
     <div class="kotak">
     <div class="judul"><b>........</b></div> 
-          <div class="addbook1">
-            <a href="#">AddBook</a>
-        </div>
-        <div class="addbook2">
-            <a href="#">AddBook</a>
-        </div>
+        
     <div class="tabel">
         <table class="table table-striped">        
   <thead>
