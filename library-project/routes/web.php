@@ -48,6 +48,9 @@ Route::get('/addbook', function () {
     return view('createbook');
 });
 
+Route::get('/Show', function () {
+    return view('Showbook');
+});
 
 
 
