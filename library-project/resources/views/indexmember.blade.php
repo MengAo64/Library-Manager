@@ -5,11 +5,11 @@
 <div class="kotak">
         <div class="judul"><b>Members</b></div> 
         <div class="addbook">
-            <a href="#">AddMember</a>
+            <a href="/addmember">AddMember</a>
         </div>
 
-        <table class="table table-striped">
-           
+        
+        <table class="table table-bordered table-hover" >  
   <thead>
     <tr>
       <th scope="col">No</th>
@@ -22,14 +22,15 @@
     $i = 0; ?>
   @foreach($member as $m) 
   <?php $i++; ?>
-    <tr>
+   <tr >
       <th scope="row">{{ $i }}</th>
-      <td>{{ $m -> name}}</td>
-      <td>{{ $m -> join_date}}</td>    
+      <td><a href="{{ $m -> name}}" style="text-decoration:none; color:black;">{{ $m -> name}}</a></td>
+      <td>{{ $m -> join_date}}</td>   
     </tr>
     @endforeach
   </tbody>
 </table>
+
 </div>
 
 

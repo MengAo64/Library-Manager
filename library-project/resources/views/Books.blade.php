@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="books.css">
-    <title>Document</title>
+    <title>Library Manager | Tampilan Buku</title>
 </head>
 <body >
     <nav>

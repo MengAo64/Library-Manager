@@ -28,9 +28,18 @@ Route::get('/', function () {
     return view('Home');
 });
 
-Route::get('/home', function () {
-    return view('Home');
-});
+// Route::get('/home', function () {
+//     return view('Home');
+// });
+// Route::get('/book', function () {
+//     return view('indexbook');
+// });
+// Route::get('/member', function () {
+//     return view('indexbook');
+// });
+// Route::get('/book', function () {
+//     return view('indexbook');
+// });
 
 
 Route::get('/book', [bookController::class, 'h']);
@@ -43,6 +52,9 @@ Route::get('/addbook', function () {
     return view('createbook');
 });
 
+Route::get('/Show', function () {
+    return view('Showbook');
+});
 
 
 
