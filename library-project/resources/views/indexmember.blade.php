@@ -8,8 +8,8 @@
             <a href="#">AddMember</a>
         </div>
 
-        <table class="table table-bordered table-hover">
-           
+        
+        <table class="table table-bordered table-hover" >  
   <thead>
     <tr>
       <th scope="col">No</th>
@@ -22,15 +22,15 @@
     $i = 0; ?>
   @foreach($member as $m) 
   <?php $i++; ?>
-  <a href=""> <tr >
+   <tr >
       <th scope="row">{{ $i }}</th>
-      <td >{{ $m -> name}}</td>
-      <td>{{ $m -> join_date}}</td>    
+      <td><a href="{{ $m -> name}}" style="text-decoration:none; color:black;">{{ $m -> name}}</a></td>
+      <td>{{ $m -> join_date}}</td>   
     </tr>
-  </a>
     @endforeach
   </tbody>
 </table>
+
 </div>
 
 

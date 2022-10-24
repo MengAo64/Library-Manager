@@ -12,8 +12,8 @@
         <a href="#"><img src="img/logo.jpeg" alt="logo" width="240px"></a>
         <ul>
             <li><a href="/home">Dashboard</a></li>
-            <li><a href="#">Manage Books</a></li>
-            <li><a href="#">Manage Members</a></li>
+            <li><a href="/book">Manage Books</a></li>
+            <li><a href="/member">Manage Members</a></li>
             <li><a href="#">Records</a></li>
         </ul>
     </nav>
@@ -31,9 +31,13 @@
             <div class="titlebook"><div class="judultitle">Title</div><input class="input" type="text" placeholder="Input Title"></div>
             <div class="titlebook"><div class="judultitle">Author</div><input  class="input" type="text" placeholder="Author"></div>
             <div class="titlebook"><div class="judultitle">Publisher</div><input class="input" type="text" placeholder="Publisher"></div>
-            <div class="titlebook"><div class="judultitle">Publication Date</div><input class="input" type="text" placeholder="Publication Date"></div>
-        </div>
+            <div class="titlebook"><div class="judultitle">Publication Date</div><input class="input" type="date" placeholder="Publication Date"></div>
+            
+        </div> 
+        <a href="" class="add">add</a>
     </div>
+    
+   
 
             
     </div>   

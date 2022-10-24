@@ -63,6 +63,7 @@ nav ul li a:hover{
     /* align-items: center; */
     /* justify-content: center; */
     gap: 10px;
+    margin-left: 5em;
 }
 
 #preview-img{
@@ -101,4 +102,20 @@ nav ul li a:hover{
 }
 .kotak-right{
     font-size: 25px;
+}
+.add{
+    border: #080808 solid 2px;
+    font-size: 25px;
+    border-radius: 20px;
+    background-color:#c8dbbe;
+    text-decoration: none;
+    color: #000000;
+    padding: 8px 60px;
+    height: 47px;
+    margin:4em 0 0 7em;
+
+}
+.add:hover{
+    color:#000000;
+    background-color: #caa26b;
 }
