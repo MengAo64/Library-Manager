@@ -17,6 +17,24 @@
             <li><a href="/record">Records</a></li>
         </ul>
     </nav>
-    <div class="kotak"></div>
+    <div class="kotak2">
+        <div class="kiri"><img src="img/placeholder.jpg" alt=""></div>
+        <div class="kanan">
+            <h2 class="p">Title</h2>
+            <h4  class="p">Author</h4>
+            <h4  class="p">Publisher</h4>
+            <br>
+            <br>
+            <h4 style="font-size: 22px">Publication date</h4>
+            <br>
+            <br>
+            <br>
+            <a href="" class="borrow">Borrow</a>
+        </div>
+        <div class="button2">
+            <a class="delete" href="">Delete</a>
+            <a class="edit" href="">Edit</a>
+        </div>
+    </div>
 </body>
 </html>
