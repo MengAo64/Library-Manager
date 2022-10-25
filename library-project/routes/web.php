@@ -52,5 +52,8 @@ Route::get('/Show', function () {
     return view('Showbook');
 });
 
+// Route::get('/addmember', function () {
+//     return view('addmember');
+// });
 
-
+// Route::post('/member');

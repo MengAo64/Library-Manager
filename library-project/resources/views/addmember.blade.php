@@ -17,25 +17,32 @@
         <li><a href="#">Records</a></li>
     </ul>
 </nav>
-<div class="kotak">
-    <div class="add">
-    <h1>Tambah member</h1>
-    </div>
-    <br> <br>
-<div class="name">
-  <span class="input-group-text">First and last name</span>
-  <input type="text" aria-label="First name" class="form-control">
-  <input type="text" aria-label="Last name" class="form-control">
-</div>
-<br>
-<div class="date">
-  <span class="input-group-text" id="inputGroup-sizing-lg">JOIN DATE</span>
-  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-</div>
-<br><br>
-<button class="submit" type="submit">Submit</button>
-    </form>
-</div>
+    
+        <div class="kotak">
+            <div class="add">
+            <h1>Tambah member</h1>
+            </div>
+            <br> <br>
 
-</body>
-</html>
+            <div class="kotak-input">
+
+
+                <div class="nama-add"><span class="input-group-text nama-inp">Name =</span>
+                <input class="inputnama" type="text" aria-label="First name" class="form-control" placeholder="Name">
+                </div>
+                <br><br>
+
+                <div class="date-add">
+                <span class="input-group-text" id="inputGroup-sizing-lg">Join Date =</span>
+                <input class="inputdate" type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Join Date">
+                </div>
+
+            </div>    
+        <br><br>
+        <button class="btn-submit" type="submit"> Add </button>
+        
+        </div>
+        <!-- </form> -->
+
+        </body>
+        </html>
