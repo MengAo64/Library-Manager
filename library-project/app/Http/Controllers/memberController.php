@@ -14,11 +14,16 @@ class memberController extends Controller
      */
     public function member()
     {
-        $datas = Member::all();
 
-        return view('member.index', compact(
-            'datas'
-        ));
+        $member = [
+            'member' => Member::all()
+        ];
+        return view('indexmember', $member);
+        // $datas = Member::all();
+
+        // return view('indexmember', compact(
+        //     'datas'
+        // ));
     }
 
     /**
@@ -43,7 +48,12 @@ class memberController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $model = new Member;
+        $model->name = $request->name;
+        $model->join_date = $request->join_date;
+        $model->save();
+
+        return redirect('member');
     }
 
     /**
