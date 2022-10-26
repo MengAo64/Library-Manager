@@ -39,6 +39,11 @@ Route::get('/', function () {
 // });
 
 
+Route::get('/', [bookController::class, 'h']);
+
+Route::get('/addmember', function () {
+    return view('addmember');
+});
 
 Route::get('/book', [bookController::class, 'h']);
 Route::get('/member', [memberController::class, 'member']);
@@ -56,6 +61,13 @@ Route::get('/addbook', function () {
 Route::get('/show', function () {
     return view('Showbook');
 });
+
+
+// Route::get('/addmember', function () {
+//     return view('addmember');
+// });
+
+// Route::post('/member');
 
 Route::get('/coverimg/{path}', function ($path) {
     $path = storage_path('app/coverImg/' . $path);
@@ -77,3 +89,4 @@ Route::post('/book',[bookController::class, "store"] );
 
 Route::resource('{{$buku}}', bookController::class, );
 Route::get(memberController::class);
+
