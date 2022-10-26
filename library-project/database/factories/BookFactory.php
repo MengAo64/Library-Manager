@@ -20,7 +20,7 @@ class BookFactory extends Factory
 
         return [
             
-            'name' => fake()->title(),
+            'title' => fake()->title(),
             'author' => fake()->name(),
             'publisher' => fake()->name(),
             'publication_date' => fake()->date(),

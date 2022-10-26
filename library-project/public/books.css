@@ -18,11 +18,6 @@ nav{
     top: 0;
 
 }
-nav h2{
-    color: red;
-    
-    /* background-color: blue; */
-}
 nav ul{
     display: flex;
     justify-content: center;
@@ -75,7 +70,7 @@ nav ul li a:hover{
 }
 .isi{
     display: flex;
-    gap: 5em 25px;
+    gap: 5em 5em;
     flex-wrap: wrap;
     width: 90%;
    margin: auto;
@@ -108,5 +103,72 @@ nav ul li a:hover{
 }
 .addbook :hover{
     color:#000000;
+    background-color: #caa26b;
+}
+.kotak2{
+    background-color: #c8dbbe;
+    width: 73em;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    border-radius: 5px;
+    padding-bottom: 15px;
+}
+.kiri img{
+    border: 2px solid;
+    width: 290px;
+    height: 320px;
+    margin: 27px 0 0 2em;
+
+}
+.kanan{
+    margin:27px 0 0 2em;
+}
+h4{
+    padding-top: 7px;
+}
+.p{
+    font-size: 27px;
+}
+.borrow{
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    border: 2px solid ;
+    border-radius: 23px;
+    padding: 13px;
+    background-color:  #c8dbbe;
+}
+.borrow:hover{
+    color: #000000;
+    background-color: #caa26b;
+}
+.button2{
+    margin-left: 25em;
+    margin-top: 20em;
+    padding-bottom: 20px;
+}
+.delete{
+    color: #000000;
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 10px;
+    
+}
+.edit{
+    color: #000000;
+    text-decoration: none;
+    padding-left: 17px ;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 10px;
+}
+.delete:hover{
+    color: #000000;
+    background-color: #caa26b;
+}
+.edit:hover{
+    color: #000000;
     background-color: #caa26b;
 }

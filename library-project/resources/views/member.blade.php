@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="books.css">
-    <title>Library Manager | Tampilan Buku</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="member.css">
+    <title>Document</title>
 </head>
-<body >
-    <nav>
+<body>
+<nav>
         <a href="#"><img src="img/logo.jpeg" alt="logo" width="240px"></a>
         <ul>
             <li><a href="/home">Dashboard</a></li>

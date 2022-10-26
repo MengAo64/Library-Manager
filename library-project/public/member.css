@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #665a48;
+}
+nav{
+    width: 100%;
+    background-color: #665a48;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+
+}
+nav h2{
+    color: red;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+nav ul li{
+    list-style: none;
+    padding: 0px 5px;
+
+
+}
+nav ul li a{
+    color: rgb(218, 214, 214);
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 50px;
+    padding: 6px;
+}
+nav ul li a:hover{
+    background-color: rgb(206, 203, 197);
+    color: #665a48 ;
+    border-radius: 20px;
+    
+}
+.kotak{
+    background-color: #c8dbbe;
+    width: 73em;
+    height: 100%;
+    margin: auto;
+    border-radius: 5px;
+    padding-bottom: 15px;
+}
+.judul{
+    color: black;
+    font-size: 35px;
+   padding: 20px 0 0 25px;
+}
+.addbook{
+    width: 20em;
+    height: 30px;
+    text-align: center;
+    margin-left: 45em;
+    margin-top: -20px;
+    margin-bottom: 25px;
+    
+}
+.addbook a{
+    text-decoration: none;
+    border: #000000 solid 3px;
+    color: black;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px 70px ;
+}
+.addbook :hover{
+    color:#000000;
+    background-color: #caa26b;
+}
