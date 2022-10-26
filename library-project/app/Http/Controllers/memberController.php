@@ -14,7 +14,11 @@ class memberController extends Controller
      */
     public function index()
     {
-        //
+        $datas = Member::all();
+
+        return view('member.index', compact(
+            'datas'
+        ));
     }
 
     /**
@@ -24,6 +28,10 @@ class memberController extends Controller
      */
     public function create()
     {
+        $model = new Member;
+        return view('member', compact(
+
+        ));
         //
     }
 

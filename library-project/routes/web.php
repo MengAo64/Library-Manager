@@ -4,7 +4,7 @@ use App\Models\member;
 use App\Models\record;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\bookController;
-
+use App\Http\Controllers\memberController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,3 +28,5 @@ Route::get('/index', function () {
 });
 
 Route::get('/', [bookController::class, 'h']);
+
+Route::get(memberController::class);
