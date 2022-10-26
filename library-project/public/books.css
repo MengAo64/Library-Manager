@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=PT+Sans&family=Tiro+Devanagari+Hindi:ital@1&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -61,12 +62,15 @@ nav ul li a:hover{
 .card1{
     margin-top: 3px;
     width: 200px;
-    height: 19em;
+    height: 20em;
     border: #000000 solid 5px;
     margin: auto;
     margin-top: 15px;
     border-radius: 5px;
 
+}
+img{
+    border-radius: 7px;
 }
 .isi{
     display: flex;

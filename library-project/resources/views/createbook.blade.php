@@ -26,7 +26,7 @@
             <div class="kotak-left">
                 <input type="file" accept="image/png, image/jpeg" class="file-cover" name="cover_image">
                 <div class="preview-box">
-                    <img src="" width="100%" id="preview-img" alt=" ">
+                    <img src="" width="100%" id="preview-img" alt="">
                 </div>   
             </div>
             
