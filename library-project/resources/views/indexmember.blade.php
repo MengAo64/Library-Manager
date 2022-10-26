@@ -5,7 +5,7 @@
 <div class="kotak">
         <div class="judul"><b>Members</b></div> 
         <div class="addbook">
-            <a href="#">AddMember</a>
+            <a href="/addmember">AddMember</a>
         </div>
 
         

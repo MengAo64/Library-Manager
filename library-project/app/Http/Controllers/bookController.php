@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\book;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class bookController extends Controller
 {
@@ -12,6 +13,16 @@ class bookController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    // public function index()
+    // {
+    //     $datas = book::all();
+
+    //     return view('indexbook', compact(
+    //         'datas'
+    //     ));
+
+
+    // }
     public function h()
     {
         $buku = [
@@ -27,7 +38,10 @@ class bookController extends Controller
      */
     public function create()
     {
-        //
+        $model = new Book ;
+        return view('createbook', compact(
+            'model'
+        ));
     }
 
     /**
@@ -37,8 +51,26 @@ class bookController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        //
+    {   
+        
+        $model = new Book;
+        $model ->title = $request-> title;
+        $model ->author = $request-> author;
+        $model ->publisher = $request-> publisher;
+        $model ->publication_date = $request-> publication_date;
+        $model ->status = $request-> status;
+
+        if($request->file("cover_image")){
+            $name_file = $request->file("cover_image")->hashName();
+            // Storage::put("coverImg/$name_file" , $request->file("cover_image") , "public");
+            $request->file("cover_image")->storePubliclyAs("coverImg" , $name_file);
+            $model ->cover_image = $name_file;
+        }
+
+        $model ->save();
+
+        return redirect('book');
+
     }
 
     /**

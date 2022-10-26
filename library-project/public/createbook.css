@@ -112,10 +112,13 @@ nav ul li a:hover{
     color: #000000;
     padding: 8px 60px;
     height: 47px;
-    margin:4em 0 0 7em;
+    margin:12em 0 5px 6em;
 
 }
 .add:hover{
     color:#000000;
     background-color: #caa26b;
+}
+.input2{
+    width: 35px;
 }
