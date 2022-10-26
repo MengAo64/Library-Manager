@@ -76,3 +76,4 @@ Route::get('/coverimg/{path}', function ($path) {
 Route::post('/book',[bookController::class, "store"] );
 
 Route::resource('{{$buku}}', bookController::class, );
+Route::get(memberController::class);
