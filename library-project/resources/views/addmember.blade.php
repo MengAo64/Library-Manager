@@ -17,7 +17,8 @@
         <li><a href="#">Records</a></li>
     </ul>
 </nav>
-    
+    <form method="POST" action="{{url('member')}}">
+        @csrf
         <div class="kotak">
             <div class="add">
             <h1>Add Member</h1>
@@ -28,13 +29,13 @@
 
 
                 <div class="nama-add"><span class="input-group-text nama-inp">Name =</span>
-                <input class="inputnama" type="text" aria-label="First name" class="form-control" placeholder="Name">
+                <input class="inputnama" name="name" type="text" aria-label="First name" class="form-control" placeholder="Name">
                 </div>
                 <br><br>
 
                 <div class="date-add">
                 <span class="input-group-text" id="inputGroup-sizing-lg">Join Date =</span>
-                <input class="inputdate" type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Join Date">
+                <input class="inputdate" name="join_date"type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Join Date">
                 </div>
 
             </div>    
@@ -42,7 +43,7 @@
         <button class="btn-submit" type="submit"> Add </button>
         
         </div>
-        <!-- </form> -->
+        </form>
 
         </body>
         </html>
