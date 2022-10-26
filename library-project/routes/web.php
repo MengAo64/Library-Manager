@@ -41,6 +41,11 @@ Route::get('/', function () {
 //     return view('indexbook');
 // });
 
+Route::get('/', [bookController::class, 'h']);
+
+Route::get('/addmember', function () {
+    return view('addmember');
+});
 
 Route::get('/book', [bookController::class, 'h']);
 Route::get('/member', [memberController::class, 'member']);
@@ -56,5 +61,8 @@ Route::get('/Show', function () {
     return view('Showbook');
 });
 
+// Route::get('/addmember', function () {
+//     return view('addmember');
+// });
 
-
+// Route::post('/member');
