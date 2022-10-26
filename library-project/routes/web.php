@@ -39,10 +39,28 @@ Route::get('/', function () {
 // });
 
 
+Route::get('/', [bookController::class, 'h']);
+
+Route::get('/addmember', function () {
+    return view('addmember');
+});
+Route::get('/member', function () {
+    return view('member');
+});
 
 Route::get('/book', [bookController::class, 'h']);
 Route::get('/member', [memberController::class, 'member']);
-// Route::get('/record', [memberController::class, '']);
+//Route get => member => indexmember
+//Route get => member => create
+//Route post => member => addmember
+//Route get => member/{id} => show
+//Route put => member/{id} => update
+//Route delete => member/{id} => delete
+//Route get => member/{id}/edit +> edit
+
+// Route::get('/record', [memberController::class, 'index']);
+// Route::get('/record/show_api', [memberController::class, 'show api']);
+
 
 
 
@@ -52,10 +70,20 @@ Route::get('/member', [memberController::class, 'member']);
 Route::get('/addbook', function () {
     return view('createbook');
 });
+Route::get('/cmember', function () {
+    return view('createmember');
+});
 
 Route::get('/show', function () {
     return view('Showbook');
 });
+
+
+// Route::get('/addmember', function () {
+//     return view('addmember');
+// });
+
+// Route::post('/member');
 
 Route::get('/coverimg/{path}', function ($path) {
     $path = storage_path('app/coverImg/' . $path);
@@ -74,5 +102,9 @@ Route::get('/coverimg/{path}', function ($path) {
 });
 
 Route::post('/book',[bookController::class, "store"] );
+Route::post('/member',[memberController::class, "store"] );
 
 Route::resource('{{$buku}}', bookController::class, );
+Route::resource('{{$member}}', bookController::class, );
+Route::get(memberController::class);
+
