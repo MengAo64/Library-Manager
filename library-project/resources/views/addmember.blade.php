@@ -20,7 +20,7 @@
     
         <div class="kotak">
             <div class="add">
-            <h1>Tambah member</h1>
+            <h1>Add Member</h1>
             </div>
             <br> <br>
 
