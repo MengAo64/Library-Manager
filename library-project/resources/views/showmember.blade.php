@@ -18,6 +18,7 @@
 <div class="kotak">
     <div class="">
         {{$member->name}}
+        {{$member->join_date}}
     </div>
 </body>
 </html>
