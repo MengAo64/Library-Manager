@@ -11,7 +11,7 @@
         </div>
         <div class="isi">
         @foreach ($buku as $b)
-        <a href=""  style="text-decoration: none; color:black;">
+        <a href="/book/{{ $b->id }}"  style="text-decoration: none; color:black;">
             <div class="card1">
                 <img src="{{ $b->cover_image ? 'coverimg/' . $b->cover_image :  asset("img/placeholder.jpg") }}" alt=""  style="width: 130px; margin: 10px 0 0 2em;">
                 <div class="deskripsi" style="margin: 10px 0 0 1em;">

@@ -48,7 +48,7 @@ Route::get('/member', function () {
     return view('member');
 });
 
-Route::get('/book', [bookController::class, 'h']);
+// Route::get('/book', [bookController::class, 'h']);
 Route::get('/member', [memberController::class, 'member']);
 //Route get => member => indexmember
 //Route get => member => create
@@ -74,9 +74,10 @@ Route::get('/cmember', function () {
     return view('createmember');
 });
 
-Route::get('/show', function () {
-    return view('Showbook');
-});
+// Route::get('/show', function () {
+//     return view('Showbook');
+// });
+// Route::get('/show/{id}', [bookController::class , "show"]);
 
 
 // Route::get('/addmember', function () {
@@ -101,10 +102,11 @@ Route::get('/coverimg/{path}', function ($path) {
     return $response; ;
 });
 
-Route::post('/book',[bookController::class, "store"] );
-Route::post('/member',[memberController::class, "store"] );
+// Route::post('/book',[bookController::class, "store"] );
+// Route::post('/member',[memberController::class, "store"] );
 
-Route::resource('{{$buku}}', bookController::class, );
-Route::resource('{{$member}}', bookController::class, );
+Route::resource('book', bookController::class );
+Route::resource('member', bookController::class );
 Route::get(memberController::class);
 
+// Route::get('/book/{id}', [UserController::class, 'show']);
