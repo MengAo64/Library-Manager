@@ -74,8 +74,11 @@ Route::get('/cmember', function () {
     return view('createmember');
 });
 
-Route::get('/show', function () {
+Route::get('/Showbook', function () {
     return view('Showbook');
+});
+Route::get('/Showmember', function () {
+    return view('showmember');
 });
 
 
