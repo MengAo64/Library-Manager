@@ -24,7 +24,7 @@
   <?php $i++; ?>
    <tr >
       <th scope="row">{{ $i }}</th>
-      <td><a href="{{ $m -> name}}" style="text-decoration:none; color:black;">{{ $m -> name}}</a></td>
+      <td><a href="/member/{{ $m -> id}}" style="text-decoration:none; color:black;">{{ $m -> name}}</a></td>
       <td>{{ $m -> join_date}}</td>   
     </tr>
     @endforeach
