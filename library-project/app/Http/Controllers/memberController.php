@@ -12,7 +12,7 @@ class memberController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function member()
+    public function index()
     {
 
         $member = [
@@ -34,9 +34,9 @@ class memberController extends Controller
     public function create()
     {
         $model = new Member;
-        return view('member', compact(
+        // return view('member', compact(
 
-        ));
+        // ));
         //
     }
 
@@ -64,7 +64,7 @@ class memberController extends Controller
      */
     public function show(member $member)
     {
-        //
+        return view("showmember" , ["member" => $member]);
     }
 
     /**

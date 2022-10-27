@@ -39,7 +39,7 @@ Route::get('/', function () {
 // });
 
 
-Route::get('/', [bookController::class, 'h']);
+Route::get('/', [bookController::class, 'index']);
 
 Route::get('/addmember', function () {
     return view('addmember');
@@ -49,7 +49,7 @@ Route::get('/member', function () {
 });
 
 // Route::get('/book', [bookController::class, 'h']);
-Route::get('/member', [memberController::class, 'member']);
+// Route::get('/member', [memberController::class, 'member']);
 //Route get => member => indexmember
 //Route get => member => create
 //Route post => member => addmember
@@ -64,9 +64,7 @@ Route::get('/member', [memberController::class, 'member']);
 
 
 
-// Route::get('', function () {
-//     return view('');
-// });
+
 Route::get('/addbook', function () {
     return view('createbook');
 });
@@ -106,7 +104,7 @@ Route::get('/coverimg/{path}', function ($path) {
 // Route::post('/member',[memberController::class, "store"] );
 
 Route::resource('book', bookController::class );
-Route::resource('member', bookController::class );
-Route::get(memberController::class);
+Route::resource('member', memberController::class );
+// Route::get(memberController::class);
 
 // Route::get('/book/{id}', [UserController::class, 'show']);
