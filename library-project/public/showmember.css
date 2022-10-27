@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@600&family=Tiro+Devanagari+Hindi:ital@1&display=swap');
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Merriweather;
     
 }
 body{
