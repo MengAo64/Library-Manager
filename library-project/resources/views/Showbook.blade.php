@@ -8,15 +8,7 @@
     <title>Show Book</title>
 </head>
 <body>
-    <nav>
-        <a href="#"><img src="img/logo.jpeg" alt="logo" width="240px"></a>
-        <ul>
-            <li><a href="/home">Dashboard</a></li>
-            <li><a href="/book">Manage Books</a></li>
-            <li><a href="/member">Manage Members</a></li>
-            <li><a href="/record">Records</a></li>
-        </ul>
-    </nav>
+    @yield('navbar')
     <div class="kotak2">
         <div class="kiri"><img src="/coverimg/{{ $buku->cover_image}}" alt=""></div>
         <div class="kanan">
