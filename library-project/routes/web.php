@@ -27,7 +27,7 @@ use Illuminate\Support\Facades\Storage;
 //     return view('index');
 // });
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('Home');
 });
 
