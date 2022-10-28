@@ -23,7 +23,7 @@
             <h2 class="p">{{ $buku->title }} </h2>
             <h4  class="p">{{ $buku->author }}</h4>
             <h4  class="p">{{$buku ->publisher}}</h4>
-            <h4  class="p">{{$buku ->status}</h4>
+            <h4  class="p">{{$buku ->status}}</h4>
             <br><br>
             <h4 style="font-size: 22px">{{$buku ->publication_date}}</h4>
             <br><br><br>
@@ -34,8 +34,6 @@
 
             {{-- buat delete --}}
             {{-- <form action="{{url ($book->id) }}" method="POST"> --}}
-                
-                <button class="delete" type="submit"></button>
                 <a class="delete" href="">Delete</a>
             {{-- </form> --}}
             <a class="edit" href="">Edit</a>
