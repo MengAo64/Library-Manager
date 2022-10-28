@@ -149,9 +149,10 @@ img{
     background-color: #caa26b;
 }
 .button2{
-    margin-left: 25em;
+    margin-left: 14em;
     margin-top: 20em;
     padding-bottom: 20px;
+    display: flex;
 }
 .delete{
     color: #000000;
@@ -159,6 +160,7 @@ img{
     border: 2px solid;
     border-radius: 20px;
     padding: 10px;
+    margin-right: 10px;
     
 }
 .edit{

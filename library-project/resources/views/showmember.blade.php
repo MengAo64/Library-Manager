@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="showmember.css">
+    <link rel="stylesheet" href="{{ asset("showmember.css") }}">
     <title>Document</title>
 </head>
 <body>
@@ -26,14 +26,12 @@
             <div class="kotak-input">
 
 
-                <div class="nama-add"><span class="input-group-text nama-inp">Name =</span>
-                <input class="inputnama" name="name" type="text" aria-label="First name" class="form-control" placeholder="Name">
+                <div class="nama-add"><span class="input-group-text nama-inp">Name = {{$member-> name}}</span>
                 </div>
                 <br><br>
 
                 <div class="date-add">
-                <span class="input-group-text" id="inputGroup-sizing-lg">Join Date =</span>
-                <input class="inputdate" name="join_date"type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Join Date">
+                <span class="input-group-text" id="inputGroup-sizing-lg">Join Date = {{$member-> join_date}}</span>
                 </div>      
                <div class="button3">
                 <button class="btn-delete" type="submit"> Delete </button>

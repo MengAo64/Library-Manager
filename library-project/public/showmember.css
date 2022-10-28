@@ -55,17 +55,17 @@ nav ul li a:hover{
     border-radius: 5px;
     padding-bottom: 15px;
 }
-
 .inputnama{
+    padding-right: 8px;
     font-size: 25px;
-    margin-left: 90px;
-    border-radius: 8px;
+    margin-left: 115px;
+    border-radius: 6px;
 }
 .inputdate{
     text-align: right;
     padding-right: 120px;
     font-size: 25px;
-    margin-left: 54px;
+    margin-left: 55px;
     border-radius: 6px;
 }
 /* .name{
@@ -83,7 +83,7 @@ nav ul li a:hover{
 }
 
 .btn-delete{
-    padding: 10px 40px;
+    padding: 10px 20px;
     margin-left:500px;
     font-size: 25px;
     border: 2px black solid;
@@ -92,12 +92,18 @@ nav ul li a:hover{
     color:#000000;
     background-color: #caa26b;
 }
-
 .btn-edit{
-    padding: 10px 40px;
-    margin-left:500px;
+
+    padding: 10px 20px;
+    padding-right: 40px;
+    text-align: center;
     font-size: 25px;
     border: 2px black solid;
+}
+.btn-delete,.btn-edit{
+    border-radius: 6px;
+    margin-top: 100px;
+    text-align: center;
 }
 .btn-edit:hover{
     color:#000000;
@@ -123,7 +129,4 @@ nav ul li a:hover{
 }
 .add{
     text-align: center;
-}
-.button3 {
-    float: inline-start;
 }

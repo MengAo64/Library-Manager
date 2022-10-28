@@ -78,7 +78,7 @@ Route::get('/cmember', function () {
 // });
 // Route::get('/show/{id}', [bookController::class , "show"]);
 
-Route::get('/Showmember', function () {
+Route::get('/showmember', function () {
     return view('showmember');
 });
 
