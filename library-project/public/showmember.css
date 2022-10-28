@@ -81,12 +81,16 @@ nav ul li a:hover{
     padding: 20px   ;
     margin-left: 350px;
 }
-
+.button3{
+    margin-left: 27em;
+}
 .btn-delete{
-    padding: 10px 20px;
-    margin-left:500px;
-    font-size: 25px;
-    border: 2px black solid;
+    color: #000000;
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 10px;
 }
 .btn-delete:hover{
     color:#000000;
@@ -94,14 +98,15 @@ nav ul li a:hover{
 }
 .btn-edit{
 
-    padding: 10px 20px;
-    padding-right: 40px;
-    text-align: center;
-    font-size: 25px;
-    border: 2px black solid;
+    color: #000000;
+    text-decoration: none;
+    padding-left: 17px ;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 10px;
 }
 .btn-delete,.btn-edit{
-    border-radius: 6px;
+    border-radius: 20px;
     margin-top: 100px;
     text-align: center;
 }
@@ -116,7 +121,9 @@ nav ul li a:hover{
     background-color: gray;
 } */
 
-
+.title2{
+    padding-top: 15px;
+}
 
 .nama-add span{
     margin-left: -200px;

@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset("books.css") }}">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Show Book</title>
-</head>
-<body>
-    @yield('navbar')
+@extends('layout.main')
+@section('title')
+Library | ShowBook
+@endsection
+@section('css')
+      <link rel="stylesheet" href="{{ asset("books.css") }}">
+@endsection
+@section('content')
+    
+
     <div class="kotak2">
         <div class="kiri"><img src="/coverimg/{{ $buku->cover_image}}" alt=""></div>
         <div class="kanan">
@@ -31,5 +30,4 @@
             <a class="edit" href="">Edit</a>
         </div>
     </div>
-</body>
-</html>
+    @endsection

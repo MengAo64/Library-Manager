@@ -19,9 +19,6 @@ nav{
     top: 0;
 
 }
-nav h2{
-    color: red;
-}
 nav ul{
     display: flex;
     justify-content: center;

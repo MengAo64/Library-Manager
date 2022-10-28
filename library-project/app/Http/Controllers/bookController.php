@@ -79,7 +79,7 @@ class bookController extends Controller
      */
     public function show(book $book)
     {
-        return view("indexShowbook" , ["buku" => $book]);
+        return view("Showbook" , ["buku" => $book]);
     }
 
     /**

@@ -1,9 +1,12 @@
-@extends('Books')
+@extends('layout/main')
+@section('title')
+Library | Books
+@endsection
+@section('css')
+      <link rel="stylesheet" href="{{ asset("books.css") }}">
+@endsection
 
-@section('container')
-
-
-
+@section('content')
 <div class="kotak">
         <div class="judul"><b>Books</b></div> 
         <div class="addbook">
@@ -27,8 +30,5 @@
         </div>
      
 </div>
-
-
-
 @endsection
 
