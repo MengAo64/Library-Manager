@@ -88,9 +88,10 @@ class bookController extends Controller
      * @param  \App\Models\book  $book
      * @return \Illuminate\Http\Response
      */
-    public function edit(book $book)
+    public function edit($id)
     {
-        //
+        $buku = book::find($id);
+        return view('editbook',compact(['buku']));
     }
 
     /**
@@ -100,9 +101,26 @@ class bookController extends Controller
      * @param  \App\Models\book  $book
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, book $book)
+    public function update($id, Request $request)
     {
-        //
+        $buku = book::find($id);
+        $buku->update();
+        $buku ->title = $request-> title;
+        $buku ->author = $request-> author;
+        $buku ->publisher = $request-> publisher;
+        $buku ->publication_date = $request-> publication_date;
+        $buku ->status = $request-> status;
+
+        if($request->file("cover_image")){
+            $name_file = $request->file("cover_image")->hashName();
+            // Storage::put("coverImg/$name_file" , $request->file("cover_image") , "public");
+            $request->file("cover_image")->storePubliclyAs("coverImg" , $name_file);
+            $buku ->cover_image = $name_file;
+        }
+
+        $buku->save();
+
+        return redirect('book');
     }
 
     /**
@@ -113,8 +131,8 @@ class bookController extends Controller
      */
     public function destroy($id)
     {
-        // $model = book::find($id);
-        // $model->delete();
-        // return redirect('book');
+        $model = book::find($id);
+        $model->delete();
+        return redirect('book');
     }
 }

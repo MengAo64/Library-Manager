@@ -130,9 +130,12 @@ img{
     margin:27px 0 0 2em;
 }
 .p h4{
+    
     padding-top: 7px;
 }
 .p{
+    font-family: sans-serif;
+    margin-top: 3px;
     font-size: 27px;
 }
 .borrow{
@@ -154,22 +157,28 @@ img{
     padding-bottom: 20px;
     display: flex;
 }
-.delete{
+/* .delete{
+    text-align: center;
+    width: 100px;
     color: #000000;
     text-decoration: none;
     border: 2px solid;
     border-radius: 20px;
     padding: 10px;
-    margin-right: 10px;
+    background-color: #c8dbbe;
     
-}
-.edit{
+} */
+.edit, .delete{
+    margin-right: 3px;
+    font-size: 20px;
+    text-align: center;
+    width: 100px;
     color: #000000;
     text-decoration: none;
-    padding-left: 17px ;
     border: 2px solid;
     border-radius: 20px;
     padding: 10px;
+    background-color: #c8dbbe;
 }
 .delete:hover{
     color: #000000;
@@ -178,4 +187,14 @@ img{
 .edit:hover{
     color: #000000;
     background-color: #caa26b;
+}
+
+.terbit{
+    font-family: sans-serif;
+    margin-top: 10px;
+    font-size: 30px;
+}
+.status{
+    margin-top: 30px;
+    font-size: 32px;
 }

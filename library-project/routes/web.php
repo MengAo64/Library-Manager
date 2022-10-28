@@ -27,7 +27,7 @@ use Illuminate\Support\Facades\Storage;
 //     return view('index');
 // });
 
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('Home');
 });
 
@@ -39,7 +39,7 @@ Route::get('/home', function () {
 // });
 
 
-Route::get('/', [bookController::class, 'index']);
+// Route::get('/', [bookController::class, 'h']);
 
 Route::get('/addmember', function () {
     return view('addmember');
@@ -49,7 +49,7 @@ Route::get('/member', function () {
 });
 
 // Route::get('/book', [bookController::class, 'h']);
-// Route::get('/member', [memberController::class, 'member']);
+Route::get('/member', [memberController::class, 'member']);
 //Route get => member => indexmember
 //Route get => member => create
 //Route post => member => addmember
@@ -64,24 +64,23 @@ Route::get('/member', function () {
 
 
 
-
+// Route::get('', function () {
+//     return view('');
+// });
 Route::get('/addbook', function () {
     return view('createbook');
+});
+Route::get('/updatebook', function () {
+    return view('editbook');
 });
 Route::get('/cmember', function () {
     return view('createmember');
 });
 
-
 // Route::get('/show', function () {
 //     return view('Showbook');
 // });
 // Route::get('/show/{id}', [bookController::class , "show"]);
-
-Route::get('/showmember', function () {
-    return view('showmember');
-});
-
 
 
 // Route::get('/addmember', function () {
@@ -110,7 +109,7 @@ Route::get('/coverimg/{path}', function ($path) {
 // Route::post('/member',[memberController::class, "store"] );
 
 Route::resource('book', bookController::class );
-Route::resource('member', memberController::class );
-// Route::get(memberController::class);
+Route::resource('member', bookController::class );
+Route::get(memberController::class);
 
 // Route::get('/book/{id}', [UserController::class, 'show']);

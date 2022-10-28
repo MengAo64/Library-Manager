@@ -14,20 +14,28 @@ Library | ShowBook
             <h2 class="p">{{ $buku->title }} </h2>
             <h4  class="p">{{ $buku->author }}</h4>
             <h4  class="p">{{$buku ->publisher}}</h4>
-            <h4  class="p">{{$buku ->status}}</h4>
-            <br><br>
-            <h4 style="font-size: 22px">{{$buku ->publication_date}}</h4>
+
+            <h4 class="terbit">Terbit : {{$buku ->publication_date}}</h4>
+
+            <h4  class="status">Status : {{$buku ->status}}</h4>
             <br><br><br>
 
-            <a href="" class="borrow">Borrow</a>
+           
         </div>
         <div class="button2">
+            {{-- buat edit/Update book --}}
+            <a class="edit " href="/book/{{$buku->id}}/edit">Update</a>
 
-            {{-- buat delete --}}
-            {{-- <form action="{{url ($book->id) }}" method="POST"> --}}
-                <a class="delete" href="">Delete</a>
-            {{-- </form> --}}
-            <a class="edit" href="">Edit</a>
+            {{-- buat delete book --}}
+            <form action="/book/{{$buku->id}}" method="POST">
+                @csrf
+                @method('delete')
+                <input type="hidden" name="_method"  value="DELETE">
+                <button class="delete"  type="submit">Delete</button>
+                {{-- <a class="delete" href="">Delete</a> --}}
+            </form>
+
+        
         </div>
     </div>
     @endsection
