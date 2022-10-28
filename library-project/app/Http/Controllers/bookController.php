@@ -13,23 +13,21 @@ class bookController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    // public function index()
-    // {
-    //     $datas = book::all();
-
-    //     return view('indexbook', compact(
-    //         'datas'
-    //     ));
-
-
-    // }
-    public function h()
+    public function index()
     {
         $buku = [
             'buku' => Book::all()
         ];
         return view('indexbook', $buku);
+
     }
+    // public function h()
+    // {
+    //     $buku = [
+    //         'buku' => Book::all()
+    //     ];
+    //     return view('indexbook', $buku);
+    // }
 
     /**
      * Show the form for creating a new resource.
@@ -81,7 +79,7 @@ class bookController extends Controller
      */
     public function show(book $book)
     {
-        //
+        return view("Showbook" , ["buku" => $book]);
     }
 
     /**
@@ -113,8 +111,10 @@ class bookController extends Controller
      * @param  \App\Models\book  $book
      * @return \Illuminate\Http\Response
      */
-    public function destroy(book $book)
+    public function destroy($id)
     {
-        //
+        // $model = book::find($id);
+        // $model->delete();
+        // return redirect('book');
     }
 }

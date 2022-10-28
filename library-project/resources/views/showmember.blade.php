@@ -18,7 +18,7 @@
 </nav>
 <div class="kotak">
     <div class="">
-
+        {{$member->name}}
     </div>
 </body>
 </html>
