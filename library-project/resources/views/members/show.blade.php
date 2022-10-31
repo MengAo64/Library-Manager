@@ -1,6 +1,6 @@
 @extends('layout.main')
 @section('title')
-Library | ShowMember
+Library | Show Member
 @endsection
 @section('css')
 <link rel="stylesheet" href="{{ asset("showmember.css") }}">
@@ -25,8 +25,16 @@ Library | ShowMember
                 <span class="input-group-text" id="inputGroup-sizing-lg">Join Date = {{$member-> join_date}}</span>
                 </div>      
                <div class="button3">
-                <button class="btn-delete" type="submit"> Delete </button>
-                <button class="btn-edit" type="submit"> Edit </button>
+
+               
+
+                <form action="/member/{{$member->id}}" method="POST">
+                        @csrf
+                        @method('delete')
+                   <a class="btn-edit"  href="/member/edit/{{$member->id}}"> Edit </a>
+                    <button class="btn-delete" type="submit"> Delete </button>
+                </form>
+                
             </div>
                 
             </div>  

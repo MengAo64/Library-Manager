@@ -18,7 +18,7 @@ class bookController extends Controller
         $buku = [
             'buku' => Book::all()
         ];
-        return view('indexbook', $buku);
+        return view('books.indexbook',  $buku);
 
     }
     // public function h()
@@ -37,7 +37,7 @@ class bookController extends Controller
     public function create()
     {
         $model = new Book ;
-        return view('createbook', compact(
+        return view('books.create', compact(
             'model'
         ));
     }
@@ -67,7 +67,7 @@ class bookController extends Controller
 
         $model ->save();
 
-        return redirect('book');
+        return redirect('book')->with('success', 'Buku Berhasil di Tambahkan');
 
     }
 
@@ -77,9 +77,10 @@ class bookController extends Controller
      * @param  \App\Models\book  $book
      * @return \Illuminate\Http\Response
      */
-    public function show(book $book)
+    public function show($bk)
     {
-        return view("Showbook" , ["buku" => $book]);
+    $book = book::findOrFail($bk);
+    return view('books.show',["buku" => $book]);
     }
 
     /**
@@ -91,7 +92,7 @@ class bookController extends Controller
     public function edit($id)
     {
         $buku = book::find($id);
-        return view('editbook',compact(['buku']));
+        return view('books.edit',compact(['buku']));
     }
 
     /**
@@ -120,7 +121,7 @@ class bookController extends Controller
 
         $buku->save();
 
-        return redirect('book');
+        return redirect('book')->with('success', 'Buku Berhasil di Update');;
     }
 
     /**
@@ -133,6 +134,6 @@ class bookController extends Controller
     {
         $model = book::find($id);
         $model->delete();
-        return redirect('book');
+        return redirect('book')->with('success', 'Buku Berhasil di Hapus');;
     }
 }

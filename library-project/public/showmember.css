@@ -84,32 +84,28 @@ nav ul li a:hover{
 .button3{
     margin-left: 27em;
 }
-.btn-delete{
-    color: #000000;
-    text-decoration: none;
-    border: 2px solid;
-    border-radius: 20px;
-    padding: 10px;
-    margin-right: 10px;
-}
+
 .btn-delete:hover{
     color:#000000;
     background-color: #caa26b;
 }
-.btn-edit{
-
+.btn-delete{
+    height: 43px;
+    font-size: 18px;
+}
+.btn-edit , .btn-delete{
     color: #000000;
+    background-color:transparent ;
     text-decoration: none;
-    padding-left: 17px ;
     border: 2px solid;
     border-radius: 20px;
-    padding: 10px;
-}
-.btn-delete,.btn-edit{
+    padding: 10px 30px;
     border-radius: 20px;
     margin-top: 100px;
     text-align: center;
+    margin-right: 5px;
 }
+
 .btn-edit:hover{
     color:#000000;
     background-color: #caa26b;
@@ -136,4 +132,5 @@ nav ul li a:hover{
 }
 .add{
     text-align: center;
+    background-color: transparent;
 }

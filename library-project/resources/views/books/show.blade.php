@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('layout/main')
 @section('title')
 Library | ShowBook
 @endsection
@@ -24,14 +24,14 @@ Library | ShowBook
         </div>
         <div class="button2">
             {{-- buat edit/Update book --}}
-            <a class="edit " href="/book/{{$buku->id}}/edit">Update</a>
+            <a class="edit " href="/book/edit/{{$buku->id}}">Update</a>
 
             {{-- buat delete book --}}
             <form action="/book/{{$buku->id}}" method="POST">
                 @csrf
                 @method('delete')
                 <input type="hidden" name="_method"  value="DELETE">
-                <button class="delete"  type="submit">Delete</button>
+                <button class="delete"  type="submit" >Delete</button>
                 {{-- <a class="delete" href="">Delete</a> --}}
             </form>
 

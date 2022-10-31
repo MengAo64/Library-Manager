@@ -1,6 +1,6 @@
 @extends('layout/main')
 @section('title')
-Library | Home
+Library | Dashboard
 @endsection
 @section('css')
 <link rel="stylesheet" href="{{ asset("home.css") }}">
