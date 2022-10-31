@@ -105,6 +105,9 @@ Route::get('/coverimg/{path}', function ($path) {
 
 Route::resource('book', bookController::class );
 Route::resource('member', memberController::class );
+Route::get('/member/{id}/edit',[memberController::class,'edit']);
+Route::put('/member/{id}',[memberController::class,'update']);
+Route::delete('/member/{id}',[memberController::class,'destroy']);
 // Route::get(memberController::class);
 
 // Route::get('/book/{id}', [UserController::class, 'show']);

@@ -52,6 +52,7 @@ class memberController extends Controller
         $model->name = $request->name;
         $model->join_date = $request->join_date;
         $model->save();
+        Member::create($request->except(['addmember','submit']));
 
         return redirect('member');
     }
@@ -75,7 +76,8 @@ class memberController extends Controller
      */
     public function edit(member $member)
     {
-        //
+        $member = Member::find($member);
+        return view('member.edit',compact(['member']));
     }
 
     /**
@@ -87,7 +89,9 @@ class memberController extends Controller
      */
     public function update(Request $request, member $member)
     {
-        //
+        $member = Member::find($member);
+        $member->update($request->except(['addmember','submit']));
+        return redirect('member');
     }
 
     /**
@@ -98,6 +102,8 @@ class memberController extends Controller
      */
     public function destroy(member $member)
     {
-        //
+        $member = Member::find($member);
+        $member->delete();
+        return redirect('member'); 
     }
 }

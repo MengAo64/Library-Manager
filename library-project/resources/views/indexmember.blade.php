@@ -25,7 +25,14 @@
    <tr >
       <th scope="row">{{ $i }}</th>
       <td><a href="/member/{{ $m -> id}}" style="text-decoration:none; color:black;">{{ $m -> name}}</a></td>
-      <td>{{ $m -> join_date}}</td>   
+      <td>{{ $m -> join_date}}</td>
+      <td>
+        <a href="/member/{{$m->member}}}}/edit">Edit</a></td>
+        <form acton="/member/{{$m->member}}">method="POST">
+          @csrf
+          @method('delete')
+        <input type="submit" value="Delete">
+</td>  
     </tr>
     @endforeach
   </tbody>
