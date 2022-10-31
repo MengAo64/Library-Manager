@@ -19,11 +19,7 @@ class memberController extends Controller
             'member' => Member::all()
         ];
         return view('indexmember', $member);
-        // $datas = Member::all();
 
-        // return view('indexmember', compact(
-        //     'datas'
-        // ));
     }
 
     /**

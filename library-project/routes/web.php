@@ -72,10 +72,16 @@ Route::get('/cmember', function () {
     return view('createmember');
 });
 
+
 // Route::get('/show', function () {
 //     return view('Showbook');
 // });
 // Route::get('/show/{id}', [bookController::class , "show"]);
+
+Route::get('/Showmember', function () {
+    return view('showmember');
+});
+
 
 
 // Route::get('/addmember', function () {

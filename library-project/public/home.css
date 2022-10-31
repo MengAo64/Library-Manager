@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@600&family=Tiro+Devanagari+Hindi:ital@1&display=swap');
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    
+    font-family: Merriweather;
 }
 body{
     background-color: #665a48;
@@ -37,7 +38,7 @@ nav ul li a{
     color: rgb(218, 214, 214);
     font-size: 20px;
     text-decoration: none;
-    margin-right: 50px;
+    margin-right: 45px;
     padding: 6px;
 }
 nav ul li a:hover{
