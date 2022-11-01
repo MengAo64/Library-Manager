@@ -25,7 +25,7 @@ Library | Createbook
                 <div class="titlebook"><div class="judultitle">Publication Date</div><input class="input" type="date" placeholder="publication Date" name="publication_date"></div>
                 <div class="titlebook"><div class="judultitle">Status</div>
                 <input class="input2" type="radio"  name="status" value="Dipinjam" >Dipinjam</div>
-                <input class="input2" type="radio"  name="status" value="Tidak Dipinjam">Tidak Dipinjam</div>
+                <input class="input2" type="radio"  name="status" value="Tidak Dipinjam" {{'checked'}}>Tidak Dipinjam</div>
                 <button class="add" type="submit">add</button>
                 
             </div> 

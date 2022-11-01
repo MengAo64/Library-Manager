@@ -11,6 +11,7 @@
 </head>
 <body>
     @include('layout.navbar')
+    @include('sweetalert::alert')
     @yield('content')
 </body>
 </html>

@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('layout/main')
 @section('title')
 Library | Member
 @endsection
@@ -13,7 +13,7 @@ Library | Member
 <div class="kotak">
         <div class="judul"><b>Members</b></div> 
         <div class="addbook">
-            <a href="addmember">AddMember</a>
+            <a href="/member/create">AddMember</a>
         </div>
 
         
@@ -32,7 +32,7 @@ Library | Member
   <?php $i++; ?>
    <tr >
       <th scope="row">{{ $i }}</th>
-      <td><a href="/member/{{ $m -> id}}" style="text-decoration:none; color:black;">{{ $m -> name}}</a></td>
+      <td><a href="/member/show/{{ $m -> id}}" style="text-decoration:none; color:black;">{{ $m -> name}}</a></td>
       <td>{{ $m -> join_date}}</td>   
     </tr>
     @endforeach

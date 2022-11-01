@@ -18,7 +18,7 @@ class memberController extends Controller
         $member = [
             'member' => Member::all()
         ];
-        return view('indexmember', $member);
+        return view('members.indexmember', $member);
 
     }
 
@@ -29,11 +29,10 @@ class memberController extends Controller
      */
     public function create()
     {
-        $model = new Member;
-        // return view('member', compact(
-
-        // ));
-        //
+        $model = new member() ;
+        return view('members.create', compact(
+            'model'
+        ));
     }
 
     /**
@@ -49,7 +48,7 @@ class memberController extends Controller
         $model->join_date = $request->join_date;
         $model->save();
 
-        return redirect('member');
+        return redirect('member')->with('success', 'Member Berhasil di Tambahkan');
     }
 
     /**
@@ -58,9 +57,10 @@ class memberController extends Controller
      * @param  \App\Models\member  $member
      * @return \Illuminate\Http\Response
      */
-    public function show(member $member)
+    public function show($mb)
     {
-        return view("showmember" , ["member" => $member]);
+        $member = member::findOrFail($mb);
+        return view("members.show" , ["member" => $member]);
     }
 
     /**
@@ -69,9 +69,10 @@ class memberController extends Controller
      * @param  \App\Models\member  $member
      * @return \Illuminate\Http\Response
      */
-    public function edit(member $member)
+    public function edit($id)
     {
-        //
+        $member = member::find($id);
+        return view('members.edit',compact(['member']));
     }
 
     /**
@@ -81,19 +82,27 @@ class memberController extends Controller
      * @param  \App\Models\member  $member
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, member $member)
+    public function update($id, Request $request)
     {
-        //
-    }
+        $member = member::find($id);
+        $member->update();
+        $member ->name = $request-> name;
+        $member ->join_date = $request-> join_date;
 
+        $member->save();
+
+        return redirect('member')->with('success', 'Member Berhasil di Update');;
+    }
     /**
      * Remove the specified resource from storage.
      *
      * @param  \App\Models\member  $member
      * @return \Illuminate\Http\Response
      */
-    public function destroy(member $member)
+    public function destroy($id)
     {
-        //
+        $model = member::find($id);
+        $model->delete();
+        return redirect('member')->with('success', 'Member Berhasil di Hapus');;
     }
 }
