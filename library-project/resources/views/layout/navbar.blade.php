@@ -9,7 +9,7 @@
 
         {{-- fungsi dari button Login/Logout --}}
         @if (Auth::user())
-        <form action="{{('logout')}}" method="POST" class="d-flex">
+        <form action="{{ route('logout')}}" method="POST" class="d-flex">
             @csrf
             <button type="submit" class="logout"><i class='bx bxs-user' style="width:25px; height:20px; text-align:center; "></i>Logout</button>
         </form>
