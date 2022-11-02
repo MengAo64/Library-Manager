@@ -50,7 +50,14 @@ class bookController extends Controller
      */
     public function store(Request $request)
     {   
-        
+        $request->validate([
+            "title" => "required",
+            "author" => "required",
+            "publisher"=> "required",
+            "publication_date" => "required",
+            "status" => "required"
+        ]);
+
         $model = new Book;
         $model ->title = $request-> title;
         $model ->author = $request-> author;
