@@ -22,7 +22,12 @@ use Illuminate\Support\Facades\Storage;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/home', function () {
+    return view('Home');
+});
+Route::get('/', function () {
+    return view('Home');
+});
 
 
 // Buat Tampilan Login
@@ -42,12 +47,7 @@ Route::post('/logout', [AuthController::class,'logout']);
 
 Route::middleware(['auth'])->group(function () {
     // buat tampilan Dashboard
-Route::get('/home', function () {
-    return view('Home');
-});
-Route::get('/', function () {
-    return view('Home');
-});
+
 // Route::get('/', function () {
 //     return view('Home');
 // });
