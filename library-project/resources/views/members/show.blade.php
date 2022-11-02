@@ -14,28 +14,29 @@ Library | Show Member
             </div>
             <br> <br>
 
+    
+    <div class="icon" style="display: inline-block;"><i class='bx bx-user' style="margin:1px -140px 0 270px; font-size:110px; " ></i> </div>
             <div class="kotak-input">
-
-
                 <div class="nama-add"><span class="input-group-text nama-inp">Name = {{$member-> name}}</span>
                 </div>
                 <br><br>
 
                 <div class="date-add">
                 <span class="input-group-text" id="inputGroup-sizing-lg">Join Date = {{$member-> join_date}}</span>
-                </div>      
+                </div>     
+                
+            </div>
+              
                <div class="button3">
-
-               
-
                 <form action="/member/{{$member->id}}" method="POST">
                         @csrf
                         @method('delete')
                    <a class="btn-edit"  href="/member/edit/{{$member->id}}"> Edit </a>
                     <button class="btn-delete" type="submit"> Delete </button>
                 </form>
-                
-            </div>
+            
+            
+       
                 
             </div>  
     </div>
