@@ -16,7 +16,7 @@
             </div>
             <div class="rightside">
                 <div class="up">
-                    <h1>SIGN In!</h1>
+                    <h1>SIGN IN!</h1>
                 </div>
                  <div class="isi">
 
@@ -24,16 +24,14 @@
                     <div class='bx bx-user-circle' style="font-size:21px;"></div>
                     <hr style="width: 80%; border-top: 1px solid black;">
 
-                    <input type="email"  name="email" placeholder="Enter Email">
-                    <div  class='bx bx-envelope'  style="font-size:21px;"></div>
-                    <hr style="width: 80%; border-top: 1px solid black;">
-
-                    <input type="Password" name="Password" placeholder="Enter Password">
+                    <input type="Password" id="myInput" placeholder="Enter Password">
                     <div   class='bx bx-lock'  style="font-size:21px;"></div>
                     <hr style="width: 80%; border-top: 1px solid black;">
+                    <input type="checkbox" onclick="myFunction()">Show Password
                  </div>
-                 <div>
-                 <button class="register"  type="submit" >Register</button>
+                 <div class="button">
+                 <button class="register"  type="submit" >Login</button>
+                 <a href="/signup" style="text-decoration:none; color:#000; margin:2px 0 0 18px;">Create Account</a>
                  </div>
             </div>
         </div>

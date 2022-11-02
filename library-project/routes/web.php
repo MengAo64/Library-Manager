@@ -69,3 +69,6 @@ Route::resource('member', memberController::class );
 Route::get('/signup', function () {
     return view('Login.sign-up');
 });
+Route::get('/signin', function () {
+    return view('Login.sign-in');
+});

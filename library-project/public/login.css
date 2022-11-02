@@ -65,9 +65,14 @@ body{
     margin-top: 60px;
     text-align: center;
     margin-right: 130px;
-    float: right;
+    float: right; 
 }
 .register:hover{
     color:#000000;
     background-color: #caa26b;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    float: right;
 }

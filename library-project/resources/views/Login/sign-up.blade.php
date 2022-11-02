@@ -28,11 +28,10 @@
                     <div  class='bx bx-envelope'  style="font-size:21px;"></div>
                     <hr style="width: 80%; border-top: 1px solid black;">
 
-                    <input type="Password" value="FakePSW" id="myInput" placeholder="Enter Password">
+                    <input type="Password" id="myInput" placeholder="Enter Password">
                     <div   class='bx bx-lock'  style="font-size:21px;"></div>
                     <hr style="width: 80%; border-top: 1px solid black;">
-                    
-<input type="checkbox" onclick="myFunction()">Show Password
+                    <input type="checkbox" onclick="myFunction()">Show Password
                  </div>
                  <div>
                  <button class="register"  type="submit" >Register</button>

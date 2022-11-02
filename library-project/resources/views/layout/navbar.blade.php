@@ -5,6 +5,6 @@
         <li><a href="/book">Manage Books</a></li>
         <li><a href="/member">Manage Members</a></li>
         <li><a href="/record">Records</a></li>
-        <li><a href="/signup"><i class='bx bxs-user' style="width:25px; height:20px; text-align:center;"></i></a></li>
+        <li><a href="/signin"><i class='bx bxs-user' style="width:25px; height:20px; text-align:center;"></i></a></li>
     </ul>
 </nav>
