@@ -43,6 +43,13 @@ class memberController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            "name" => "required",
+            "join_date" => "required"
+            
+        ]);
+        
+
         $model = new Member;
         $model->name = $request->name;
         $model->join_date = $request->join_date;
