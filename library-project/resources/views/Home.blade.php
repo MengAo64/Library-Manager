@@ -16,7 +16,7 @@ Library | Dashboard
 <div class="kotak">
   <div class="container my-5">
     @if (Auth::user())
-       <h1>Selamat Datang, {{Auth::user()->name}}</h1>
+       <h1 style="margin-left: 50px; padding-top:20px;">Selamat Datang, {{Auth::user()->name}}</h1>
     @else
         <h1 style="text-align: center;">Anda Harus Login Terlebih dahulu Untuk mengakses Fitur</h1>
     @endif

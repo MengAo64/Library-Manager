@@ -25,18 +25,18 @@
 
                  <div class="isi">
 
-                    <input type="text" name="name" placeholder="Enter Username">
+                    <input type="text" name="name" placeholder="Enter Username" autocomplete="off">
                     <div class='bx bx-user-circle' style="font-size:21px;"></div>
                     <hr style="width: 80%; border-top: 1px solid black;">
 
-                    <input name="password" type="Password" id="myInput" placeholder="Enter Password">
+                    <input name="password" type="Password" id="myInput" placeholder="Enter Password" autocomplete="off">
                     <div   class='bx bx-lock'  style="font-size:21px;"></div>
                     <hr style="width: 80%; border-top: 1px solid black;">
                     <input type="checkbox" onclick="myFunction()">Show Password
                  </div>
                  <div class="button">
-                 <button class="register"  type="submit" >Login</button>
-                 <a href="/register" style="text-decoration:none; color:#000; margin:2px 0 0 18px;">Create Account</a>
+                 <button class="login"  type="submit" >Login</button>
+                 <a href="/register" style="text-decoration:none; color:#000; margin:2px 0 0 11px;">Create Account</a>
                  </div>
                 </form>
             </div>
