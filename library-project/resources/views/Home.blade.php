@@ -11,28 +11,38 @@ Library | Dashboard
 
 @section('content')
 
-    <div class="kotak">
-    <div class="judul"><b>........</b></div> 
-        
-    <div class="tabel">
-        <table class="table table-striped">        
-  <thead>
-    <tr>
-      <th scope="col">Book Title</th>
-      <th scope="col">Author</th>
-      <th scope="col">Publisher</th>
-    </tr>
-  </thead>
+  
+{{-- @if (session()->has('error'))
+<p class="text-danger">{{ session('error') }}</p>
+     
+
+@endif --}}
+<div class="kotak">
+  <div class="container my-5">
+    <h1>Selamat Datang, {{Auth::user()->name}}</h1>
+  </div>
+
+      
+  <div class="tabel">
+      <table class="table table-striped">        
+<thead>
+  <tr>
+    <th scope="col">Book Title</th>
+    <th scope="col">Author</th>
+    <th scope="col">Publisher</th>
+  </tr>
+</thead>
 </table>
 <table class="table table-striped">        
-  <thead>
-    <tr>
-      <th scope="col">No</th>
-      <th scope="col">Name</th>
-    </tr>
-  </thead>
+<thead>
+  <tr>
+    <th scope="col">No</th>
+    <th scope="col">Name</th>
+  </tr>
+</thead>
 </table>
 </div>
-    </div>
-  
+  </div>
+
+    
 @endsection

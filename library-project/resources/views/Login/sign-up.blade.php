@@ -18,9 +18,11 @@
                 <div class="up">
                     <h1>SIGN UP!</h1>
                 </div>
+                <form action="" method="POST">
+                    @csrf
                  <div class="isi">
 
-                    <input type="text" name="username" placeholder="Enter Username">
+                    <input type="text" name="name" placeholder="Enter Username">
                     <div class='bx bx-user-circle' style="font-size:21px;"></div>
                     <hr style="width: 80%; border-top: 1px solid black;">
 
@@ -28,7 +30,7 @@
                     <div  class='bx bx-envelope'  style="font-size:21px;"></div>
                     <hr style="width: 80%; border-top: 1px solid black;">
 
-                    <input type="Password" id="myInput" placeholder="Enter Password">
+                    <input type="Password" id="myInput" name="password" placeholder="Enter Password">
                     <div   class='bx bx-lock'  style="font-size:21px;"></div>
                     <hr style="width: 80%; border-top: 1px solid black;">
                     <input type="checkbox" onclick="myFunction()">Show Password
@@ -36,6 +38,7 @@
                  <div>
                  <button class="register"  type="submit" >Register</button>
                  </div>
+                </form>
             </div>
         </div>
         <script>

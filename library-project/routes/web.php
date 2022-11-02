@@ -1,11 +1,13 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Models\member;
 use App\Models\record;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\bookController;
 use App\Http\Controllers\memberController;
 use App\Http\Controllers\sweetController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Storage;
@@ -21,16 +23,34 @@ use Illuminate\Support\Facades\Storage;
 |
 */
 
-// buat tampilan Dashboard
+
+
+// Buat Tampilan Login
+// Route::get('/signup', function () {
+//     return view('Login.sign-up');
+// });
+
+Route::get('/login',[AuthController::class,'login']);
+
+Route::get('/register', [AuthController::class, 'register']);
+
+Route::post('/register', [AuthController::class,'registerStore']);
+
+Route::post('/login', [AuthController::class,'loginStore'])->name("login");
+
+Route::post('/logout', [AuthController::class,'logout']);
+
+Route::middleware(['auth'])->group(function () {
+    // buat tampilan Dashboard
 Route::get('/home', function () {
     return view('Home');
 });
 Route::get('/', function () {
     return view('Home');
 });
-Route::get('/', function () {
-    return view('Home');
-});
+// Route::get('/', function () {
+//     return view('Home');
+// });
 
 // buat tampilan buku
 Route::get('/book',[bookController::class,'index']);
@@ -64,11 +84,4 @@ Route::post('/member/store',[memberController::class,'store']);
 Route::get('/member/edit/{id}',[memberController::class,'edit']);
 Route::post('/member/delete',[memberController::class,'delete']);
 Route::resource('member', memberController::class );
-
-// Buat Tampilan Login
-Route::get('/signup', function () {
-    return view('Login.sign-up');
-});
-Route::get('/signin', function () {
-    return view('Login.sign-in');
 });
