@@ -64,3 +64,8 @@ Route::post('/member/store',[memberController::class,'store']);
 Route::get('/member/edit/{id}',[memberController::class,'edit']);
 Route::post('/member/delete',[memberController::class,'delete']);
 Route::resource('member', memberController::class );
+
+// Buat Tampilan Login
+Route::get('/signup', function () {
+    return view('Login.sign-up');
+});
