@@ -63,9 +63,9 @@ body{
     border-radius: 20px;
     padding: 10px 50px;
     border-radius: 20px;
-    margin-top: 60px;
+    margin-top: 40px;
     text-align: center;
-    margin-right: 130px;
+    margin-right: 120px;
     float: right; 
 }
 .register:hover{
@@ -93,4 +93,5 @@ body{
     display: flex;
     flex-direction: column;
     float: right;
+    justify-content: center;
 }
