@@ -91,6 +91,12 @@ class memberController extends Controller
      */
     public function update($id, Request $request)
     {
+        $request->validate([
+            "name" => "required",
+            "join_date" => "required"
+            
+        ]);
+
         $member = member::find($id);
         $member->update();
         $member ->name = $request-> name;
