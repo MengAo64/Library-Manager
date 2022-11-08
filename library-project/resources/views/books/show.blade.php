@@ -9,7 +9,7 @@ Library | ShowBook
     
 
     <div class="kotak2">
-        <div class="kiri"><img src="/coverimg/{{ $buku->cover_image}}" alt=""></div>
+        <div class="kiri"><img src="{{ $buku->cover_image ? 'coverimg/' . $buku->cover_image :  asset("img/placeholder.jpg") }}" alt=""></div>
         <div class="kanan">
             <h2 class="p">{{ $buku->title }} </h2>
             <h4  class="p">{{ $buku->author }}</h4>
