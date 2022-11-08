@@ -37,7 +37,7 @@
                  </div>
                  <div class="button">
                  <button class="register"  type="submit" >Register</button>
-                 <a href="/login" style="text-decoration:none; color:#000; margin:2px 0 0 57px;">Login</a>
+                 <a href="/login" style="text-decoration:none; color:#000; margin:4px 0 0 57px;">Login</a>
                  </div>
                 </form>
             </div>
