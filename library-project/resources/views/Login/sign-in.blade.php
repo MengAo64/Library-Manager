@@ -27,10 +27,16 @@
 
                     <input type="text" name="name" placeholder="Enter Username" autocomplete="off">
                     <div class='bx bx-user-circle' style="font-size:21px;"></div>
-                    <hr style="width: 80%; border-top: 1px solid black;">
+                    @error('name')
+                        <p style="color: red; font-size:13px; margin-left:7px; margin-bottom:5px">{{$message}}</p>
+                     @enderror
+                     <hr style="width: 80%; border-top: 1px solid black;">
 
-                    <input name="password" type="Password" id="myInput" placeholder="Enter Password" autocomplete="off">
+                    <input name="password" type="Password" id="myInput" placeholder="Enter Password" autocomplete="off">                    
                     <div   class='bx bx-lock'  style="font-size:21px;"></div>
+                    @error('password')
+                        <p style="color: red; font-size:13px; margin-left:7px; margin-bottom:5px">{{$message}}</p>
+                    @enderror
                     <hr style="width: 80%; border-top: 1px solid black;">
                     <input type="checkbox" onclick="myFunction()">Show Password
                  </div>
