@@ -22,21 +22,21 @@
                     @csrf
                  <div class="isi">
 
-                    <input type="text" name="name" placeholder="Enter Username" autocomplete="off">
+                    <input type="text" name="name" placeholder="Enter Username" autocomplete="off" value="{{old ('name')}}">
                     <div class='bx bx-user-circle' style="font-size:21px;"></div>
                     @error('name')
                         <p style="color: red; font-size:13px; margin-left:7px; margin-top:-10px;  margin-bottom:5px">{{$message}}</p>
                      @enderror
                      <hr style="width: 80%; border-top: 1px solid black;">
 
-                    <input type="email"  name="email" placeholder="Enter Email" autocomplete="off">
+                    <input type="email"  name="email" placeholder="Enter Email" autocomplete="off" value="{{old ('email')}}">
                     <div  class='bx bx-envelope'  style="font-size:21px;"></div>
                     @error('email')
                         <p style="color: red; font-size:13px; margin-left:7px; margin-top:-10px;  margin-bottom:5px">{{$message}}</p>
                      @enderror
                      <hr style="width: 80%; border-top: 1px solid black;">
 
-                    <input type="Password" id="myInput" name="password" placeholder="Enter Password" autocomplete="off">
+                    <input type="Password" id="myInput" name="password" placeholder="Enter Password" autocomplete="off" value="{{old ('password')}}">
                     <div   class='bx bx-lock'  style="font-size:21px;"></div>
                     @error('password')
                         <p style="color: red; font-size:13px; margin-left:7px;  margin-top:-10px; margin-bottom:5px">{{$message}}</p>

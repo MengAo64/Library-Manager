@@ -1,6 +1,6 @@
 @extends('layout/main')
 @section('title')
-Library | Member
+Library | Reecord
 @endsection
 @section('css')
 <link rel="stylesheet" href="{{ asset("member.css") }}">
@@ -11,15 +11,31 @@ Library | Member
 @section('content')
 <div class="kotak">
         <div class="judul"><b>Records</b></div>
-        @foreach ($records as $r)
+        <div class="addbook">
+          <a href="/member/record">Add Record</a>
+      </div>
+
         <table class="table table-bordered table-hover" >  
   <thead>
     <tr>
       <th scope="col">No</th>
-      <th scope="col">Borrow</th>
       <th scope="col">Borrower</th>
+      <th scope="col">Book</th>
       <th scope="col">Date</th>
-      <th scope="col">Action</th>
+      <th scope="col">Status</th>
     </tr>
-    @endforeach
+
+    <?php 
+    $i = 0; ?>
+    @foreach($record as $r) 
+    <?php $i++; ?>
+     <tr >
+        <th scope="row">{{ $i }}</th>
+        <td>{{ $r -> member -> name}}</td>
+        <td>{{ $r -> book -> title}}</td>   
+        <td>{{ $r -> date_record}}</td>   
+        <td>{{ $r -> status}}</td>   
+      </tr>
+      @endforeach
+
 @endsection

@@ -18,7 +18,7 @@ class AuthController extends Controller
     public function registerStore(Request $request)
     {
         $data = $request->validate([
-            'name' => 'required',
+            'name' => 'required|unique:users',
             'email' => 'required|email|unique:users,email',
             'password' => 'required|min:6'
         ]);
@@ -50,7 +50,7 @@ class AuthController extends Controller
             return redirect()->to("/home");
         }
 
-        return back()->with('error','email atau password salah');
+        return back()->with('error','Wrong Username or Password');
     }
 
     // buat logout

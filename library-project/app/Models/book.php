@@ -18,4 +18,5 @@ class book extends Model
     // public function show(){
     //     return $this->hasOne(book::class,'title', 'author','publisher','publication_date','status');
     // }
+    
 }

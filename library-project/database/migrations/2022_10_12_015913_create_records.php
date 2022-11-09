@@ -15,11 +15,16 @@ return new class extends Migration
     {
         Schema::create('records', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('member_id');
-            $table->foreignId('book_id');
+            $table->bigInteger('member_id')->unsigned();
+            $table->foreign('member_id')->references('id')->on('members');
+            $table->bigInteger('book_id')->unsigned();
+            $table->foreign('book_id')->references('id')->on('books');
+            $table->date('date_record');
             $table->string ('status');
             $table->timestamps();
         });
+        
+       
     }
 
     /**

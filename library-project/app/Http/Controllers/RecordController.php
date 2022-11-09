@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\record;
+use App\Models\member;
+use App\Models\book;
 use Illuminate\Http\Request;
 
 class RecordController extends Controller
@@ -12,9 +14,14 @@ class RecordController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index ()
     {
-        //
+        return view ( 'records.indexrecord',[
+            'record' => Record::with(['book','member'])->get()
+        ]
+        
+    );
+
     }
 
     /**
@@ -24,7 +31,7 @@ class RecordController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -35,7 +42,7 @@ class RecordController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
