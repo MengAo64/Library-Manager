@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@600&family=Tiro+Devanagari+Hindi:ital@1&display=swap');
 *{
-    margin: 0px;
+    /* margin: 0px; */
     padding: 0px;
     box-sizing: border-box;
-    font-family: Merriweather;
+    font-family: Montserrat ;
 }
 body{
     background-color: #665a48;
@@ -44,15 +44,31 @@ nav ul li a:hover{
     border-radius: 20px;
     
 }
+.logout{
+    color: rgb(218, 214, 214);
+    font-size: 20px;
+    margin-right: 50px;
+    padding: 6px;
+    background-color: #665a48;
+    border: none;
+}
+.logout:hover{
+    background-color: rgb(206, 203, 197);
+    color: #665a48 ;
+    border-radius: 20px;
+}
 .kotak{
     background-color: #c8dbbe;
-    width: 73em;
+    width: 80em;
     height: 100%;
     margin: auto;
     border-radius: 5px;
-    padding-bottom: 15px;
 }
-.judul{
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+/* .judul{
     color: black;
     font-size: 15px;
    padding: 13px 0 3em 35em;
@@ -103,18 +119,119 @@ nav ul li a:hover{
     padding: 17px;
     gap: 4em;
 
+} */
+.left .title{
+    display: block;
+    padding: 20px 0 0 170px;
 }
-.logout{
-    color: rgb(218, 214, 214);
+.title h1{
+    font-size: 80px;
+    font-weight: bold;
+}
+.title h2{
+    font-size: 65px;
+    margin-left: 30px;
+    margin-top: -70px;
+}
+.desk{
+    margin-left: 60px;
+    padding-top: 170px;
+   
+}
+.desk p{
     font-size: 20px;
-    margin-right: 50px;
-    padding: 6px;
-    background-color: #665a48;
-    border: none;
+    font-weight: 40;
 }
-.logout:hover{
-    background-color: rgb(206, 203, 197);
-    color: #665a48 ;
-    border-radius: 20px;
+.desk span{
+    font-size: 40px;
+    font-weight: 100;
 }
-
+.right{
+   padding: 100px 20px 0 0;
+}
+.right img{
+    width: 550px;
+}
+.about{
+    justify-content: center;
+    float: inline-end;
+    margin-top: 100px;
+    padding-top: 70px;
+    background-color: #aac29d;
+     padding-bottom:130px;
+}
+.about p{
+    font-size: 22px;
+    font-weight: 40;
+    padding: 13px;
+    margin-right: -10px;
+    
+}
+.swiperBooks{
+   padding-bottom: 250px;
+   margin-top: 150px;
+}
+.title2{
+ padding-bottom: 160px;
+}
+.swiper-slide{
+    border: 2px solid;
+    border-radius: 10px;
+    width: 300px;
+    height: 150px;
+    padding: 7px;
+    display: flex;
+}
+.teks h1{
+    font-size: 20px;
+    padding-left: 17px;
+    padding-top: 20px;
+    margin: 0;
+  }
+.teks p{
+    margin-top: 2px;
+    font-size: 15px;
+    padding-left: 17px;
+}
+.title2{
+    margin-top: 20px;
+}
+.title2 h2{
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+} 
+.title2 hr{
+    width: 160px;
+    padding: 2px;
+    background-color: black;
+    margin: 7px 0 0 557px;
+}
+.swiper-button-next .swiper-button-prev{
+ color: black;
+ margin-top: 20px;
+}
+.footer{
+    background-color: #aac29d;
+    padding-top: 30px;
+}
+.title-footer{
+    display: flex;
+    justify-content: space-around;
+}
+.footer1 br{
+    padding: 10px;
+}
+.footer1 p{
+    display: inline-block;
+}
+.footer2 a{
+    text-decoration: none;
+    color: black;
+}
+.bottom{
+text-align: center;
+background-color: #9bb090;
+padding: 20px;
+margin-top: 10px;
+}
