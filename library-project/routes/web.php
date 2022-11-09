@@ -91,3 +91,6 @@ Route::resource('member', memberController::class );
 
 });
 
+Route::get('/records', function () {
+    return view('records.records');
+});

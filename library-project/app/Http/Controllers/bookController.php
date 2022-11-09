@@ -56,7 +56,10 @@ class bookController extends Controller
             "publisher"=> "required",
             "publication_date" => "required",
             "status" => "required"
+
         ]);
+
+        
 
         $model = new Book;
         $model ->title = $request-> title;
@@ -98,6 +101,7 @@ class bookController extends Controller
      */
     public function edit($id)
     {
+        
         $buku = book::find($id);
         return view('books.edit',compact(['buku']));
     }
@@ -111,6 +115,15 @@ class bookController extends Controller
      */
     public function update($id, Request $request)
     {
+        $request->validate([
+            "title" => "required",
+            "author" => "required",
+            "publisher"=> "required",
+            "publication_date" => "required",
+            "status" => "required"
+        ]);
+
+
         $buku = book::find($id);
         $buku->update();
         $buku ->title = $request-> title;
