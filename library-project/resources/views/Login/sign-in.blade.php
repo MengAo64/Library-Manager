@@ -52,10 +52,12 @@
                  <button class="login"  type="submit" >Login</button>
                  <a href="/register" style="text-decoration:none; color:#000; margin:4px 0 0 9px;">Create Account</a>
                  </div>
+                 {{-- @dd($logouted) --}}
                 </form>
             </div>
         </div>
-        <script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        {{-- <script>
             function myFunction() {
   var x = document.getElementById("myInput");
   if (x.type === "password") {
@@ -65,5 +67,10 @@
   }
 }
         </script>
+        @if($logouted)
+        <script>
+            Swal.fire('Any fool can use a computer')
+        </script>
+        @endif --}}
     </body>
 </html>
