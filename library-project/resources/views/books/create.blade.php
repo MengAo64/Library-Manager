@@ -45,7 +45,7 @@ Library | Createbook
 
                 <div class="titlebook">
                     <div class="judultitle">Publication Date</div>
-                    <input class="input" type="date" placeholder="publication Date" name="publication_date" value="{{old ('publication_date')}}>
+                    <input class="input" type="date" placeholder="publication Date" name="publication_date" value="{{old ('publication_date')}}">
                     @error('publication_date')
                         <p style="color: red; font-size:13px; margin-left:7px;">{{$message}}</p>
                     @enderror

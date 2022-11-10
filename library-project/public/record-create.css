@@ -17,9 +17,7 @@ nav{
     padding: 15px 20px;
     position: sticky;
     top: 0;
-
 }
-
 nav ul{
     display: flex;
     justify-content: center;
@@ -53,12 +51,65 @@ nav ul li a:hover{
     border-radius: 5px;
     padding-bottom: 15px;
 }
-.input,.input2{
+.logout{
+    color: rgb(218, 214, 214);
+    font-size: 20px;
+    margin-right: 50px;
+    padding: 6px;
+    background-color: #665a48;
+    border: none;
+}
+.logout:hover{
+    background-color: rgb(206, 203, 197);
+    color: #665a48 ;
+    border-radius: 20px;
+}
+.add{
     text-align: center;
 }
-.record-add{
+.input-borrower{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px
+}
+.record-borrower{
+    display: inline;
     font-size: 25px;
 }
-.inputborrower{
+.input-book{
+    margin-bottom: 10px;
+    padding-right: 200px;
+    font-size: 18px
+}
+.record-book{
+    display: inline;
     font-size: 25px;
+}
+.book-add{
+    padding-left: 55px;
+}
+.input-date{
+    margin-bottom: 10px;
+    padding-right: 94px;
+    font-size: 18px
+}
+.record-date{
+    display: inline;
+    font-size: 25px;
+}
+.date-record{
+    padding-left: 63px;
+}
+.judultitle{
+    margin: 0px auto;
+    margin-top: 15px;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+.stat,.input1{
+    padding-right: 32px;
+    font-size: 20px;
+}
+.input{
+    font-size: 16px;
 }

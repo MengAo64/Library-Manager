@@ -33,8 +33,11 @@ class RecordController extends Controller
     {
         $model = new Record ;
         $members = member::all();
+        $books = book::all();
         return view('records.create', [
-            "members" => $members
+            "members" => $members,
+            "books" => $books
+
         ]);
     }
 
