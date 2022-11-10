@@ -32,9 +32,10 @@ class RecordController extends Controller
     public function create()
     {
         $model = new Record ;
-        return view('records.create', compact(
-            'model'
-        ));
+        $members = member::all();
+        return view('records.create', [
+            "members" => $members
+        ]);
     }
 
     /**
@@ -55,7 +56,7 @@ class RecordController extends Controller
         $model = new Record;
         $model-> member -> name = $request->name;
         $model-> book -> title = $request->title;
-        $model-> record_date = $request->record_date;
+        $model-> date_record = $request->record_date;
         $model-> status = $request->status;
         $model->save();
 

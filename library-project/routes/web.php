@@ -101,6 +101,6 @@ Route::post('/record/delete',[recordController::class,'delete']);
 Route::resource('record', recordController::class );
 });
 
-Route::get('/createrecord', function () {
-    return view('records.create');
-});
+// Route::get('/createrecord', function () {
+//     return view('records.create');
+// });

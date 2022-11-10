@@ -12,7 +12,7 @@ Library | Reecord
 <div class="kotak">
         <div class="judul"><b>Records</b></div>
         <div class="addbook">
-          <a href="/member/record">Add Record</a>
+          <a href="/record/create">Add Record</a>
       </div>
 
         <table class="table table-bordered table-hover" >  
