@@ -96,3 +96,6 @@ Route::get('/record',[recordController::class,'index']);
 Route::resource('record', recordController::class );
 });
 
+Route::get('/createrecord', function () {
+    return view('records.create');
+});
