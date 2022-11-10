@@ -74,9 +74,13 @@ class RecordController extends Controller
      * @param  \App\Models\record  $record
      * @return \Illuminate\Http\Response
      */
-    public function show(record $record)
+    public function show(record $rc)
     {
-        //
+        dd($rc->all());
+        $record = Record::findOrFail($rc);
+        return view("records.show" , [
+            "record" => $record ,
+        ]);
     }
 
     /**
