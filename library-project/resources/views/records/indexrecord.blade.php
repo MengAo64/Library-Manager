@@ -34,7 +34,7 @@ Library | Reecord
         <td>{{ $r -> member -> name}}</td>
         <td>{{ $r -> book -> title}}</td>   
         <td>{{ $r -> date_record}}</td>   
-        <td>{{ $r -> status}}</td>   
+        <td>{{ $r -> book -> status}}</td>   
       </tr>
       @endforeach
 
