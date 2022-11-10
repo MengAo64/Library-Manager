@@ -31,7 +31,10 @@ class RecordController extends Controller
      */
     public function create()
     {
-        
+        $model = new Record ;
+        return view('records.create', compact(
+            'model'
+        ));
     }
 
     /**
@@ -42,7 +45,22 @@ class RecordController extends Controller
      */
     public function store(Request $request)
     {
+        // $request->validate([
+        //     "name" => "required",
+        //     "join_date" => "required"
+            
+        // ]);
         
+            
+        $model = new Record;
+        $model-> member -> name = $request->name;
+        $model-> book -> title = $request->title;
+        $model-> record_date = $request->record_date;
+        $model-> status = $request->status;
+        $model->save();
+
+
+        return redirect('Record')->with('success', 'Record Berhasil di Tambahkan');
     }
 
     /**

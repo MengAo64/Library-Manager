@@ -93,6 +93,11 @@ Route::resource('member', memberController::class );
 
 // Buat tampilan Record
 Route::get('/record',[recordController::class,'index']);
+Route::get('/record/create',[recordController::class,'create']);
+Route::get('/record/show/{id}',[recordController::class,'show']);
+Route::post('/record/store',[recordController::class,'store']);
+Route::get('/record/edit/{id}',[recordController::class,'edit']);
+Route::post('/record/delete',[recordController::class,'delete']);
 Route::resource('record', recordController::class );
 });
 
