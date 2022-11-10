@@ -17,7 +17,7 @@ Library | AddMember
 
             <div class="record-add"><span class="input-group-text nama-inp">Borrower =</span>
                 <!-- <input class="inputborrower" name="name" type="text" aria-label="First name" class="form-control" placeholder="input Borrower" value="{{old ('name')}}"> -->
-                <select name="borrower" id="">
+                <select name="member_id" id="">
                     @foreach($members as $member)
                         <option value="{{$member->id}}">{{$member->name}}</option>
                     @endforeach
@@ -27,13 +27,16 @@ Library | AddMember
                         <p style="color: red; font-size:13px; margin-left:7px;">{{$message}}</p>
                     @enderror
                 
+
                     <div class="book-add">
                 <span class="input-group-text" id="inputGroup-sizing-lg">Book =</span>
-                <input class="input-book" name="title" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Title" value="{{old ('join_date')}}" >
+                <select name="book_id" id="">
+                    @foreach($books as $book)
+                        <option value="{{$book->id}}">{{$book->title}}</option>
+                    @endforeach
+                </select>
                 </div>
-                    @error('title')
-                        <p style="color: red; font-size:13px; margin-left:7px;">{{$message}}</p>
-                    @enderror
+                
 
 
                     <div class="record-date">
@@ -46,10 +49,10 @@ Library | AddMember
 
 
                     <div class="judultitle">Status</div>
-                    
-                <input class="input2" type="radio"  name="status" value="Dipinjam"  >Dipinjam</div>
-                <input class="input2" type="radio"  name="status" value="Tidak Dipinjam"  >Tidak Dipinjam</div>
-                <button class="btn-submit" type="submit"> Update </button>
+                    <input class="input2" type="radio"  name="status" value="Dipinjam"  >Dipinjam</div>
+                    <input class="input2" type="radio"  name="status" value="Tidak Dipinjam"  >Tidak Dipinjam</div>
+
+                <button class="btn-submit" type="submit"> Add</button>
         
             </div>
         </form>
