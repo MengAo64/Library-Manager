@@ -23,9 +23,7 @@ Library | AddMember
                     @endforeach
                 </select>
                 </div>
-                    @error('name')
-                        <p style="color: red; font-size:13px; margin-left:7px;">{{$message}}</p>
-                    @enderror
+                    
                 
 
                     <div class="book-add">
@@ -43,13 +41,11 @@ Library | AddMember
                 <span class="input-group-text" id="inputGroup-sizing-lg">Date =</span>
                 <input class="date" name="date_record" type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Join Date" value="{{old ('join_date')}}" >
                 </div>
-                    @error('date_record')
-                        <p style="color: red; font-size:13px; margin-left:7px;">{{$message}}</p>
-                    @enderror
+
 
 
                     <div class="judultitle">Status</div>
-                    <input class="input2" type="radio"  name="status" value="Dipinjam"  >Dipinjam</div>
+                    <input class="input2" type="radio"  name="status" value="Dipinjam"   >Dipinjam</div>
                     <input class="input2" type="radio"  name="status" value="Tidak Dipinjam"  >Tidak Dipinjam</div>
 
                 <button class="btn-submit" type="submit"> Add</button>

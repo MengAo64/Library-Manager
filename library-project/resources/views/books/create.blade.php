@@ -45,7 +45,7 @@ Library | Createbook
 
                 <div class="titlebook">
                     <div class="judultitle">Publication Date</div>
-                    <input class="input" type="date" placeholder="publication Date" name="publication_date" value="{{old ('publication_date')}}>
+                    <input class="input" type="date" placeholder="publication Date" name="publication_date" value="{{old ('publication_date')}}">
                     @error('publication_date')
                         <p style="color: red; font-size:13px; margin-left:7px;">{{$message}}</p>
                     @enderror
@@ -55,8 +55,11 @@ Library | Createbook
                 <div class="titlebook">
                     <div class="judultitle">Status</div>
                 <input class="input2" type="radio"  name="status" value="Dipinjam"  >Dipinjam</div>
-                <input class="input2" type="radio"  name="status" value="Tidak Dipinjam" {{"checked"}} >Tidak Dipinjam</div>
-
+                <input class="input2" type="radio"  name="status" value="Tidak Dipinjam" >Tidak Dipinjam
+            @error('status')
+                <p style="color: red; font-size:13px; margin-left:7px;">{{$message}}</p>
+                @enderror</div>
+                
 
                 <button class="add" type="submit">Add</button>
                 

@@ -48,11 +48,11 @@ class RecordController extends Controller
      */
     public function store(Request $request)
     {
-        // $request->validate([
-        //     "name" => "required",
-        //     "join_date" => "required"
+        $request->validate([
+            "date_record" => "required",
+            "status" => "required"
             
-        // ]);
+        ]);
         
             // dd($request->all());
         $model = new Record;
