@@ -10,14 +10,16 @@ Library | AddMember
 
 <form method="POST" action="{{url('member')}}">
         @csrf
-        <div class="kotak">
+    <div class="kotak">
             <div class="add">
             <h1>Add Records</h1>
+            </div>
 
-            <div class="input">
+        <div class="input">
 
             <div class="record-borrower"><span class="input-group-text nama-inp">Borrower =</span>
-                <select class="input-borrower" name="borrower" id="">
+                <!-- <input class="inputborrower" name="name" type="text" aria-label="First name" class="form-control" placeholder="input Borrower" value="{{old ('name')}}"> -->
+                <select class="input-borrower" name="member_id" id="">
                     @foreach($members as $member)
                         <option value="{{$member->id}}">{{$member->name}}</option>
                     @endforeach
@@ -26,13 +28,12 @@ Library | AddMember
 
             <div class="book-add">
                 <span class="record-book" id="inputGroup-sizing-lg">Book =</span>
-                <select class="input-book" name="borrower" id="">
+                <select class="input-book" name="book_id" id="">
                     @foreach($books as $book)
                         <option value="{{$book->id}}">{{$book->title}}</option>
                     @endforeach
                 </select>
-            </div>
-                    
+                </div>
 
 
             <div class="date-record">
@@ -43,21 +44,19 @@ Library | AddMember
                         <p style="color: red; font-size:13px; margin-left:7px;">{{$message}}</p>
                     @enderror
 
-
-                    <div class="judultitle"><h2>Status</h2></div>
+        <div class="status">            
+                <div class="judultitle">Status</div>
             <div class="stat">
-                <input class="input1" type="radio"  name="status" value="Dipinjam"  >Dipinjam</div>
-                <input class="input0" type="radio"  name="status" value="Tidak Dipinjam" {{"checked"}} >Tidak Dipinjam
-        </div>
+                <input class="input1" type="radio"  name="status" value="Dipinjam"  >Dipinjam <br>
+                <input class="input1" type="radio"  name="status" value="Tidak Dipinjam" {{"checked"}} >Tidak Dipinjam
+                </div>   
 
-
-
-
-
-
-
-
-
-
+                </div>
+                
+                <button class="btn-submit" type="submit"> Add</button>
+        
+        </div>      
+    </div>            
+       
 
 @endsection

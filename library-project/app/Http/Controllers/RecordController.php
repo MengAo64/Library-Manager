@@ -37,7 +37,6 @@ class RecordController extends Controller
         return view('records.create', [
             "members" => $members,
             "books" => $books
-
         ]);
     }
 
@@ -49,22 +48,24 @@ class RecordController extends Controller
      */
     public function store(Request $request)
     {
-        // $request->validate([
-        //     "name" => "required",
-        //     "join_date" => "required"
+        $request->validate([
+            "date_record" => "required",
+            "status" => "required"
             
-        // ]);
+        ]);
         
-            
+            // dd($request->all());
         $model = new Record;
-        $model-> member -> name = $request->name;
-        $model-> book -> title = $request->title;
-        $model-> date_record = $request->record_date;
+        $members = member::all();
+        $books = book::all();
+        $model->member_id = $request->member_id;
+        $model->book_id = $request->book_id;
+        $model-> date_record = $request->date_record;
         $model-> status = $request->status;
         $model->save();
+            
 
-
-        return redirect('Record')->with('success', 'Record Berhasil di Tambahkan');
+        return redirect('record')->with('success', 'Record Berhasil di Tambahkan');
     }
 
     /**
@@ -73,9 +74,13 @@ class RecordController extends Controller
      * @param  \App\Models\record  $record
      * @return \Illuminate\Http\Response
      */
-    public function show(record $record)
+    public function show(record $rc)
     {
-        //
+        dd($rc->all());
+        $record = Record::findOrFail($rc);
+        return view("records.show" , [
+            "record" => $record ,
+        ]);
     }
 
     /**

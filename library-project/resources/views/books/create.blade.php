@@ -55,8 +55,11 @@ Library | Createbook
                 <div class="titlebook">
                     <div class="judultitle">Status</div>
                 <input class="input2" type="radio"  name="status" value="Dipinjam"  >Dipinjam</div>
-                <input class="input2" type="radio"  name="status" value="Tidak Dipinjam" {{"checked"}} >Tidak Dipinjam</div>
-
+                <input class="input2" type="radio"  name="status" value="Tidak Dipinjam" >Tidak Dipinjam
+            @error('status')
+                <p style="color: red; font-size:13px; margin-left:7px;">{{$message}}</p>
+                @enderror</div>
+                
 
                 <button class="add" type="submit">Add</button>
                 

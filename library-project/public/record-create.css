@@ -67,7 +67,11 @@ nav ul li a:hover{
 .add{
     text-align: center;
 }
+.input{
+    text-align: center;
+}
 .input-borrower{
+    border-radius: 7px;
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 20px
@@ -77,6 +81,7 @@ nav ul li a:hover{
     font-size: 25px;
 }
 .input-book{
+    border-radius: 7px;
     margin-bottom: 10px;
     padding-right: 200px;
     font-size: 18px
@@ -89,6 +94,7 @@ nav ul li a:hover{
     padding-left: 55px;
 }
 .input-date{
+    border-radius: 7px;
     margin-bottom: 10px;
     padding-right: 94px;
     font-size: 18px
@@ -106,10 +112,23 @@ nav ul li a:hover{
     font-size: 24px;
     padding-bottom: 10px;
 }
-.stat,.input1{
-    padding-right: 32px;
-    font-size: 20px;
+.status{
+
+    display:inline-block;
+    justify-content: center;
 }
-.input{
-    font-size: 16px;
+.stat{
+    display: inline-block;
+    margin: auto;
+}
+.btn-submit{
+    padding: 5px 25px;
+    margin-left:950px;
+    font-size: 25px;
+    border-radius: 25px;
+    border: 2px black solid;     
+}
+.btn-submit:hover{
+    color:#000000;
+    background-color: #caa26b;
 }
