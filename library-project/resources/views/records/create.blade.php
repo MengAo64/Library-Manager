@@ -4,64 +4,59 @@ Library | AddMember
 @endsection
 @section('css')
 <link rel="stylesheet" href="{{ asset('record-create.css') }}">
+<link rel="stylesheet" href="style.css">
 @endsection
 @section('content')
 
-<form method="POST" action="{{url('record')}}">
+<form method="POST" action="{{url('member')}}">
         @csrf
-        <div class="kotak">
+    <div class="kotak">
             <div class="add">
             <h1>Add Records</h1>
+            </div>
 
-            <div class="input">
+        <div class="input">
 
-            <div class="record-add"><span class="input-group-text nama-inp">Borrower =</span>
+            <div class="record-borrower"><span class="input-group-text nama-inp">Borrower =</span>
                 <!-- <input class="inputborrower" name="name" type="text" aria-label="First name" class="form-control" placeholder="input Borrower" value="{{old ('name')}}"> -->
-                <select name="member_id" id="">
+                <select class="input-borrower" name="member_id" id="">
                     @foreach($members as $member)
                         <option value="{{$member->id}}">{{$member->name}}</option>
                     @endforeach
-                </select>
-                </div>
-                    
-                
+                </select>  
+            </div>           
 
-                    <div class="book-add">
-                <span class="input-group-text" id="inputGroup-sizing-lg">Book =</span>
-                <select name="book_id" id="">
+            <div class="book-add">
+                <span class="record-book" id="inputGroup-sizing-lg">Book =</span>
+                <select class="input-book" name="book_id" id="">
                     @foreach($books as $book)
                         <option value="{{$book->id}}">{{$book->title}}</option>
                     @endforeach
                 </select>
                 </div>
-                
 
 
-                    <div class="record-date">
-                <span class="input-group-text" id="inputGroup-sizing-lg">Date =</span>
-                <input class="date" name="date_record" type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Join Date" value="{{old ('join_date')}}" >
+            <div class="date-record">
+                <span class="record-date" id="inputGroup-sizing-lg">Date =</span>
+                <input class="input-date" name="join_date" type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Join Date" value="{{old ('join_date')}}" >
+            </div>
+                    @error('join_date')
+                        <p style="color: red; font-size:13px; margin-left:7px;">{{$message}}</p>
+                    @enderror
+
+        <div class="status">            
+                <div class="judultitle">Status</div>
+            <div class="stat">
+                <input class="input1" type="radio"  name="status" value="Dipinjam"  >Dipinjam <br>
+                <input class="input1" type="radio"  name="status" value="Tidak Dipinjam" {{"checked"}} >Tidak Dipinjam
+                </div>   
+
                 </div>
-
-
-
-                    <div class="judultitle">Status</div>
-                    <input class="input2" type="radio"  name="status" value="Dipinjam"   >Dipinjam</div>
-                    <input class="input2" type="radio"  name="status" value="Tidak Dipinjam"  >Tidak Dipinjam</div>
-
+                
                 <button class="btn-submit" type="submit"> Add</button>
         
-            </div>
-        </form>
-        </div>
-
-
-
-        
-
-
-
-
-
-
+        </div>      
+    </div>            
+       
 
 @endsection
