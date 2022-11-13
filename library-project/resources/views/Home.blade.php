@@ -47,7 +47,7 @@ class="swiper mySwiper2"
    <p>Digital libraries can vary immensely in size and scope, and can be maintained by individuals or organizations.</p>
    </div>
      
-
+{{-- 
 <div class="swiperBooks" id="swiperBooks">
   <div class="title2">
     <h2>Provided Books</h2>
@@ -141,7 +141,136 @@ class="swiper mySwiper2"
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>
-  </div>
+  </div> --}}
+
+  <div class="our-team" id="team">
+    <div class="title2">
+      <h2>Our Team</h2>
+      <hr>
+  <div class="slide-container swiper">
+    <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                      <img src="{{ asset("img/placeholder.jpg") }}" alt="" class="card-img">
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <h2 class="name">Farel</h2>
+                    <h4 class="job">Project Manager</h4>
+                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <!--<img src="images/profile2.jpg" alt="" class="card-img">-->
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <h2 class="name">Samuel</h2>
+                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <!--<img src="images/profile3.jpg" alt="" class="card-img">-->
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <h2 class="name">Rizky</h2>
+                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <!--<img src="images/profile4.jpg" alt="" class="card-img">-->
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <h2 class="name">Zaki</h2>
+                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <!--<img src="images/profile5.jpg" alt="" class="card-img">-->
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <h2 class="name">Jagad</h2>
+                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <!--<img src="images/profile6.jpg" alt="" class="card-img">-->
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <h2 class="name">Delila</h2>
+                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <!--<img src="images/profile7.jpg" alt="" class="card-img">-->
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <h2 class="name">Reva</h2>
+                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <!--<img src="images/profile8.jpg" alt="" class="card-img">-->
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <h2 class="name">Fahrel</h2>
+                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-button-next swiper-navBtn"></div>
+    <div class="swiper-button-prev swiper-navBtn"></div>
+</div>
+</div>
+
 
 
 
@@ -159,7 +288,7 @@ class="swiper mySwiper2"
         <h2><b>Home</b></h2>
         <p><a href="#Welcome">Welcome</a></p>
         <p><a href="#about">About</a></p>
-        <p><a href="#swiperBooks">Provided books</a></p>
+        <p><a href="#team">Our Team</a></p>
         <p><a href="#footer">Footer</a></p>
       </div>
       <div class="footer3">
@@ -185,21 +314,52 @@ class="swiper mySwiper2"
   loop: true,
 });
 
-var swiper = new Swiper(".swiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        slidesPerGroup: 3,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
+var swiper = new Swiper(".slide-content", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints:{
+        0: {
+            slidesPerView: 1,
         },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+        520: {
+            slidesPerView: 2,
         },
-      });
+        950: {
+            slidesPerView: 3,
+        },
+    },
+  });
+
+
+// var swiper = new Swiper(".swiper", {
+//         slidesPerView: 3,
+//         spaceBetween: 30,
+//         slidesPerGroup: 3,
+//         loop: true,
+//         loopFillGroupWithBlank: true,
+//         pagination: {
+//           el: ".swiper-pagination",
+//           clickable: true,
+//         },
+//         navigation: {
+//           nextEl: ".swiper-button-next",
+//           prevEl: ".swiper-button-prev",
+//         },
+//       });
 </script>
 @endsection
     
