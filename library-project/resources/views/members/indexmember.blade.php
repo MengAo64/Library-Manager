@@ -39,6 +39,8 @@ Library | Member
   </tbody>
 </table>
 
+@include('layout.pagination', ['paginator' => $member])
+
 </div>
 
 

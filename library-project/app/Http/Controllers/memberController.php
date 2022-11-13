@@ -18,7 +18,9 @@ class memberController extends Controller
         $member = [
             'member' => Member::all()
         ];
-        return view('members.indexmember', $member);
+        return view('members.indexmember',[
+            'member' => Member::latest()->paginate(10)
+        ]);
 
     }
 

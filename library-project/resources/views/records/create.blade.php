@@ -44,14 +44,16 @@ Library | AddMember
                         <p style="color: red; font-size:13px; margin-left:7px;">{{$message}}</p>
                     @enderror
 
+
+                    <div class="status1">
         <div class="status">            
                 <div class="judultitle">Status</div>
             <div class="stat">
-                <input class="input1" type="radio"  name="status" value="Dipinjam"  >Dipinjam <br>
-                <input class="input1" type="radio"  name="status" value="Tidak Dipinjam" {{"checked"}} >Tidak Dipinjam
-                </div>   
-
-                </div>
+               <div class="input1"><input type="radio"  name="status" value="Dipinjam" >Dipinjam </div> 
+               <div class="input2"><input type="radio"  name="status" value="Tidak Dipinjam" {{"checked"}} >Tidak Dipinjam</div> 
+            </div>   
+        </div>
+    </div>
                 
                 <button class="btn-submit" type="submit"> Add</button>
         

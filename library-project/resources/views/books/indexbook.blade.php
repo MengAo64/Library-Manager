@@ -2,6 +2,9 @@
 @section('title')
 Library | Books
 @endsection
+@section('bootsrap')
+<link rel="stylesheet" href="{{ asset("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css") }}">
+@endsection
 @section('css')
       <link rel="stylesheet" href="{{ asset("books.css") }}">
 @endsection
@@ -28,7 +31,9 @@ Library | Books
         </a>
             @endforeach
         </div>
-     
+        @include('layout.pagination', ['paginator' => $buku])
 </div>
+
+
 @endsection
 

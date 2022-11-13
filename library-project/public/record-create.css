@@ -82,6 +82,7 @@ nav ul li a:hover{
 }
 .input{
     text-align: center;
+    padding-top: 20px;
 }
 .input-borrower{
     border-radius: 7px;
@@ -92,6 +93,7 @@ nav ul li a:hover{
 .record-borrower{
     display: inline;
     font-size: 25px;
+    margin-right: 47px;
 }
 .input-book{
     border-radius: 7px;
@@ -120,19 +122,25 @@ nav ul li a:hover{
     padding-left: 63px;
 }
 .judultitle{
-    margin: 0px auto;
-    margin-top: 15px;
     font-size: 24px;
-    padding-bottom: 10px;
+    float: left;
+}
+.status1{
+   width: 300px;
+   margin-top: 5px;
+   margin-left: 450px;
 }
 .status{
-
-    display:inline-block;
-    justify-content: center;
+    margin-right: 48px;
 }
 .stat{
-    display: inline-block;
     margin: auto;
+}
+.input1{
+  margin-right: 50px;
+}
+.input2{
+    margin-top: 7px;
 }
 .btn-submit{
     padding: 5px 25px;
