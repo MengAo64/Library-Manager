@@ -104,3 +104,6 @@ Route::resource('record', recordController::class );
 // Route::get('/createrecord', function () {
 //     return view('records.create');
 // });
+Route::get('/r', function () {
+    return view('records.edit');
+});

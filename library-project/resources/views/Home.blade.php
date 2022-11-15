@@ -46,103 +46,7 @@ class="swiper mySwiper2"
    <p>Objects can consist of digitized content like print or photographs. In addition to storing content, digital libraries provide means for organizing, searching, and retrieving the content contained in the collection.</p>    
    <p>Digital libraries can vary immensely in size and scope, and can be maintained by individuals or organizations.</p>
    </div>
-     
-{{-- 
-<div class="swiperBooks" id="swiperBooks">
-  <div class="title2">
-    <h2>Provided Books</h2>
-    <hr>
-  </div>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="content2">
-            <img src="{{ asset("img/placeholder.jpg") }}" alt=""  style="width:120px; height:120px;border-radius: 10px; border:2px solid;">
-          </div>
-          <div class="teks">
-            <h1 >Biography</h1>
-            <p>A biography is simply the story  <br>of a real person's life.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="content2">
-            <img src="{{ asset("img/placeholder.jpg") }}" alt=""  style="width:120px; height:120px;border-radius: 10px; border:2px solid;">
-          </div>
-          <div class="teks">
-            <h1 >Biography</h1>
-            <p>A biography is simply the story  <br>of a real person's life.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="content2">
-            <img src="{{ asset("img/placeholder.jpg") }}" alt=""  style="width:120px; height:120px;border-radius: 10px; border:2px solid;">
-          </div>
-          <div class="teks">
-            <h1 >Biography</h1>
-            <p>A biography is simply the story  <br>of a real person's life.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="content2">
-            <img src="{{ asset("img/placeholder.jpg") }}" alt=""  style="width:120px; height:120px;border-radius: 10px; border:2px solid;">
-          </div>
-          <div class="teks">
-            <h1 >Biography</h1>
-            <p>A biography is simply the story  <br>of a real person's life.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="content2">
-            <img src="{{ asset("img/placeholder.jpg") }}" alt=""  style="width:120px; height:120px;border-radius: 10px; border:2px solid;">
-          </div>
-          <div class="teks">
-            <h1 >Biography</h1>
-            <p>A biography is simply the story  <br>of a real person's life.</p>
-          </div>
-        </div>
-        <div class="swiper-slide"> 
-          <div class="content2">
-          <img src="{{ asset("img/placeholder.jpg") }}" alt=""  style="width:120px; height:120px;border-radius: 10px; border:2px solid;">
-            </div>
-           <div class="teks">
-          <h1 >Fiction</h1>
-          <p>something invented by the imagination or feigned
-            specifically : an invented story</p>
-        </div>
-      </div>
-        <div class="swiper-slide"> 
-          <div class="content2">
-          <img src="{{ asset("img/placeholder.jpg") }}" alt=""  style="width:120px; height:120px;border-radius: 10px; border:2px solid;">
-            </div>
-           <div class="teks">
-          <h1 >Fantasy </h1>
-          <p>something you imagine, which might involve dragons,or an imaginary best friend</p>
-        </div>
-      </div>
-        <div class="swiper-slide"> 
-          <div class="content2">
-          <img src="{{ asset("img/placeholder.jpg") }}" alt=""  style="width:120px; height:120px;border-radius: 10px; border:2px solid;">
-            </div>
-           <div class="teks">
-          <h1 >Motivation</h1>
-          <p>A book that contains the study of psychology to arouse enthusiasm for its readers</p>
-        </div>
-      </div>
-        <div class="swiper-slide"> 
-          <div class="content2">
-          <img src="{{ asset("img/placeholder.jpg") }}" alt=""  style="width:120px; height:120px;border-radius: 10px; border:2px solid;">
-            </div>
-           <div class="teks">
-          <h1 >Science</h1>
-          <p>a book of knowledge</p>
-        </div>
-      </div>
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
-  </div> --}}
-
+    
   <div class="our-team" id="team">
     <div class="title2">
       <h2>Our Team</h2>
@@ -155,7 +59,7 @@ class="swiper mySwiper2"
                     <span class="overlay"></span>
 
                     <div class="card-image">
-                      <img src="{{ asset("img/placeholder.jpg") }}" alt="" class="card-img">
+                      <img src="{{ asset("img/m.png") }}" alt="" class="card-img">
                     </div>
                 </div>
 
@@ -170,12 +74,13 @@ class="swiper mySwiper2"
                     <span class="overlay"></span>
 
                     <div class="card-image">
-                        <!--<img src="images/profile2.jpg" alt="" class="card-img">-->
+                        <img src="{{ asset("img/m.png") }}" alt="" class="card-img">
                     </div>
                 </div>
 
                 <div class="card-content">
                     <h2 class="name">Samuel</h2>
+                    <h4 class="job">Backend</h4>
                     <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
@@ -184,12 +89,13 @@ class="swiper mySwiper2"
                     <span class="overlay"></span>
 
                     <div class="card-image">
-                        <!--<img src="images/profile3.jpg" alt="" class="card-img">-->
+                        <img src="{{ asset("img/m.png") }}" alt="" class="card-img">
                     </div>
                 </div>
 
                 <div class="card-content">
                     <h2 class="name">Rizky</h2>
+                    <h4 class="job">Backend</h4>
                     <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
@@ -198,13 +104,14 @@ class="swiper mySwiper2"
                     <span class="overlay"></span>
 
                     <div class="card-image">
-                        <!--<img src="images/profile4.jpg" alt="" class="card-img">-->
+                        <img src="{{ asset("img/m.png") }}" alt="" class="card-img">
                     </div>
                 </div>
 
                 <div class="card-content">
                     <h2 class="name">Zaki</h2>
-                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                    <h4 class="job">Frontend</h4>
+                    <p class="description">"Try to be enthusiastic, not disappointed, at the possibility of something new"</p>
                 </div>
             </div>
             <div class="card swiper-slide">
@@ -212,12 +119,13 @@ class="swiper mySwiper2"
                     <span class="overlay"></span>
 
                     <div class="card-image">
-                        <!--<img src="images/profile5.jpg" alt="" class="card-img">-->
+                        <img src="{{ asset("img/m.png") }}" alt="" class="card-img">
                     </div>
                 </div>
 
                 <div class="card-content">
                     <h2 class="name">Jagad</h2>
+                    <h4 class="job">Frontend</h4>
                     <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
@@ -226,12 +134,13 @@ class="swiper mySwiper2"
                     <span class="overlay"></span>
 
                     <div class="card-image">
-                        <!--<img src="images/profile6.jpg" alt="" class="card-img">-->
+                        <img src="{{ asset("img/w.png") }}" alt="" class="card-img">
                     </div>
                 </div>
 
                 <div class="card-content">
                     <h2 class="name">Delila</h2>
+                    <h4 class="job">UI/UX</h4>
                     <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
@@ -240,12 +149,13 @@ class="swiper mySwiper2"
                     <span class="overlay"></span>
 
                     <div class="card-image">
-                        <!--<img src="images/profile7.jpg" alt="" class="card-img">-->
+                        <img src="{{ asset("img/w.png") }}" alt="" class="card-img">
                     </div>
                 </div>
 
                 <div class="card-content">
                     <h2 class="name">Reva</h2>
+                    <h4 class="job">UI/UX</h4>
                     <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
@@ -254,12 +164,13 @@ class="swiper mySwiper2"
                     <span class="overlay"></span>
 
                     <div class="card-image">
-                        <!--<img src="images/profile8.jpg" alt="" class="card-img">-->
+                        <img src="{{ asset("img/m.png") }}" alt="" class="card-img">
                     </div>
                 </div>
 
                 <div class="card-content">
                     <h2 class="name">Fahrel</h2>
+                    <h4 class="job">Tester</h4>
                     <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>

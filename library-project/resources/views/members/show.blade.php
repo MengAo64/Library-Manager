@@ -3,7 +3,7 @@
 Library | Show Member
 @endsection
 @section('css')
-<link rel="stylesheet" href="{{ asset("showmember.css") }}">
+<link rel="stylesheet" href="{{ asset("showMember.css") }}">
 @endsection
 @section('content')
     
