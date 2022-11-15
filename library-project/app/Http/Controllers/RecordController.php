@@ -76,11 +76,11 @@ class RecordController extends Controller
      */
     public function show(record $rc)
     {
-        dd($rc->all());
-        $record = Record::findOrFail($rc);
-        return view("records.show" , [
-            "record" => $record ,
-        ]);
+        // dd($rc->all());
+        // $record = Record::findOrFail($rc);
+        // return view("records.show" , [
+        //     "record" => $record ,
+        // ]);
     }
 
     /**
@@ -89,9 +89,10 @@ class RecordController extends Controller
      * @param  \App\Models\record  $record
      * @return \Illuminate\Http\Response
      */
-    public function edit(record $record)
+    public function edit($id)
     {
-        //
+        $record = record::find($id);
+        return view('records.edit',compact(['record']));
     }
 
     /**
@@ -101,10 +102,31 @@ class RecordController extends Controller
      * @param  \App\Models\record  $record
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, record $record)
+    public function update($id, Request $request)
     {
-        //
+        $request->validate([
+           "member_id" => "required",
+           "book_id" => "required",
+           "date_record" => "required",
+            "status" => "required"
+            
+        ]);
+
+            //    dd($request->all());
+        $model = record::find($id);
+        $members = member::all();
+        $books = book::all();
+        $model->update();
+        $model-> member_id = $request->member_id;
+        $model->book_id = $request->book_id;
+        $model-> date_record = $request->date_record;
+        $model-> status = $request->status;
+
+        $model->save();
+
+        return redirect('record')->with('success', 'Record Berhasil di Update');
     }
+    
 
     /**
      * Remove the specified resource from storage.
@@ -112,8 +134,8 @@ class RecordController extends Controller
      * @param  \App\Models\record  $record
      * @return \Illuminate\Http\Response
      */
-    public function destroy(record $record)
-    {
-        //
-    }
+    // public function destroy(record $record)
+    // {
+    //     //
+    // }
 }
