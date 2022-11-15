@@ -18,7 +18,7 @@ class bookController extends Controller
         $buku = [
             'buku' => Book::all()
         ];
-        return view('books.indexbook',  [
+        return view('books.indexbook', [
             'buku' => Book::latest()->paginate(8)
         ]);
 
