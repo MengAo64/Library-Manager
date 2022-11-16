@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\book;
+use Error;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -90,6 +91,7 @@ class bookController extends Controller
      */
     public function show($bk)
     {
+       
     $book = book::findOrFail($bk);
     return view('books.show',["buku" => $book]);
     }
@@ -153,8 +155,11 @@ class bookController extends Controller
      */
     public function destroy($id)
     {
-        $model = book::find($id);
-        $model->delete();
-        return redirect('book')->with('success', 'Buku Berhasil di Hapus');;
+        // $model = book::find($id);
+        // dd($model);
+        // $model->delete();
+        book::find($id)->delete();
+        return redirect('book')->with('success', 'Buku Berhasil di Hapus');
+        
     }
 }
