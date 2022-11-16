@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('records', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('member_id')->unsigned();
-            $table->foreign('member_id')->references('id')->on('members');
-            $table->bigInteger('book_id')->unsigned();
-            $table->foreign('book_id')->references('id')->on('books');
+            // $table->bigInteger('member_id')->unsigned();
+            $table->foreignId('member_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
+            // $table->bigInteger('book_id')->unsigned();
+            $table->foreignId('book_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->date('date_record');
             $table->string ('status');
             $table->timestamps();

@@ -5,7 +5,7 @@ use App\Models\member;
 use App\Models\record;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\bookController;
-use App\Http\Controllers\recordController;
+use App\Http\Controllers\RecordController;
 use App\Http\Controllers\memberController;
 use App\Http\Controllers\sweetController;
 use Illuminate\Support\Facades\Auth;
@@ -101,9 +101,4 @@ Route::post('/record/delete',[recordController::class,'delete']);
 Route::resource('record', recordController::class );
 });
 
-// Route::get('/createrecord', function () {
-//     return view('records.create');
-// });
-Route::get('/r', function () {
-    return view('records.edit');
-});
+

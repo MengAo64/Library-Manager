@@ -4,7 +4,6 @@ Library | AddMember
 @endsection
 @section('css')
 <link rel="stylesheet" href="{{ asset('record-create.css') }}">
-<link rel="stylesheet" href="style.css">
 @endsection
 @section('content')
 
@@ -46,9 +45,9 @@ Library | AddMember
 
 
                     <div class="status1">
-        <div class="status">            
+                    <div class="status">            
                 <div class="judultitle">Status</div>
-            <div class="stat">
+                <div class="stat">
                <div class="input1"><input type="radio"  name="status" value="Dipinjam" >Dipinjam </div> 
                <div class="input2"><input type="radio"  name="status" value="Tidak Dipinjam" {{"checked"}} >Tidak Dipinjam</div> 
             </div>   

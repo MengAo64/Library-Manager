@@ -87,6 +87,7 @@ nav ul li a:hover{
 .input-borrower{
     border-radius: 7px;
     margin-top: 20px;
+    margin-right: 35px;
     margin-bottom: 10px;
     font-size: 20px
 }
@@ -119,7 +120,7 @@ nav ul li a:hover{
     font-size: 25px;
 }
 .date-record{
-    padding-left: 63px;
+    padding-left: 15px;
 }
 .judultitle{
     font-size: 24px;
@@ -152,4 +153,18 @@ nav ul li a:hover{
 .btn-submit:hover{
     color:#000000;
     background-color: #caa26b;
+}
+.statusEdit{
+    width: 400px;
+margin-left: 420px;
+    
+}
+.judultitle1{
+    float: left;
+}
+.status-edit{
+    padding-left: 20px;
+}
+.edit1{
+    margin-right: 5.6em;
 }
