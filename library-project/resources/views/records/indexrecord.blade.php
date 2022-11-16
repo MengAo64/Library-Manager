@@ -33,8 +33,7 @@ Library | Reecord
     <?php $i++; ?>
      <tr >
         <th scope="row">{{ $i }}</th>
-        <td><a href="/records/show/{{ $r -> id}}" style="text-decoration:none; color:black;">{{ $r -> member -> name}}</a></td>
-        {{-- <td>{{ $r -> member -> name}}</td> --}}
+        <td><a href="/record/show/{{ $r -> id}}" style="text-decoration:none; color:black;">{{ $r -> member -> name}}</a></td>
         <td>{{ $r -> book -> title}}</td>   
         <td>{{ $r -> date_record}}</td>   
         <td>{{ $r ->  status}}</td>   
