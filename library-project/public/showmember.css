@@ -83,6 +83,12 @@ nav ul li a:hover{
     margin-left: 350px;
     display: inline-block;
 }
+.kotak-input-record {
+    padding: 20px   ;
+    margin-top: 14px;
+    margin-left: 310px;
+    display: inline-block;
+}
 .button3{
     margin-left: 50em;
 }

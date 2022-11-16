@@ -72,13 +72,13 @@ class RecordController extends Controller
      * @param  \App\Models\record  $record
      * @return \Illuminate\Http\Response
      */
-    public function show(record $rc)
+    public function show( $rc)
     {
         // dd($rc->all());
-        // $record = Record::findOrFail($rc);
-        // return view("records.show" , [
-        //     "record" => $record ,
-        // ]);
+        $record = Record::findOrFail($rc);
+        return view("records.show" , [
+            "record" => $record ,
+        ]);
     }
 
     /**
@@ -90,8 +90,8 @@ class RecordController extends Controller
     public function edit($id)
     {
         $record = record::find($id);
-        $members = member::all();
-        $books = book::all();
+        $members = member::latest()->get();
+        $books = book::latest()->get();
         return view('records.edit',compact(['record' , "members" , "books"]));
     }
 
@@ -129,8 +129,10 @@ class RecordController extends Controller
      * @param  \App\Models\record  $record
      * @return \Illuminate\Http\Response
      */
-    // public function destroy(record $record)
-    // {
-    //     //
-    // }
+    public function destroy($id)
+    {
+        $model = record::find($id);
+        $model->delete();
+        return redirect('record')->with('success', 'record Berhasil di Hapus');;
+    }
 }
