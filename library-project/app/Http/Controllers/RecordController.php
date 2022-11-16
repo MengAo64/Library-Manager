@@ -17,7 +17,8 @@ class RecordController extends Controller
     public function index ()
     {
         return view ( 'records.indexrecord',[
-            'record' => Record::with(['book','member'])->get()
+            'record' => Record::with(['book','member'])->get(),
+          
         ]
         
     );
@@ -32,8 +33,8 @@ class RecordController extends Controller
     public function create()
     {
         $model = new Record ;
-        $members = member::all();
-        $books = book::all();
+        $members = member::latest()->get();
+        $books = book::latest()->get();
         return view('records.create', [
             "members" => $members,
             "books" => $books
