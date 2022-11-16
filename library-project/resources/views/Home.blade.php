@@ -59,7 +59,7 @@ class="swiper mySwiper2"
                     <span class="overlay"></span>
 
                     <div class="card-image">
-                      <img src="{{ asset("img/m.png") }}" alt="" class="card-img">
+                      <img src="{{ asset("img/farel.jpg") }}" alt="" class="card-img">
                     </div>
                 </div>
 
@@ -104,7 +104,7 @@ class="swiper mySwiper2"
                     <span class="overlay"></span>
 
                     <div class="card-image">
-                        <img src="{{ asset("img/rizky,jpg") }}" alt="" class="card-img">
+                        <img src="{{ asset("img/m.png") }}" alt="" class="card-img">
                     </div>
                 </div>
 
