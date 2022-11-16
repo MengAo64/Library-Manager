@@ -4,11 +4,10 @@ Library | AddMember
 @endsection
 @section('css')
 <link rel="stylesheet" href="{{ asset('record-create.css') }}">
-<link rel="stylesheet" href="style.css">
 @endsection
 @section('content')
 
-<form method="POST" action="{{url('record')}}">
+<form method="POST" action="{{url('member')}}">
         @csrf
     <div class="kotak">
             <div class="add">
@@ -38,17 +37,17 @@ Library | AddMember
 
             <div class="date-record">
                 <span class="record-date" id="inputGroup-sizing-lg">Date =</span>
-                <input class="input-date" name="date_record" type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Join Date" value="{{old ('date_record')}}" >
+                <input class="input-date" name="join_date" type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Join Date" value="{{old ('join_date')}}" >
             </div>
-                    @error('date_record')
+                    @error('join_date')
                         <p style="color: red; font-size:13px; margin-left:7px;">{{$message}}</p>
                     @enderror
 
 
                     <div class="status1">
-        <div class="status">            
+                    <div class="status">            
                 <div class="judultitle">Status</div>
-            <div class="stat">
+                <div class="stat">
                <div class="input1"><input type="radio"  name="status" value="Dipinjam" >Dipinjam </div> 
                <div class="input2"><input type="radio"  name="status" value="Tidak Dipinjam" {{"checked"}} >Tidak Dipinjam</div> 
             </div>   
