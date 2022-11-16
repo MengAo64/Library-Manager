@@ -9,7 +9,7 @@ Library | ShowBook
     
 
     <div class="kotak2">
-        <div class="kiri"><img src="/coverimg/{{ $buku->cover_image}}" alt=""></div>
+        <div class="kiri"><img src="{{ $buku->cover_image ? '/coverimg/' . $buku->cover_image :  asset("img/placeholder.jpg") }}" alt=""></div>
         <div class="kanan">
             <h2 class="p">{{ $buku->title }} </h2>
             <h4  class="p">{{ $buku->author }}</h4>
@@ -32,6 +32,9 @@ Library | ShowBook
                 @method('delete')
                 <input type="hidden" name="_method"  value="DELETE">
                 <button class="delete"  type="submit" >Delete</button>
+                @error('')
+                        <p style="color: red; font-size:13px; margin-left:7px;">{{$message}}</p>
+                    @enderror
                 {{-- <a class="delete" href="">Delete</a> --}}
             </form>
 

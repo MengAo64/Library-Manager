@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@600&family=Tiro+Devanagari+Hindi:ital@1&display=swap');
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: #665A48;
+}
+
+.wrapper{
+    width: 800px;
+    height: 400px;
+    display: flex;
+    border: 1px solid;
+    box-shadow: 5px 10px 18px #060606;
+}
+
+.leftside{
+    background-color: #A9967C;
+    width: 100%;
+}
+.leftside img{
+    width: 100%;
+}
+.leftside img{
+    height: "350px" ;
+    width: "500px" ;
+}
+.rightside{
+    background-color: #C8DBBE;
+    width: 100%;
+}
+.up{
+    margin-top: 30px;
+    text-align: center;
+}
+.isi{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.isi input[type="text"],input[type="Password"],input[type="email"]{
+    border: none;
+    /* border-bottom: 1px solid black; */
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+}
+
+.register{
+    color: #000000;
+    background-color:transparent ;
+    text-decoration: none;
+    border: 2px solid;
+    padding: 10px 50px;
+    border-radius: 20px;
+    margin-top: 40px;
+    text-align: center;
+    margin-right: 120px;
+    float: right; 
+}
+.register:hover{
+    color:#000000;
+    background-color: #caa26b;
+}
+.login{
+    color: #000000;
+    background-color:transparent ;
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 10px 50px;
+    border-radius: 20px;
+    margin-top: 60px;
+    text-align: center;
+    margin-right: 130px;
+    float: right; 
+}
+.login:hover{
+    color:#000000;
+    background-color: #caa26b;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    justify-content: center;
+}

@@ -18,7 +18,9 @@ class memberController extends Controller
         $member = [
             'member' => Member::all()
         ];
-        return view('members.indexmember', $member);
+        return view('members.indexmember',[
+            'member' => Member::latest()->paginate(10),
+        ]);
 
     }
 
@@ -43,6 +45,13 @@ class memberController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            "name" => "required",
+            "join_date" => "required"
+            
+        ]);
+        
+
         $model = new Member;
         $model->name = $request->name;
         $model->join_date = $request->join_date;
@@ -84,6 +93,12 @@ class memberController extends Controller
      */
     public function update($id, Request $request)
     {
+        $request->validate([
+            "name" => "required",
+            "join_date" => "required"
+            
+        ]);
+
         $member = member::find($id);
         $member->update();
         $member ->name = $request-> name;

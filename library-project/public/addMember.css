@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@600&family=Tiro+Devanagari+Hindi:ital@1&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:  Montserrat ;
+    
+}
+body{
+    background-color: #665a48;
+}
+nav{
+    width: 100%;
+    background-color: #665a48;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* background-color: blue; */
+
+}
+nav ul li{
+    list-style: none;
+    padding: 0px 5px;
+
+
+}
+nav ul li a{
+    color: rgb(218, 214, 214);
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 50px;
+    padding: 6px;
+}
+nav ul li a:hover{
+    background-color: rgb(206, 203, 197);
+    color: #665a48 ;
+    border-radius: 20px;
+    
+}
+.kotak{
+    background-color: #c8dbbe;
+    width: 89vw;
+    height: 100%;
+    margin: auto;
+    border-radius: 5px;
+    padding-bottom: 15px;
+}
+.inputnama{
+    font-size: 28px;
+    margin-left: 95px;
+    border-radius: 8px;
+}
+.inputdate{
+    text-align: right;
+    padding-right: 120px;
+    font-size: 25px;
+    margin-left: 54px;
+    border-radius: 6px;
+}
+/* .name{
+    margin-left: 500px;
+    font-size: 20px;
+    text-align: left;
+}
+.date{
+    text-align: center;
+} */
+
+.kotak-input {
+    padding: 20px   ;
+    margin-left: 350px;
+}
+
+.btn-submit{
+    padding: 10px 40px;
+    margin-left:950px;
+    font-size: 25px;
+    border-radius: 40px;
+    border: 2px black solid;
+}
+.btn-submit:hover{
+    color:#000000;
+    background-color: #caa26b;
+}
+/* span {
+    font-size: 25px;
+    padding: 10px;
+    border: 2px gray solid;
+    background-color: gray;
+} */
+
+
+
+.nama-add span{
+    margin-left: -200px;
+    font-size: 25px;
+}
+.date-add span{
+
+    margin-left: -200px;
+    font-size: 25px;
+}
+.add{
+    text-align: center;
+}
+.logout{
+    color: rgb(218, 214, 214);
+    font-size: 20px;
+    margin-right: 50px;
+    padding: 6px;
+    background-color: #665a48;
+    border: none;
+}
+.logout:hover{
+    background-color: rgb(206, 203, 197);
+    color: #665a48 ;
+    border-radius: 20px;
+}

@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@600&family=Tiro+Devanagari+Hindi:ital@1&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:  Montserrat ;   
+}
+body{
+    background-color: #665a48;
+}
+nav{
+    width: 100%;
+    background-color: #665a48;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+nav ul li{
+    list-style: none;
+    padding: 0px 5px;
+
+
+}
+nav ul li a{
+    color: rgb(218, 214, 214);
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 50px;
+    padding: 6px;
+}
+nav ul li a:hover{
+    background-color: rgb(206, 203, 197);
+    color: #665a48 ;
+    border-radius: 20px;
+    
+}
+.logout{
+    color: rgb(218, 214, 214);
+    font-size: 20px;
+    margin-right: 50px;
+    padding: 6px;
+    background-color: #665a48;
+    border: none;
+}
+.logout:hover{
+    background-color: rgb(206, 203, 197);
+    color: #665a48 ;
+    border-radius: 20px;
+}
+.kotak{
+    background-color: #c8dbbe;
+    width: 89vw;
+    height: 100%;
+    margin: auto;
+    border-radius: 5px;
+    padding-bottom: 15px;
+}
+.logout{
+    color: rgb(218, 214, 214);
+    font-size: 20px;
+    margin-right: 50px;
+    padding: 6px;
+    background-color: #665a48;
+    border: none;
+}
+.logout:hover{
+    background-color: rgb(206, 203, 197);
+    color: #665a48 ;
+    border-radius: 20px;
+}
+.add{
+    text-align: center;
+}
+.input{
+    text-align: center;
+    padding-top: 20px;
+}
+.input-borrower{
+    border-radius: 7px;
+    margin-top: 20px;
+    margin-right: 35px;
+    margin-bottom: 10px;
+    font-size: 20px
+}
+.record-borrower{
+    display: inline;
+    font-size: 25px;
+    margin-right: 47px;
+}
+.input-book{
+    border-radius: 7px;
+    margin-bottom: 10px;
+    padding-right: 200px;
+    font-size: 18px
+}
+.record-book{
+    display: inline;
+    font-size: 25px;
+}
+.book-add{
+    padding-left: 55px;
+}
+.input-date{
+    border-radius: 7px;
+    margin-bottom: 10px;
+    padding-right: 94px;
+    font-size: 18px
+}
+.record-date{
+    display: inline;
+    font-size: 25px;
+}
+.date-record{
+    padding-left: 15px;
+}
+.judultitle{
+    font-size: 24px;
+    float: left;
+}
+.status1{
+   width: 300px;
+   margin-top: 5px;
+   margin-left: 450px;
+}
+.status{
+    margin-right: 48px;
+}
+.stat{
+    margin: auto;
+}
+.input1{
+  margin-right: 50px;
+}
+.input2{
+    margin-top: 7px;
+}
+.btn-submit{
+    padding: 5px 25px;
+    margin-left:950px;
+    font-size: 25px;
+    border-radius: 25px;
+    border: 2px black solid;     
+}
+.btn-submit:hover{
+    color:#000000;
+    background-color: #caa26b;
+}
+.statusEdit{
+    width: 400px;
+margin-left: 420px;
+    
+}
+.judultitle1{
+    float: left;
+}
+.status-edit{
+    padding-left: 20px;
+}
+.edit1{
+    margin-right: 5.6em;
+}

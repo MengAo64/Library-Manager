@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\book;
+use Error;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -18,7 +19,9 @@ class bookController extends Controller
         $buku = [
             'buku' => Book::all()
         ];
-        return view('books.indexbook',  $buku);
+        return view('books.indexbook',  [
+            'buku' => Book::latest()->paginate(8)
+        ]);
 
     }
     // public function h()
@@ -50,13 +53,22 @@ class bookController extends Controller
      */
     public function store(Request $request)
     {   
+        $request->validate([
+            "title" => "required",
+            "author" => "required",
+            "publisher"=> "required",
+            "publication_date" => "required",
+
+        ]);
+
         
+
         $model = new Book;
         $model ->title = $request-> title;
         $model ->author = $request-> author;
         $model ->publisher = $request-> publisher;
         $model ->publication_date = $request-> publication_date;
-        $model ->status = $request-> status;
+        $model ->status = "Tidak Dipinjam";
 
         if($request->file("cover_image")){
             $name_file = $request->file("cover_image")->hashName();
@@ -79,6 +91,7 @@ class bookController extends Controller
      */
     public function show($bk)
     {
+       
     $book = book::findOrFail($bk);
     return view('books.show',["buku" => $book]);
     }
@@ -91,6 +104,7 @@ class bookController extends Controller
      */
     public function edit($id)
     {
+        
         $buku = book::find($id);
         return view('books.edit',compact(['buku']));
     }
@@ -104,6 +118,15 @@ class bookController extends Controller
      */
     public function update($id, Request $request)
     {
+        $request->validate([
+            "title" => "required",
+            "author" => "required",
+            "publisher"=> "required",
+            "publication_date" => "required",
+            "status" => "required"
+        ]);
+
+
         $buku = book::find($id);
         $buku->update();
         $buku ->title = $request-> title;
@@ -132,8 +155,11 @@ class bookController extends Controller
      */
     public function destroy($id)
     {
-        $model = book::find($id);
-        $model->delete();
-        return redirect('book')->with('success', 'Buku Berhasil di Hapus');;
+        // $model = book::find($id);
+        // dd($model);
+        // $model->delete();
+        book::find($id)->delete();
+        return redirect('book')->with('success', 'Buku Berhasil di Hapus');
+        
     }
 }

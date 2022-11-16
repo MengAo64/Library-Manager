@@ -3,7 +3,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Merriweather;
+    font-family:  Montserrat ;
     
 }
 body{
@@ -49,7 +49,7 @@ nav ul li a:hover{
 }
 .kotak{
     background-color: #c8dbbe;
-    width: 73em;
+    width: 89vw;
     height: 100%;
     margin: auto;
     border-radius: 5px;
@@ -135,4 +135,17 @@ nav ul li a:hover{
 .add{
     text-align: center;
     background-color: transparent;
+}
+.logout{
+    color: rgb(218, 214, 214);
+    font-size: 20px;
+    margin-right: 50px;
+    padding: 6px;
+    background-color: #665a48;
+    border: none;
+}
+.logout:hover{
+    background-color: rgb(206, 203, 197);
+    color: #665a48 ;
+    border-radius: 20px;
 }

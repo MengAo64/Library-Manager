@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\record;
+use App\Models\member;
+use App\Models\book;
 use Illuminate\Http\Request;
 
 class RecordController extends Controller
@@ -12,9 +14,15 @@ class RecordController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index ()
     {
-        //
+        return view ( 'records.indexrecord',[
+            'record' => Record::with(['book','member'])->get(),
+          
+        ]
+        
+    );
+
     }
 
     /**
@@ -24,7 +32,13 @@ class RecordController extends Controller
      */
     public function create()
     {
-        //
+        $model = new Record ;
+        $members = member::latest()->get();
+        $books = book::latest()->get();
+        return view('records.create', [
+            "members" => $members,
+            "books" => $books
+        ]);
     }
 
     /**
@@ -35,7 +49,21 @@ class RecordController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            "date_record" => "required",
+            "status" => "required"
+        ]);
+        
+        $model = new Record;
+        book::find($request->book_id)->update(["status" => $request->status]);
+        $model->member_id = $request->member_id;
+        $model->book_id = $request->book_id;
+        $model-> date_record = $request->date_record;
+        $model-> status = $request->status;
+        $model->save();
+            
+
+        return redirect('record')->with('success', 'Record Berhasil di Tambahkan');
     }
 
     /**
@@ -44,9 +72,13 @@ class RecordController extends Controller
      * @param  \App\Models\record  $record
      * @return \Illuminate\Http\Response
      */
-    public function show(record $record)
+    public function show(record $rc)
     {
-        //
+        // dd($rc->all());
+        // $record = Record::findOrFail($rc);
+        // return view("records.show" , [
+        //     "record" => $record ,
+        // ]);
     }
 
     /**
@@ -55,9 +87,12 @@ class RecordController extends Controller
      * @param  \App\Models\record  $record
      * @return \Illuminate\Http\Response
      */
-    public function edit(record $record)
+    public function edit($id)
     {
-        //
+        $record = record::find($id);
+        $members = member::all();
+        $books = book::all();
+        return view('records.edit',compact(['record' , "members" , "books"]));
     }
 
     /**
@@ -67,10 +102,26 @@ class RecordController extends Controller
      * @param  \App\Models\record  $record
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, record $record)
+    public function update($id, Request $request)
     {
-        //
+        $request->validate([
+           "member_id" => "required",
+           "book_id" => "required",
+           "date_record" => "required",
+            "status" => "required"
+        ]);
+
+        if($request->status == "Tidak Dipinjam"){
+            book::find($request->book_id)->update(["status" => $request->status]);
+        }
+        
+        $data = $request->except(["_method" , "_token"]);
+        // dd($data);
+        record::find($id)->update($data);
+
+        return redirect('record')->with('success', 'Record Berhasil di Update');
     }
+    
 
     /**
      * Remove the specified resource from storage.
@@ -78,8 +129,8 @@ class RecordController extends Controller
      * @param  \App\Models\record  $record
      * @return \Illuminate\Http\Response
      */
-    public function destroy(record $record)
-    {
-        //
-    }
+    // public function destroy(record $record)
+    // {
+    //     //
+    // }
 }

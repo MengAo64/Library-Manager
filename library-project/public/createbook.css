@@ -3,7 +3,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Merriweather;
+    font-family:  Montserrat ;
     
 }
 body{
@@ -49,8 +49,8 @@ nav ul li a:hover{
 }
 .kotak{
     background-color: #c8dbbe;
-    width: 73em;
-    height: 100%;
+    width: 89vw;
+    height: 530px;
     margin: auto;
     border-radius: 5px;
     padding: 15px;
@@ -114,7 +114,7 @@ nav ul li a:hover{
     color: #000000;
     padding: 8px 60px;
     height: 47px;
-    margin:12em 0 5px 6em;
+    margin:14em 0 5px 6em;
 
 }
 .add:hover{
@@ -123,4 +123,24 @@ nav ul li a:hover{
 }
 .input2{
     width: 35px;
+}
+.titlebook {
+    margin-top: 7px;
+}
+
+.judultitle{
+    margin-bottom: -7px;
+}
+.logout{
+    color: rgb(218, 214, 214);
+    font-size: 20px;
+    margin-right: 50px;
+    padding: 6px;
+    background-color: #665a48;
+    border: none;
+}
+.logout:hover{
+    background-color: rgb(206, 203, 197);
+    color: #665a48 ;
+    border-radius: 20px;
 }
