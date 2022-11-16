@@ -51,13 +51,10 @@ class RecordController extends Controller
         $request->validate([
             "date_record" => "required",
             "status" => "required"
-            
         ]);
         
-            // dd($request->all());
         $model = new Record;
-        $members = member::all();
-        $books = book::all();
+        book::find($request->book_id)->update(["status" => $request->status]);
         $model->member_id = $request->member_id;
         $model->book_id = $request->book_id;
         $model-> date_record = $request->date_record;
@@ -92,7 +89,9 @@ class RecordController extends Controller
     public function edit($id)
     {
         $record = record::find($id);
-        return view('records.edit',compact(['record']));
+        $members = member::all();
+        $books = book::all();
+        return view('records.edit',compact(['record' , "members" , "books"]));
     }
 
     /**
@@ -109,20 +108,15 @@ class RecordController extends Controller
            "book_id" => "required",
            "date_record" => "required",
             "status" => "required"
-            
         ]);
 
-            //    dd($request->all());
-        $model = record::find($id);
-        $members = member::all();
-        $books = book::all();
-        $model->update();
-        $model-> member_id = $request->member_id;
-        $model->book_id = $request->book_id;
-        $model-> date_record = $request->date_record;
-        $model-> status = $request->status;
-
-        $model->save();
+        if($request->status == "Tidak Dipinjam"){
+            book::find($request->book_id)->update(["status" => $request->status]);
+        }
+        
+        $data = $request->except(["_method" , "_token"]);
+        // dd($data);
+        record::find($id)->update($data);
 
         return redirect('record')->with('success', 'Record Berhasil di Update');
     }

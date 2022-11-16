@@ -17,20 +17,21 @@ Library | Reecord
                 </div>  <br> <br>
                  <div class="kotak-input">
                     <div class="nama-add"><span class="input-group-text nama-inp">Borower =</span>
-                     <select class="input-book" name="borrower" id="">
+                     <select class="input-book" name="member_id" id="">
                        @foreach($members as $m)
-                        <option value="{{$m->id}}">{{$m->name}}</option>
+                        <option value="{{$m->id}}" {{ $m->id == $record->member_id ? "selected" : "" }}>{{ $m->name }}</option>
                       @endforeach
                       </select>
                     <br><br>
 
-                    <div class="nama-add"><span class="input-group-text nama-inp">Book =</span>
-                    <input value="{{$record-> book -> title}}" class="inputnama" name="book" type="text" aria-label="First name" class="form-control" placeholder="Name">
-                    @error('book_id')
-                      <p style="color: red; font-size:13px; margin-left:7px;">{{$message}}</p>
-                    @enderror
-                    </div>
-                    <br><br>
+                    <div class="book-add">
+                      <span class="record-book" id="inputGroup-sizing-lg">Book =</span>
+                      <select class="input-book" name="book_id" id="">
+                          @foreach($books as $book)
+                              <option value="{{$book->id}}" {{ $book->id == $record->book_id ? "selected" : "" }}>{{$book->title}}</option>
+                          @endforeach
+                      </select>
+                      </div>
     
                     <div class="date-add">
                     <span class="input-group-text" id="inputGroup-sizing-lg">Date =</span>
@@ -41,11 +42,8 @@ Library | Reecord
                     </div>
 
                     <div class="a"><div class="a">Status</div>
-                    <input class="a" type="radio"  name="status" value="{{$record->  status}}" <?php if($record['status']=='Dipinjam') echo 'checked'?>>Dipinjam</div>
-                    <input class="a" type="radio"  name="status" value="{{$record->  status}}" <?php if($record['status']=='Tidak Dipinjam') echo 'checked'?>>Tidak Dipinjam</div>
-                    <input type="hidden" value="{{$record->member->id}}" name="member_id" >
-                    <input type="hidden" value="{{$record->book->id}}" name="book_id" >
-
+                    <input class="a" type="radio"  name="status" value="Dipinjam" <?php if($record['status']=='Dipinjam') echo 'checked'?>>Dipinjam</div>
+                    <input class="a" type="radio"  name="status" value="Tidak Dipinjam" <?php if($record['status']=='Tidak Dipinjam') echo 'checked'?>>Tidak Dipinjam</div>
                 </div>    
             <br><br>
             <button class="btn-submit" type="submit"> Update </button>

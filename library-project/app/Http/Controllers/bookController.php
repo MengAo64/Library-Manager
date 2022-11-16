@@ -57,7 +57,6 @@ class bookController extends Controller
             "author" => "required",
             "publisher"=> "required",
             "publication_date" => "required",
-            "status" => "required"
 
         ]);
 
@@ -68,7 +67,7 @@ class bookController extends Controller
         $model ->author = $request-> author;
         $model ->publisher = $request-> publisher;
         $model ->publication_date = $request-> publication_date;
-        $model ->status = $request-> status;
+        $model ->status = "Tidak Dipinjam";
 
         if($request->file("cover_image")){
             $name_file = $request->file("cover_image")->hashName();

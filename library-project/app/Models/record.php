@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class record extends Model
 {
     use HasFactory;
+    protected $guarded = ["id"];
     protected $with = ["book", "member"]; 
 
     public function member(){
