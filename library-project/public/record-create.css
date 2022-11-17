@@ -56,6 +56,27 @@ nav ul li a:hover{
     color: #665a48 ;
     border-radius: 20px;
 }
+form{
+    display: grid;
+}
+label{
+    text-align: right;
+    padding: 0.5em 2em 0.5em 0;
+    width: 170px;
+    float: left;
+}
+select{
+    margin-top: 16px;
+    width: 170px;
+}
+.input-date {
+    margin-top: 16px;
+    width: 170px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
 .kotak{
     background-color: #c8dbbe;
     width: 89vw;
@@ -81,72 +102,46 @@ nav ul li a:hover{
     text-align: center;
 }
 .input{
-    text-align: center;
+    display: grid;
+    width: 40vw;
     padding-top: 20px;
+    justify-content: center;
 }
 .input-borrower{
     border-radius: 7px;
-    margin-top: 20px;
-    margin-right: 35px;
-    margin-bottom: 10px;
     font-size: 20px
 }
 .record-borrower{
-    display: inline;
     font-size: 25px;
-    margin-right: 47px;
 }
 .input-book{
     border-radius: 7px;
-    margin-bottom: 10px;
-    padding-right: 200px;
     font-size: 18px
 }
 .record-book{
-    display: inline;
     font-size: 25px;
-}
-.book-add{
-    padding-left: 55px;
 }
 .input-date{
     border-radius: 7px;
-    margin-bottom: 10px;
-    padding-right: 94px;
     font-size: 18px
 }
 .record-date{
-    display: inline;
     font-size: 25px;
 }
-.date-record{
-    padding-left: 15px;
-}
+
 .judultitle{
     font-size: 24px;
     float: left;
 }
-.status1{
-   width: 300px;
-   margin-top: 5px;
-   margin-left: 450px;
-}
-.status{
-    margin-right: 48px;
-}
-.stat{
-    margin: auto;
-}
+
 .input1{
-  margin-right: 50px;
-}
-.input2{
-    margin-top: 7px;
+    padding-top: 16px;
 }
 .btn-submit{
     padding: 5px 25px;
-    margin-left:950px;
+   float: right;
     font-size: 25px;
+    margin-right: 50px;
     border-radius: 25px;
     border: 2px black solid;     
 }
