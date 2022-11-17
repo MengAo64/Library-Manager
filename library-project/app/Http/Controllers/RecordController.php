@@ -16,7 +16,10 @@ class RecordController extends Controller
      */
     public function index ()
     {
+        // $record = record::latest()->paginate(5);
+
         return view ( 'records.indexrecord',[
+            // 'record' => Record::latest()->paginate(5)
             'record' => Record::with(['book','member'])->get(),
           
         ]
