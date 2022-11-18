@@ -7,7 +7,7 @@ Library | AddMember
 @endsection
 @section('content')
 
-<form method="POST" action="{{url('member')}}">
+<form method="POST" action="{{url('record')}}">
         @csrf
     <div class="kotak">
             <div class="add">
@@ -45,10 +45,10 @@ Library | AddMember
 
             <div class="date">
             <div class="date-record">
-                <label class="record-date" id="inputGroup-sizing-lg">Date</label>
+                <label class="record-date" id="inputGroup-sizing-lg">Date </label>
                 <input class="input-date" name="join_date" type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Join Date" value="{{old ('join_date')}}" >
             </div>
-                    @error('join_date')
+                    @error('date_record')
                         <p style="color: red; font-size:13px; margin-left:7px;">{{$message}}</p>
                     @enderror
         </div>
@@ -66,8 +66,8 @@ Library | AddMember
         </div>
     </div>   
         </div>   
+        <button class="btn-submit" type="submit">Add</button>  
     </div>
-        <button class="btn-submit" type="submit"> Add</button>   
     </div>            
 </form>
 

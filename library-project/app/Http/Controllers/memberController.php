@@ -19,7 +19,7 @@ class memberController extends Controller
             'member' => Member::all()
         ];
         return view('members.indexmember',[
-            'member' => Member::latest()->paginate(10)
+            'member' => Member::latest()->paginate(10),
         ]);
 
     }

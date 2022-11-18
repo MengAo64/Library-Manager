@@ -62,20 +62,27 @@ form{
 label{
     text-align: right;
     padding: 0.5em 2em 0.5em 0;
-    width: 170px;
+    width: 20vw;
     float: left;
+    font-size: 25px;
 }
 select{
     margin-top: 16px;
-    width: 170px;
+    width: 13vw;
+    font-size: 25px;
+    border-radius: 5px;
 }
 .input-date {
+    border-radius: 5px;
     margin-top: 16px;
-    width: 170px;
+    width: 13vw;
+    font-size: 20px;
 }
 .container{
     display: flex;
     justify-content: center;
+    width: 37vw;
+    margin: auto;
 }
 .kotak{
     background-color: #c8dbbe;
@@ -85,81 +92,24 @@ select{
     border-radius: 5px;
     padding-bottom: 15px;
 }
-.logout{
-    color: rgb(218, 214, 214);
-    font-size: 20px;
-    margin-right: 50px;
-    padding: 6px;
-    background-color: #665a48;
-    border: none;
-}
-.logout:hover{
-    background-color: rgb(206, 203, 197);
-    color: #665a48 ;
-    border-radius: 20px;
-}
 .add{
-    text-align: center;
-}
-.input{
-    display: grid;
-    width: 40vw;
-    padding-top: 20px;
+    display: flex;
     justify-content: center;
+    padding:20px;
+    margin-left: 50px;
 }
-.input-borrower{
-    border-radius: 7px;
-    font-size: 20px
-}
-.record-borrower{
-    font-size: 25px;
-}
-.input-book{
-    border-radius: 7px;
-    font-size: 18px
-}
-.record-book{
-    font-size: 25px;
-}
-.input-date{
-    border-radius: 7px;
-    font-size: 18px
-}
-.record-date{
-    font-size: 25px;
-}
-
-.judultitle{
-    font-size: 24px;
-    float: left;
-}
-
-.input1{
-    padding-top: 16px;
-}
-.btn-submit{
-    padding: 5px 25px;
+.btn-submit {
     float: right;
-    font-size: 25px;
-    margin-right: 50px;
+    padding: 5px 10px;
+    font-size: 20px;
     border-radius: 25px;
     border: 2px black solid;     
+    margin-right: 15px;
 }
 .btn-submit:hover{
     color:#000000;
     background-color: #caa26b;
 }
-.statusEdit{
-    width: 400px;
-margin-left: 420px;
-    
-}
-.judultitle1{
-    float: left;
-}
 .status-edit{
-    padding-left: 20px;
-}
-.edit1{
-    margin-right: 5.6em;
+    padding: 7px;
 }
