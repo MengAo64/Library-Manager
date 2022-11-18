@@ -133,6 +133,9 @@ select{
     font-size: 24px;
     float: left;
 }
+.stat{
+    font-size: 20px;
+}
 
 .input1{
     padding-top: 16px;
@@ -148,18 +151,4 @@ select{
 .btn-submit:hover{
     color:#000000;
     background-color: #caa26b;
-}
-.statusEdit{
-    width: 400px;
-margin-left: 420px;
-    
-}
-.judultitle1{
-    float: left;
-}
-.status-edit{
-    padding-left: 20px;
-}
-.edit1{
-    margin-right: 5.6em;
 }

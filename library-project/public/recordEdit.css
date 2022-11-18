@@ -111,5 +111,9 @@ select{
     background-color: #caa26b;
 }
 .status-edit{
-    padding: 7px;
+   margin-top: 20px;
+   font-size: 20px;
+}
+.edit1{
+    padding: 10px;
 }
