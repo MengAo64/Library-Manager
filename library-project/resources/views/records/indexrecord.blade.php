@@ -34,9 +34,9 @@ Library | Reecord
      <tr >
         <th scope="row">{{ $i }}</th>
         <td><a href="/record/show/{{ $r -> id}}" style="text-decoration:none; color:black;">{{ $r -> member -> name}}</a></td>
-        <td>{{ $r -> book -> title}}</td>   
-        <td>{{ $r -> date_record}}</td>   
-        <td>{{ $r ->  status}}</td>   
+        <td><a href="/record/show/{{ $r -> id}}" style="text-decoration:none; color:black;">{{ $r -> book -> title}}</a></td>   
+        <td><a href="/record/show/{{ $r -> id}}" style="text-decoration:none; color:black;">{{ $r -> date_record}}</a></td>   
+        <td><a href="/record/show/{{ $r -> id}}" style="text-decoration:none; color:black;">{{ $r ->  status}}</a></td>   
       </tr>
       @endforeach
     </tbody>
