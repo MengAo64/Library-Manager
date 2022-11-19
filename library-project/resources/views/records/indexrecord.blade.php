@@ -23,6 +23,7 @@ Library | Reecord
       <th scope="col">Book</th>
       <th scope="col">Date</th>
       <th scope="col">Status</th>
+      <th scope="col">Action</th>
     </tr>
   </thead>
   <tbody>
@@ -33,10 +34,11 @@ Library | Reecord
     <?php $i++; ?>
      <tr >
         <th scope="row">{{ $i }}</th>
-        <td><a href="/record/show/{{ $r -> id}}" style="text-decoration:none; color:black;">{{ $r -> member -> name}}</a></td>
+        <td><a href="/record/show/{{ $r -> id}}" style="text-decoration:none; color:black;" >{{ $r -> member -> name}}</a></td>
         <td><a href="/record/show/{{ $r -> id}}" style="text-decoration:none; color:black;">{{ $r -> book -> title}}</a></td>   
         <td><a href="/record/show/{{ $r -> id}}" style="text-decoration:none; color:black;">{{ $r -> date_record}}</a></td>   
         <td><a href="/record/show/{{ $r -> id}}" style="text-decoration:none; color:black;">{{ $r ->  status}}</a></td>   
+        <td><a href="/record/show/{{ $r -> id}}" class="btn btn-outline-primary" >Detail</a></td>   
       </tr>
       @endforeach
     </tbody>

@@ -23,6 +23,7 @@ Library | Member
       <th scope="col">No</th>
       <th scope="col">Name</th>
       <th scope="col">Join Date</th>
+      <th scope="col">Action</th>
     </tr>
   </thead>
   <tbody>
@@ -33,7 +34,10 @@ Library | Member
    <tr >
       <th scope="row">{{ $i }}</th>
       <td><a href="/member/show/{{ $m -> id}}" style="text-decoration:none; color:black;">{{ $m -> name}}</a></td>
-      <td>{{ $m -> join_date}}</td>   
+      <td><a href="/member/show/{{ $m -> id}}" style="text-decoration:none; color:black;">{{ $m -> join_date}}</a></td>
+      <td><a href="/member/show/{{ $m -> id}}"  class="btn btn-outline-primary">Detail</a></td>
+         
+
     </tr>
     @endforeach
   </tbody>
