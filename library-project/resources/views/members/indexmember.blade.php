@@ -35,7 +35,7 @@ Library | Member
       <th scope="row">{{ $i }}</th>
       <td><a href="/member/show/{{ $m -> id}}" style="text-decoration:none; color:black;">{{ $m -> name}}</a></td>
       <td><a href="/member/show/{{ $m -> id}}" style="text-decoration:none; color:black;">{{ $m -> join_date}}</a></td>
-      <td><a href="/member/show/{{ $m -> id}}"  class="btn btn-outline-primary">Detail</a></td>
+      <td><a href="/member/show/{{ $m -> id}}"  class="btn btn-outline-dark">Detail</a></td>
          
 
     </tr>

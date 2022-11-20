@@ -38,7 +38,7 @@ Library | Reecord
         <td><a href="/record/show/{{ $r -> id}}" style="text-decoration:none; color:black;">{{ $r -> book -> title}}</a></td>   
         <td><a href="/record/show/{{ $r -> id}}" style="text-decoration:none; color:black;">{{ $r -> date_record}}</a></td>   
         <td><a href="/record/show/{{ $r -> id}}" style="text-decoration:none; color:black;">{{ $r ->  status}}</a></td>   
-        <td><a href="/record/show/{{ $r -> id}}" class="btn btn-outline-primary" >Detail</a></td>   
+        <td><a href="/record/show/{{ $r -> id}}" class="btn btn-outline-dark" >Detail</a></td>   
       </tr>
       @endforeach
     </tbody>
