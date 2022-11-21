@@ -96,7 +96,7 @@ class="swiper mySwiper2"
                 <div class="card-content">
                     <h2 class="name">Rizky</h2>
                     <h4 class="job">Backend</h4>
-                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="description">back end developer is someone who has the expertise to design or develop software on the server side related to logic and databases.</p>
                 </div>
             </div>
             <div class="card swiper-slide">
