@@ -21,7 +21,7 @@ class RecordController extends Controller
         return view ( 'records.indexrecord',[
             // 'record' => Record::latest()->paginate(5)
             'record' => Record::with(['book','member'])->get(),
-          
+            'record' => record::latest()->paginate(10),
         ]
         
     );

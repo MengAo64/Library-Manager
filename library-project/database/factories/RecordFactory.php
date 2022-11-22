@@ -17,7 +17,10 @@ class RecordFactory extends Factory
     public function definition()
     {
         return [
-            //
+            // return [
+            //     '$reecord -> member -> name' => fake()->name(),
+            //     'date_record' => now()
+            // ];
         ];
     }
 }

@@ -33,8 +33,8 @@ Library | Reecord
     @foreach($record as $r) 
     <?php $i++; ?>
      <tr >
-        <th scope="row">{{ $i }}</th>
-        <td><a href="/record/show/{{ $r -> id}}" style="text-decoration:none; color:black;" >{{ $r -> member -> name}}</a></td>
+        <th scope="row">{{ $i }}</th> 
+        <td><a href="/record/show/{{ $r -> id}}" style="text-decoration:none; color:black;" >{{$r -> member -> name}}</a></td>
         <td><a href="/record/show/{{ $r -> id}}" style="text-decoration:none; color:black;">{{ $r -> book -> title}}</a></td>   
         <td><a href="/record/show/{{ $r -> id}}" style="text-decoration:none; color:black;">{{ $r -> date_record}}</a></td>   
         <td><a href="/record/show/{{ $r -> id}}" style="text-decoration:none; color:black;">{{ $r ->  status}}</a></td>   
@@ -43,4 +43,7 @@ Library | Reecord
       @endforeach
     </tbody>
   </table>
+  
+@include('layout.pagination', ['paginator' => $record])
+</div>
 @endsection
