@@ -112,8 +112,7 @@ img{
 .addbook{
     width: 20em;
     height: 30px;
-    text-align: center;
-    margin-left: 45em;
+    float: right;
     margin-top: -20px;
     margin-bottom: 25px;
     
@@ -125,6 +124,7 @@ img{
     font-size: 20px;
     border-radius: 20px;
     padding: 10px 70px ;
+    text-align: center;
 }
 .addbook :hover{
     color:#000000;
