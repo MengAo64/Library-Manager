@@ -47,14 +47,14 @@ class memberController extends Controller
     {
         $request->validate([
             "name" => "required",
-            "join_date" => "required"
+            // "join_date" => "required"
             
         ]);
         
 
         $model = new Member;
         $model->name = $request->name;
-        $model->join_date = $request->join_date;
+        $model->join_date = now();
         $model->save();
 
         return redirect('member')->with('success', 'Member Berhasil di Tambahkan');
@@ -95,14 +95,14 @@ class memberController extends Controller
     {
         $request->validate([
             "name" => "required",
-            "join_date" => "required"
+            // "join_date" => "required"
             
         ]);
 
         $member = member::find($id);
         $member->update();
         $member ->name = $request-> name;
-        $member ->join_date = $request-> join_date;
+        // $member->join_date = now();
 
         $member->save();
 

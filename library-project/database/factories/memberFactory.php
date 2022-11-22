@@ -18,7 +18,7 @@ class memberFactory extends Factory
     {
         return [
             'name' => fake()->name(),
-            'join_date' => fake()->date()
+            'join_date' => now()
         ];
     }
 }

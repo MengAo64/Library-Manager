@@ -43,7 +43,7 @@ Library | AddMember
 
 
 
-            <div class="date">
+            {{-- <div class="date">
             <div class="date-record">
                 <label class="record-date" id="inputGroup-sizing-lg">Date </label>
                 <input class="input-date" name="date_record" type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Join Date" value="{{old ('join_date')}}" >
@@ -51,7 +51,7 @@ Library | AddMember
                     @error('date_record')
                         <p style="color: red; font-size:13px; margin-left:7px;">{{$message}}</p>
                     @enderror
-        </div>
+        </div> --}}
 
 
 
