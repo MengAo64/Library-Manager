@@ -53,7 +53,7 @@ class RecordController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            "date_record" => "required",
+            // "date_record" => "required",
             "status" => "required"
         ]);
         
@@ -61,7 +61,7 @@ class RecordController extends Controller
         book::find($request->book_id)->update(["status" => $request->status]);
         $model->member_id = $request->member_id;
         $model->book_id = $request->book_id;
-        $model-> date_record = $request->date_record;
+        $model-> date_record = now();
         $model-> status = $request->status;
         $model->save();
             
