@@ -3,7 +3,7 @@
 Library | AddMember
 @endsection
 @section('css')
-<link rel="stylesheet" href="{{ asset("addMember.css") }}">
+<link rel="stylesheet" href="{{ asset("css/addMember.css") }}">
 @endsection
 @section('content')
     
@@ -20,7 +20,7 @@ Library | AddMember
 
 
                 <div class="nama-add"><span class="input-group-text nama-inp">Name =</span>
-                <input class="inputnama" name="name" type="text" aria-label="First name" class="form-control" placeholder="Name" value="{{old ('name')}}">
+                <input class="inputnama" name="name" type="text" aria-label="First name" class="form-control" placeholder="  Name" value="{{old ('name')}}">
                 </div>
                     @error('name')
                         <p style="color: red; font-size:13px; margin-left:7px;">{{$message}}</p>

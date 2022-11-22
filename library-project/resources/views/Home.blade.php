@@ -3,7 +3,7 @@
 Library | Dashboard
 @endsection
 @section('css')
-<link rel="stylesheet" href="{{ asset("home.css") }}">
+<link rel="stylesheet" href="{{ asset("css/home.css") }}">
 <link rel="stylesheet"href="{{ asset("https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css") }}"/>
 <div
 style="--swiper-navigation-color: #000; --swiper-pagination-color: #000"
@@ -41,7 +41,7 @@ class="swiper mySwiper2"
 
      
   <div class="about" id="about">
-    <img src="{{ asset("img/about-library.gif") }}" alt="" style="width: 400px; float: left; margin-left:10px;">
+    <img src="{{ asset("img/about-library.gif") }}" alt="" style="width: 35vw; float: left; margin-left:10px;">
     <p>A digital library, also called an online library, an internet library,or a digital collection is an online database of digital objects that can include text, still images, digital documents, or other digital media formats or a library accessible through the internet.</p>
    <p>Objects can consist of digitized content like print or photographs. In addition to storing content, digital libraries provide means for organizing, searching, and retrieving the content contained in the collection.</p>    
    <p>Digital libraries can vary immensely in size and scope, and can be maintained by individuals or organizations.</p>
@@ -111,7 +111,7 @@ class="swiper mySwiper2"
                 <div class="card-content">
                     <h2 class="name">Zaki</h2>
                     <h4 class="job">Frontend</h4>
-                    <p class="description">"Try to be enthusiastic, not disappointed, at the possibility of something new"</p>
+                    <p class="description">Try to be enthusiastic, not disappointed, at the possibility of something new</p>
                 </div>
             </div>
             <div class="card swiper-slide">

@@ -21,7 +21,6 @@
 }
 body{
     background-color: #665a48;
-    min-height: 100vh;
 }
 nav{
     width: 100%;
@@ -32,7 +31,6 @@ nav{
     padding: 15px 20px;
     position: sticky;
     top: 0;
-
 }
 nav ul{
     display: flex;
@@ -42,13 +40,10 @@ nav ul{
 }
 nav ul li{
     list-style: none;
-    padding: 0px 5px;
-
-
 }
 nav ul li a{
     color: rgb(218, 214, 214);
-    font-size: 20px;
+    font-size: 1.5vw;
     text-decoration: none;
     margin-right: 40px;
     padding: 6px;
@@ -61,7 +56,7 @@ nav ul li a:hover{
 }
 .logout{
     color: rgb(218, 214, 214);
-    font-size: 20px;
+    font-size: 1.5vw;
     margin-right: 50px;
     padding: 6px;
     background-color: #665a48;
@@ -85,14 +80,14 @@ nav ul li a:hover{
 }
 .left .title{
     display: block;
-    padding: 20px 0 0 170px;
+    margin-left: 20%;
 }
 .title h1{
-    font-size: 80px;
+    font-size: 75px;
     font-weight: bold;
 }
 .title h2{
-    font-size: 65px;
+    font-size: 60px;
     margin-left: 30px;
     margin-top: -70px;
 }
@@ -113,7 +108,7 @@ nav ul li a:hover{
    padding: 100px 20px 0 0;
 }
 .right img{
-    width: 550px;
+    width: 44vw;
 }
 .about{
     justify-content: center;

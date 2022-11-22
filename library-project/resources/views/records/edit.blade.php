@@ -3,7 +3,7 @@
 Library | Reecord
 @endsection
 @section('css')
-<link rel="stylesheet" href="{{ asset('recordEdit.css') }}">
+<link rel="stylesheet" href="{{ asset('css/recordEdit.css') }}">
 @endsection
 @section('content')
 <form method="POST" action="/record/{{$record->id}}" enctype="multipart/form-data">

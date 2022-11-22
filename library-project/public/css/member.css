@@ -1,11 +1,23 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@600&family=Tiro+Devanagari+Hindi:ital@1&display=swap');
 *{
-    margin: 0px;
+    /* margin: 0px; */
     padding: 0px;
     box-sizing: border-box;
-    font-family:  Montserrat ;
-    
+    font-family: Montserrat ;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 body{
     background-color: #665a48;
@@ -19,9 +31,7 @@ nav{
     padding: 15px 20px;
     position: sticky;
     top: 0;
-
 }
-
 nav ul{
     display: flex;
     justify-content: center;
@@ -30,15 +40,12 @@ nav ul{
 }
 nav ul li{
     list-style: none;
-    padding: 0px 5px;
-
-
 }
 nav ul li a{
     color: rgb(218, 214, 214);
-    font-size: 20px;
+    font-size: 1.5vw;
     text-decoration: none;
-    margin-right: 50px;
+    margin-right: 40px;
     padding: 6px;
 }
 nav ul li a:hover{
@@ -46,6 +53,19 @@ nav ul li a:hover{
     color: #665a48 ;
     border-radius: 20px;
     
+}
+.logout{
+    color: rgb(218, 214, 214);
+    font-size: 1.5vw;
+    margin-right: 50px;
+    padding: 6px;
+    background-color: #665a48;
+    border: none;
+}
+.logout:hover{
+    background-color: rgb(206, 203, 197);
+    color: #665a48 ;
+    border-radius: 20px;
 }
 .kotak{
     background-color: #c8dbbe;
@@ -61,13 +81,10 @@ nav ul li a:hover{
    padding: 20px 0 0 25px;
 }
 .addbook{
-    width: 20em;
-    height: 30px;
-    text-align: center;
-    margin-left: 45em;
-    margin-top: -20px;
     margin-bottom: 25px;
-    
+    margin-top: -20px;
+   float: right;
+   margin-right: 30px;
 }
 .addbook a{
     text-decoration: none;
@@ -75,22 +92,16 @@ nav ul li a:hover{
     color: black;
     font-size: 20px;
     border-radius: 20px;
-    padding: 10px 70px ;
+    padding: 10px 60px ;
+    text-align: center;
 }
 .addbook :hover{
     color:#000000;
     background-color: #caa26b;
 }
-.logout{
-    color: rgb(218, 214, 214);
-    font-size: 20px;
-    margin-right: 50px;
-    padding: 6px;
-    background-color: #665a48;
-    border: none;
-}
-.logout:hover{
-    background-color: rgb(206, 203, 197);
-    color: #665a48 ;
-    border-radius: 20px;
-}
+
+/* @media screen and (max-width: 680vw) {
+    body{
+        background-color: green;
+    }
+} */

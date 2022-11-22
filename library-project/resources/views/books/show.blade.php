@@ -3,7 +3,7 @@
 Library | ShowBook
 @endsection
 @section('css')
-      <link rel="stylesheet" href="{{ asset("books.css") }}">
+      <link rel="stylesheet" href="{{ asset("css/books.css") }}">
 @endsection
 @section('content')
     

@@ -1,9 +1,9 @@
 <nav>
-    <a href="#"><img src="{{ URL::to('img/logo.jpeg') }}" alt="logo" width="240px"></a>
+    <a href="/"><img src="{{ URL::to('img/logo.jpeg') }}" alt="logo" style="width:20vw;"></a>
     <ul>
         <li><a href="/home">Home</a></li>
-        <li><a href="/book">Manage Books</a></li>
-        <li><a href="/member">Manage Members</a></li>
+        <li><a href="/book">Books</a></li>
+        <li><a href="/member">Members</a></li>
         <li><a href="/record">Records</a></li>
 
 
@@ -11,10 +11,10 @@
         @if (Auth::user())
         <form action="{{ route('logout')}}" method="POST" class="d-flex" id="form-logout">
             @csrf
-            <button id="logout" class="logout"><i class='bx bxs-user' style="width:25px; height:20px; text-align:center; "></i>Logout</button>
+            <button id="logout" class="logout"><i class='bx bxs-user' style="font-size:1.3vw; text-align:center; "></i>Logout</button>
         </form>
         @else 
-            <li><a href="/login"><i class='bx bxs-user' style="width:25px; height:20px; text-align:center;"></i>  Login </a></li>
+            <li><a href="/login"><i class='bx bxs-user' style="font-size:1.3vw text-align:center;"></i>  Login </a></li>
         @endif
         
     </ul>

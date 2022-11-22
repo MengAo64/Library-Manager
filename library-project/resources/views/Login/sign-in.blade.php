@@ -6,7 +6,7 @@
     <meta name="viewport" content="width, initial-scale=1.0">
     <title>Library | SignUp</title>
 
-    <link rel="stylesheet" href="{{ asset("login.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/login.css") }}">
 </head>
     <body>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>

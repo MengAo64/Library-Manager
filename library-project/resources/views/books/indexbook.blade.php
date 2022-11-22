@@ -6,7 +6,7 @@ Library | Books
 <link rel="stylesheet" href="{{ asset("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css") }}">
 @endsection
 @section('css')
-      <link rel="stylesheet" href="{{ asset("books.css") }}">
+      <link rel="stylesheet" href="{{ asset("css/books.css") }}">
 @endsection
 
 @section('content')

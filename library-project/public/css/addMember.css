@@ -1,10 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@600&family=Tiro+Devanagari+Hindi:ital@1&display=swap');
 *{
-    margin: 0px;
+    /* margin: 0px; */
     padding: 0px;
     box-sizing: border-box;
-    font-family:  Montserrat ;
-    
+    font-family: Montserrat ;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 body{
     background-color: #665a48;
@@ -18,27 +31,21 @@ nav{
     padding: 15px 20px;
     position: sticky;
     top: 0;
-
 }
 nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    /* background-color: blue; */
 
 }
 nav ul li{
     list-style: none;
-    padding: 0px 5px;
-
-
 }
 nav ul li a{
     color: rgb(218, 214, 214);
-    font-size: 20px;
+    font-size: 1.5vw;
     text-decoration: none;
-    margin-right: 50px;
+    margin-right: 40px;
     padding: 6px;
 }
 nav ul li a:hover{
@@ -46,6 +53,19 @@ nav ul li a:hover{
     color: #665a48 ;
     border-radius: 20px;
     
+}
+.logout{
+    color: rgb(218, 214, 214);
+    font-size: 1.5vw;
+    margin-right: 50px;
+    padding: 6px;
+    background-color: #665a48;
+    border: none;
+}
+.logout:hover{
+    background-color: rgb(206, 203, 197);
+    color: #665a48 ;
+    border-radius: 20px;
 }
 .kotak{
     background-color: #c8dbbe;
@@ -56,17 +76,10 @@ nav ul li a:hover{
     padding-bottom: 15px;
 }
 .inputnama{
-    padding-right: 8px;
-    font-size: 25px;
-    margin-left: 115px;
-    border-radius: 6px;
-}
-.inputdate{
-    text-align: right;
-    padding-right: 120px;
-    font-size: 25px;
-    margin-left: 55px;
-    border-radius: 6px;
+    font-size: 28px;
+    margin-left: 20px;
+    border-radius: 10px;
+    width: 23vw;
 }
 /* .name{
     margin-left: 500px;
@@ -79,42 +92,18 @@ nav ul li a:hover{
 
 .kotak-input {
     padding: 20px   ;
-    margin-top: 14px;
     margin-left: 350px;
-    display: inline-block;
-}
-.kotak-input-record {
-    padding: 20px   ;
-    margin-top: 14px;
-    margin-left: 310px;
-    display: inline-block;
-}
-.button3{
-    margin-left: 50em;
 }
 
-.btn-delete:hover{
-    color:#000000;
-    background-color: #caa26b;
+.btn-submit{
+    padding: 10px 0;
+    margin-left: 83%;
+    font-size: 25px;
+    border-radius: 40px;
+    border: 2px black solid;
+    width: 10vw;
 }
-.btn-delete{
-    height: 43px;
-    font-size: 18px;
-}
-.btn-edit , .btn-delete{
-    color: #000000;
-    background-color:transparent ;
-    text-decoration: none;
-    border: 2px solid;
-    border-radius: 20px;
-    padding: 10px 30px;
-    border-radius: 20px;
-    margin-top: 100px;
-    text-align: center;
-    margin-right: 5px;
-}
-
-.btn-edit:hover{
+.btn-submit:hover{
     color:#000000;
     background-color: #caa26b;
 }
@@ -125,9 +114,7 @@ nav ul li a:hover{
     background-color: gray;
 } */
 
-.title2{
-    padding-top: 15px;
-}
+
 
 .nama-add span{
     margin-left: -200px;
@@ -140,18 +127,4 @@ nav ul li a:hover{
 }
 .add{
     text-align: center;
-    background-color: transparent;
-}
-.logout{
-    color: rgb(218, 214, 214);
-    font-size: 20px;
-    margin-right: 50px;
-    padding: 6px;
-    background-color: #665a48;
-    border: none;
-}
-.logout:hover{
-    background-color: rgb(206, 203, 197);
-    color: #665a48 ;
-    border-radius: 20px;
 }

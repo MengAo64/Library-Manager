@@ -3,7 +3,7 @@
 Library | Edit Member
 @endsection
 @section('css')
-<link rel="stylesheet" href="{{ asset("addMember.css") }}">
+<link rel="stylesheet" href="{{ asset("css/addMember.css") }}">
 @endsection
 @section('content')
     

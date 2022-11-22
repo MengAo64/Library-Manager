@@ -3,7 +3,7 @@
 Library | Member
 @endsection
 @section('css')
-<link rel="stylesheet" href="{{ asset("member.css") }}">
+<link rel="stylesheet" href="{{ asset("css/member.css") }}">
 @endsection
 @section('bootsrap')
 <link rel="stylesheet" href="{{ asset("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css") }}">

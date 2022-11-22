@@ -3,7 +3,7 @@
 Library | AddMember
 @endsection
 @section('css')
-<link rel="stylesheet" href="{{ asset('record-create.css') }}">
+<link rel="stylesheet" href="{{ asset('css/record-create.css') }}">
 @endsection
 @section('content')
 
