@@ -12,11 +12,11 @@ Library | AddMember
         @csrf
         <div class="kotak">
             <div class="add">
-            <h1>Add Member</h1>
+            <h1 >Add Member</h1>
             </div>
             <br> <br>
 
-            <div class="kotak-input">
+            <div class="kotak-input" style="margin-left: 50%;">
 
 
                 <div class="nama-add"><span class="input-group-text nama-inp">Name =</span>
