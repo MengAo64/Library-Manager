@@ -89,16 +89,34 @@ nav ul li a:hover{
 .date{
     text-align: center;
 } */
-
-.kotak-input {
-    padding: 20px   ;
-    margin-left: 350px;
+/* .edit{
+    display: block;
+    border: 2px solid;
+    width: 45vw;
+} */
+.input-nama{
+    border-radius: 8px;
+    width: 15vw;
+    float: right;
+    font-size: 17px;
+}
+.edit{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+span{
+   font-size: 26px;
+}
+.kotak-input-1{
+    width: 27vw;
+    height: 50%;
 }
 
 .btn-submit{
-    padding: 10px 0;
+    padding: 6px 0;
     margin-left: 83%;
-    font-size: 25px;
+    font-size: 2vw;
     border-radius: 40px;
     border: 2px black solid;
     width: 10vw;
@@ -116,7 +134,7 @@ nav ul li a:hover{
 
 
 
-.nama-add span{
+/* .nama-add span{
     margin-left: -200px;
     font-size: 25px;
 }
@@ -124,7 +142,8 @@ nav ul li a:hover{
 
     margin-left: -200px;
     font-size: 25px;
-}
+} */
 .add{
+    padding-top: 10px;
     text-align: center;
 }

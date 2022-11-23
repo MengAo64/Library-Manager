@@ -23,14 +23,14 @@ body{
     background-color: #665a48;
 }
 nav{
-    width: 100%;
-    background-color: #665a48;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 15px 20px;
-    position: sticky;
-    top: 0;
+  width: 100%;
+  background-color: #665a48;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
 }
 nav ul{
     display: flex;
@@ -251,9 +251,6 @@ nav ul li a:hover{
     }
     .swiper-navBtn{
       display: none;
-    }
-    nav ul li{
-         width: 20px;
     }
   }
 .footer{
