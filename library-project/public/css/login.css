@@ -16,7 +16,7 @@ body{
 
 .wrapper{
     width: 800px;
-    height: 400px;
+    height: 450px;
     display: flex;
     border: 1px solid;
     box-shadow: 5px 10px 18px #060606;
@@ -30,6 +30,7 @@ body{
     width: 100%;
 }
 .leftside img{
+    margin-top: 40px;
     height: "350px" ;
     width: "500px" ;
 }

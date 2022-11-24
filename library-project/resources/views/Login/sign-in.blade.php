@@ -28,24 +28,24 @@
                  <div class="isi">
 
                     <input type="text" name="name" placeholder="Enter Username" autocomplete="off" value="{{old ('name')}}">
-                    <div class='bx bx-user-circle' style="font-size:21px;"></div>
-                    @error('name')
+                    <div class='bx bx-user-circle' style="font-size:21px;"></div>                  
+                     <hr style="width: 80%; border-top: 1px solid black;">
+                     @error('name')
                         <p style="color: red; font-size:13px; margin-left:7px; margin-bottom:5px">{{$message}}</p>
                      @enderror
                      @if (session()->has('error'))
                         <p style="color: red; font-size:13px; margin-left:7px; margin-bottom:5px">{{session('error')}}</p>
                     @endif
-                     <hr style="width: 80%; border-top: 1px solid black;">
 
                     <input name="password" type="Password" id="myInput" placeholder="Enter Password" autocomplete="off" value="{{old ('password')}}">                    
                     <div   class='bx bx-lock'  style="font-size:21px;"></div>
+                    <hr style="width: 80%; border-top: 1px solid black;">
                     @error('password')
                         <p style="color: red; font-size:13px; margin-left:7px; margin-bottom:5px">{{$message}}</p>
                     @enderror
                     @if (session()->has('error'))
                         <p style="color: red; font-size:13px; margin-left:7px; margin-bottom:5px">{{session('error')}}</p>
                     @endif
-                    <hr style="width: 80%; border-top: 1px solid black;">
                     <input type="checkbox" onclick="myFunction()">Show Password
                  </div>
                  <div class="button">
