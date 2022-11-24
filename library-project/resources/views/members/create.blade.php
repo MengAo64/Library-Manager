@@ -16,7 +16,7 @@ Library | AddMember
             </div>
             <br> <br>
 
-            <div class="kotak-input" style="margin-left: 50%;">
+            <div class="kotak-input" style="margin-left: 35%;">
 
 
                 <div class="nama-add"><span class="input-group-text nama-inp">Name =</span>
