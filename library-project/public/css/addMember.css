@@ -75,12 +75,11 @@ nav ul li a:hover{
     border-radius: 5px;
     padding-bottom: 15px;
 }
-.inputnama{
+/* .inputnama{
     font-size: 28px;
-    margin-left: 20px;
     border-radius: 10px;
     width: 23vw;
-}
+} */
 /* .name{
     margin-left: 500px;
     font-size: 20px;
@@ -146,4 +145,19 @@ span{
 .add{
     padding-top: 10px;
     text-align: center;
+}
+ 
+.inputdate, .inputnama{
+    width: 22.5vw;
+    height: 3vw;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 1.5vw;
+  
+}
+label{
+    text-align: right;
+    padding: 0.5em 2em 0.5em 0;
+    width: 170px;
+    float: left;
 }

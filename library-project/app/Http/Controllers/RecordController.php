@@ -61,7 +61,7 @@ class RecordController extends Controller
         book::find($request->book_id)->update(["status" => $request->status]);
         $model->member_id = $request->member_id;
         $model->book_id = $request->book_id;
-        $model-> date_record = now();
+        $model-> date_record = $request-> date_record;
         $model-> status = $request->status;
         $model->save();
             
