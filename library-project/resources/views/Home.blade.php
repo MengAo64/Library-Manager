@@ -24,8 +24,8 @@ class="swiper mySwiper2"
    <div class="container" id="Welcome">
     <div class="left">
          <div class="title">
-          <h1>Online</h1>
-          <h2>Library</h2>
+          <h1>Library</h1>
+          <h2>Manager</h2>
          </div>
          <div class="desk">
            <span class="teks"></span>
