@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@600&family=Tiro+Devanagari+Hindi:ital@1&display=swap');
-*{
-    /* margin: 0px; */
-    padding: 0px;
+*{    padding: 0px;
     box-sizing: border-box;
     font-family: Montserrat ;
 }
@@ -75,33 +73,30 @@ nav ul li a:hover{
     border-radius: 5px;
     padding-bottom: 15px;
 }
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
 .judul{
     color: black;
     font-size: 35px;
-   padding: 20px 0 0 25px;
+  margin-left: 5%;
 }
-.addbook{
-    margin-bottom: 25px;
-    margin-top: -20px;
-   float: right;
-   margin-right: 30px;
+.add{
+    margin-right: 5%;
+    padding-top: 10px;
 }
-.addbook a{
+.add a{
     text-decoration: none;
     border: #000000 solid 3px;
     color: black;
     font-size: 20px;
     border-radius: 20px;
-    padding: 10px 60px ;
     text-align: center;
+    padding: 7px 50px;
 }
-.addbook :hover{
+.add :hover{
     color:#000000;
     background-color: #caa26b;
 }
-
-/* @media screen and (max-width: 680vw) {
-    body{
-        background-color: green;
-    }
-} */

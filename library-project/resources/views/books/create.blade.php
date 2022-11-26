@@ -11,6 +11,7 @@ Library | Createbook
     <form method="POST" action="{{url('book')}}" enctype="multipart/form-data">
         @csrf
         <div class="kotak">
+            <div class="input1">
             <div class="kotak-left">
                 <input type="file" accept="image/png, image/jpeg" class="file-cover" name="cover_image">
                 <div class="preview-box">
@@ -51,17 +52,12 @@ Library | Createbook
                         <p style="color: red; font-size:13px; margin-left:7px;">{{$message}}</p>
                     @enderror
                 </div>
-
-
               </div>
-                
-
-                <button class="add" type="submit">Add</button>
+              
+            </div>
+            <button class="add" type="submit">Add</button>
                 
             </div> 
-           
-            {{-- <a href="" class="add" type="submit">add</a> --}}
-        </div>
     </form>
    
 

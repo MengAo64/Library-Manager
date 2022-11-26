@@ -10,10 +10,12 @@ Library | Reecord
 @endsection
 @section('content')
 <div class="kotak">
+  <div class="header">
         <div class="judul"><b>Records</b></div>
-        <div class="addbook">
+        <div class="add">
           <a href="/record/create">Add Record</a>
       </div>
+    </div>
 
         <table class="table table-bordered table-hover" >  
   <thead>

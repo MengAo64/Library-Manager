@@ -210,7 +210,7 @@ class="swiper mySwiper2"
       </div>
     </div>
     
-    <div class="bottom"> Copyright &copy; 2022 -Built by Our LIbrary</div>
+    <div class="bottom"></div>
   </div>
 
 </div>

@@ -11,10 +11,12 @@ Library | Books
 
 @section('content')
 <div class="kotak">
+    <div class="header">
         <div class="judul"><b>Books</b></div> 
         <div class="addbook">
             <a href="/book/create">AddBook</a>
         </div>
+    </div>
         <div class="isi">
         @foreach ($buku as $b)
         <a href="book/show/{{ $b->id }}"  style="text-decoration: none; color:black;">

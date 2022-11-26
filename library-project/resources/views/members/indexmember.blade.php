@@ -11,10 +11,12 @@ Library | Member
 @section('content')
 
 <div class="kotak">
+  <div class="header">
         <div class="judul"><b>Members</b></div> 
-        <div class="addbook">
+        <div class="add">
             <a href="/member/create">AddMember</a>
         </div>
+      </div>
 
         
         <table class="table table-bordered table-hover" >  

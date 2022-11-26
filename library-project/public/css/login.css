@@ -48,7 +48,6 @@ body{
 }
 .isi input[type="text"],input[type="Password"],input[type="email"]{
     border: none;
-    /* border-bottom: 1px solid black; */
     background: transparent;
     outline: none;
     height: 40px;

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@600&family=Tiro+Devanagari+Hindi:ital@1&display=swap');
 *{
-    /* margin: 0px; */
     padding: 0px;
     box-sizing: border-box;
     font-family: Montserrat ;
@@ -52,7 +51,6 @@ nav ul li a:hover{
     background-color: rgb(206, 203, 197);
     color: #665a48 ;
     border-radius: 20px;
-    
 }
 .logout{
     color: rgb(218, 214, 214);
@@ -81,19 +79,6 @@ nav ul li a:hover{
     border-radius: 10px;
     width: 23vw;
 }
-/* .name{
-    margin-left: 500px;
-    font-size: 20px;
-    text-align: left;
-}
-.date{
-    text-align: center;
-} */
-/* .edit{
-    display: block;
-    border: 2px solid;
-    width: 45vw;
-} */
 .input-nama{
     border-radius: 8px;
     width: 15vw;
@@ -112,7 +97,6 @@ span{
     width: 27vw;
     height: 50%;
 }
-
 .btn-submit{
     padding: 6px 0;
     margin-left: 83%;
@@ -125,24 +109,6 @@ span{
     color:#000000;
     background-color: #caa26b;
 }
-/* span {
-    font-size: 25px;
-    padding: 10px;
-    border: 2px gray solid;
-    background-color: gray;
-} */
-
-
-
-/* .nama-add span{
-    margin-left: -200px;
-    font-size: 25px;
-}
-.date-add span{
-
-    margin-left: -200px;
-    font-size: 25px;
-} */
 .add{
     padding-top: 10px;
     text-align: center;

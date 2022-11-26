@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@600&family=Tiro+Devanagari+Hindi:ital@1&display=swap');
 *{
-    /* margin: 0px; */
     padding: 0px;
     box-sizing: border-box;
     font-family: Montserrat ;
@@ -36,7 +35,6 @@ nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 nav ul li{
     list-style: none;
@@ -52,7 +50,6 @@ nav ul li a:hover{
     background-color: rgb(206, 203, 197);
     color: #665a48 ;
     border-radius: 20px;
-    
 }
 .logout{
     color: rgb(218, 214, 214);
@@ -123,7 +120,6 @@ nav ul li a:hover{
     font-weight: 40;
     padding: 13px;
     margin-right: -10px;
-    
 }
 .title2{
     margin-top: 20px;

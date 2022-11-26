@@ -75,10 +75,32 @@ nav ul li a:hover{
     border-radius: 5px;
     padding-bottom: 15px;
 }
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
 .judul{
     color: black;
     font-size: 35px;
-   padding: 20px 0 0 25px;
+  margin-left: 5%;
+}
+.addbook{
+    margin-right: 10%;
+    padding-top: 10px;
+}
+.addbook a{
+    text-decoration: none;
+    border: #000000 solid 3px;
+    color: black;
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 7px 50px;
+}
+.addbook :hover{
+    color:#000000;
+    background-color: #caa26b;
 }
 .card1{
     margin-top: 3px;
@@ -115,29 +137,7 @@ img{
     margin-left: 2em;
     padding: 4px;
 }
-.addbook{
-    width: 20em;
-    height: 30px;
-    float: right;
-    margin-top: -20px;
-    margin-bottom: 25px;
-    margin-right: 40px;
-}
-.addbook a{
-    text-decoration: none;
-    border: #000000 solid 3px;
-    color: black;
-    font-size: 20px;
-    border-radius: 20px;
-    padding: 10px 70px ;
-    text-align: center;
-}
-.addbook :hover{
-    color:#000000;
-    background-color: #caa26b;
-}
 .kotak2{
-    display: flex;
     background-color: #c8dbbe;
     width: 89vw;
     height: 100%;
@@ -145,20 +145,22 @@ img{
     border-radius: 5px;
     padding-bottom: 15px;
 }
+.c{
+    display: flex;
+}
 .kiri img{
     border: 2px solid;
-    width: 290px;
-    height: 320px;
+    width: 20vw;
+    height: 40vh;
     margin: 27px 0 0 2em;
 
 }
 .kanan{
-    margin:27px 0 0 2em;
+    /* margin:27px 0 0 2em; */
+    padding: 27px 3%;
+    display: grid;
+    gap: 10px;
 }
-/* .p h4{
-    
-    padding-top: 7px;
-} */
 .p{
     font-family: sans-serif;
     margin-top: 3px;
@@ -178,38 +180,22 @@ img{
     background-color: #caa26b;
 }
 .button2{
-    margin-left: 14em;
-    margin-top: 20em;
-    padding-bottom: 20px;
+    margin-left: 70%;
     display: flex;
 }
-/* .delete{
-    text-align: center;
-    width: 100px;
-    color: #000000;
-    text-decoration: none;
-    border: 2px solid;
-    border-radius: 20px;
-    padding: 10px;
-    background-color: #c8dbbe;
-    
-} */
 .edit{
     margin-right: 3px;
     font-size: 20px;
     text-align: center;
-    width: 100px;
     color: #000000;
     text-decoration: none;
     border: 2px solid;
     border-radius: 20px;
     padding: 10px;
-    background-color: #c8dbbe;
 }
- .delete{
+ .delete {
     font-size: 20px;
     text-align: center;
-    width: 100px;
     color: #000000;
     text-decoration: none;
     border: 2px solid;
@@ -232,6 +218,6 @@ img{
     font-size: 30px;
 }
 .status{
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 32px;
 }

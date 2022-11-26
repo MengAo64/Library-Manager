@@ -12,6 +12,7 @@ Library | Edit Book
         @method('put')
         @csrf
         <div class="kotak">
+            <div class="input1">
             <div class="kotak-left">
                 <input type="file" accept="image/png, image/jpeg" class="file-cover" name="cover_image">
                 <div class="preview-box">
@@ -51,18 +52,19 @@ Library | Edit Book
                 
                 <div class="titlebook"><div class="judultitle">Status</div>
                 <input class="input2" type="radio"  name="status" value="{{$buku->status}}" <?php if($buku['status']=='Dipinjam') echo 'checked'?>>Dipinjam</div>
-                <input class="input2" type="radio"  name="status" value="{{$buku->status}}" <?php if($buku['status']=='Tidak Dipinjam') echo 'checked'?>>Tidak Dipinjam</div>
-                <button class="add" type="submit">Update Book</button>
-                
+                <input class="input2" type="radio"  name="status" value="{{$buku->status}}" <?php if($buku['status']=='Tidak Dipinjam') echo 'checked'?>>Tidak Dipinjam
+            
             </div> 
-           
-            {{-- <a href="" class="add" type="submit">add</a> --}}
+
         </div>
+        <button class="add" type="submit">Update Book</button> 
+
+    </div>   
+
     </form>
    
 
             
-    </div>   
     <script>
         const imgInp = document.querySelector(".file-cover")
         const previewImg = document.getElementById("preview-img")

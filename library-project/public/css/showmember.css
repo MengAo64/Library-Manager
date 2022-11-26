@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@600&family=Tiro+Devanagari+Hindi:ital@1&display=swap');
-*{
-    /* margin: 0px; */
-    padding: 0px;
+*{    padding: 0px;
     box-sizing: border-box;
     font-family: Montserrat ;
 }
@@ -88,15 +86,6 @@ nav ul li a:hover{
     margin-left: 55px;
     border-radius: 6px;
 }
-/* .name{
-    margin-left: 500px;
-    font-size: 20px;
-    text-align: left;
-}
-.date{
-    text-align: center;
-} */
-
 .kotak-input {
     padding: 20px   ;
     margin-top: 14px;
@@ -110,45 +99,33 @@ nav ul li a:hover{
     display: inline-block;
 }
 .button3{
-    margin-left: 50em;
+   display: flex;
+   margin-left: 70%;
+   padding: 20px;
 }
 
 .btn-delete:hover{
     color:#000000;
     background-color: #caa26b;
 }
-.btn-delete{
-    height: 43px;
-    font-size: 18px;
-}
 .btn-edit , .btn-delete{
+    font-size: 18px;
     color: #000000;
     background-color:transparent ;
     text-decoration: none;
     border: 2px solid;
     border-radius: 20px;
-    padding: 10px 30px;
-    border-radius: 20px;
-    margin-top: 100px;
-    text-align: center;
     margin-right: 5px;
+    padding: 5px 20px;
 }
 
 .btn-edit:hover{
     color:#000000;
     background-color: #caa26b;
 }
-/* span {
-    font-size: 25px;
-    padding: 10px;
-    border: 2px gray solid;
-    background-color: gray;
-} */
-
 .title2{
     padding-top: 15px;
 }
-
 .nama-add span{
     margin-left: -200px;
     font-size: 25px;

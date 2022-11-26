@@ -40,10 +40,6 @@ Library | Show Member
                    <a class="btn-edit"  href="/record/edit/{{$record->id}}"> Edit </a>
                     <button class="btn-delete" type="submit"> Delete </button>
                 </form>
-            
-            
-       
-                
             </div>  
     </div>
     @endsection

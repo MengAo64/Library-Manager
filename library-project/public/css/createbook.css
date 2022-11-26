@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@600&family=Tiro+Devanagari+Hindi:ital@1&display=swap');
 *{
-    /* margin: 0px; */
-    padding: 0px;
-    box-sizing: border-box;
+        box-sizing: border-box;
     font-family: Montserrat ;
 }
 ::-webkit-scrollbar {
@@ -70,28 +68,24 @@ nav ul li a:hover{
 .kotak{
     background-color: #c8dbbe;
     width: 89vw;
-    height: 530px;
+    height: 100%;
     margin: auto;
     border-radius: 5px;
-    padding: 15px;
+    padding: 15px;   
+}
+.input1{
     display: flex;
     gap: 10px;
 }
-
 .kotak-left{
     display: flex;
     flex-direction: column;
     border-right: 3px solid black;
-    /* align-items: center; */
-    /* justify-content: center; */
-    gap: 10px;
-    margin-left: 5em;
+    margin-left: 6%;
 }
-
 #preview-img{
     width: 200px;
 }
-
 .judul{
     color: black;
     font-size: 35px;
@@ -109,7 +103,6 @@ nav ul li a:hover{
     border-left: 4px solid;
     border-radius: 15px;
     height: 16em;
-    /* margin: 2em 0 0 21em; */
 }
 .inputdatabook{
     margin: -4em 0 0 15em;
@@ -118,7 +111,7 @@ nav ul li a:hover{
 }
 .input{
     background-color: rgb(238, 237, 236) ;
-    width: 20em;
+    width: 17vw;
     height: 30px;
     border-radius: 5px;
 }
@@ -126,16 +119,14 @@ nav ul li a:hover{
     font-size: 25px;
 }
 .add{
-    border: #080808 solid 2px;
+    border: 2px solid;
     font-size: 25px;
     border-radius: 20px;
     background-color:#c8dbbe;
     text-decoration: none;
     color: #000000;
-    padding: 8px;
-    height: 47px;
-    margin:14em 0 5px 6em;
-
+    padding: 7px 25px;
+    margin-left: 75%;
 }
 .add:hover{
     color:#000000;
