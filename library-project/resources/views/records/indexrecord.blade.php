@@ -1,6 +1,6 @@
 @extends('layout/main')
 @section('title')
-Library | Reecord
+Library | Record
 @endsection
 @section('css')
 <link rel="stylesheet" href="{{ asset("css/member.css") }}">
