@@ -18,7 +18,9 @@ class memberController extends Controller
         $member = [
             'member' => Member::all()
         ];
-        return view('indexmember', $member);
+        return view('members.indexmember',[
+            'member' => Member::latest()->paginate(10),
+        ]);
 
     }
 
@@ -29,11 +31,10 @@ class memberController extends Controller
      */
     public function create()
     {
-        $model = new Member;
-        // return view('member', compact(
-
-        // ));
-        //
+        $model = new member() ;
+        return view('members.create', compact(
+            'model'
+        ));
     }
 
     /**
@@ -44,13 +45,20 @@ class memberController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            "name" => "required",
+            "join_date" => "required"
+            
+        ]);
+        
+
         $model = new Member;
         $model->name = $request->name;
-        $model->join_date = $request->join_date;
+        $model->join_date =$request-> join_date;
         $model->save();
         Member::create($request->except(['addmember','submit']));
 
-        return redirect('member');
+        return redirect('member')->with('success', 'Member Berhasil di Tambahkan');
     }
 
     /**
@@ -59,9 +67,10 @@ class memberController extends Controller
      * @param  \App\Models\member  $member
      * @return \Illuminate\Http\Response
      */
-    public function show(member $member)
+    public function show($mb)
     {
-        return view("showmember" , ["member" => $member]);
+        $member = member::findOrFail($mb);
+        return view("members.show" , ["member" => $member]);
     }
 
     /**
@@ -70,10 +79,10 @@ class memberController extends Controller
      * @param  \App\Models\member  $member
      * @return \Illuminate\Http\Response
      */
-    public function edit(member $member)
+    public function edit($id)
     {
-        $member = Member::find($member);
-        return view('member.edit',compact(['member']));
+        $member = member::find($id);
+        return view('members.edit',compact(['member']));
     }
 
     /**
@@ -83,23 +92,33 @@ class memberController extends Controller
      * @param  \App\Models\member  $member
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, member $member)
+    public function update($id, Request $request)
     {
-        $member = Member::find($member);
-        $member->update($request->except(['addmember','submit']));
-        return redirect('member');
-    }
+        $request->validate([
+            "name" => "required",
+            "join_date" => "required"
+            
+        ]);
 
+        $member = member::find($id);
+        $member->update();
+        $member ->name = $request-> name;
+        $member->join_date = $request-> join_date;
+
+        $member->save();
+
+        return redirect('member')->with('success', 'Member Berhasil di Update');;
+    }
     /**
      * Remove the specified resource from storage.
      *
      * @param  \App\Models\member  $member
      * @return \Illuminate\Http\Response
      */
-    public function destroy(member $member)
+    public function destroy($id)
     {
-        $member = Member::find($member);
-        $member->delete();
-        return redirect('member'); 
+        $model = member::find($id);
+        $model->delete();
+        return redirect('member')->with('success', 'Member Berhasil di Hapus');;
     }
 }

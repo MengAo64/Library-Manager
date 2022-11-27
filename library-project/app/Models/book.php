@@ -14,4 +14,9 @@ class book extends Model
         return $this->hasMany(record::class,'book_id');
         
     }
+
+    // public function show(){
+    //     return $this->hasOne(book::class,'title', 'author','publisher','publication_date','status');
+    // }
+    
 }

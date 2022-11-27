@@ -8,12 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class record extends Model
 {
     use HasFactory;
-    protected $with = ["book"]; 
+    protected $guarded = ["id"];
+    protected $with = ["book", "member"]; 
 
     public function member(){
         return $this->belongsTo(member::class,'member_id');
     }
+    
     public function book(){
         return $this->belongsTo(book::class, 'book_id');
     }
+    
 }

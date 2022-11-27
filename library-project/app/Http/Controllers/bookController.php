@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\book;
+use Error;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -18,7 +19,9 @@ class bookController extends Controller
         $buku = [
             'buku' => Book::all()
         ];
-        return view('indexbook', $buku);
+        return view('books.indexbook', [
+            'buku' => Book::latest()->paginate(8)
+        ]);
 
     }
     // public function h()
@@ -37,7 +40,7 @@ class bookController extends Controller
     public function create()
     {
         $model = new Book ;
-        return view('createbook', compact(
+        return view('books.create', compact(
             'model'
         ));
     }
@@ -50,13 +53,22 @@ class bookController extends Controller
      */
     public function store(Request $request)
     {   
+        $request->validate([
+            "title" => "required",
+            "author" => "required",
+            "publisher"=> "required",
+            "publication_date" => "required",
+
+        ]);
+
         
+
         $model = new Book;
         $model ->title = $request-> title;
         $model ->author = $request-> author;
         $model ->publisher = $request-> publisher;
         $model ->publication_date = $request-> publication_date;
-        $model ->status = $request-> status;
+        $model ->status = "Tidak Dipinjam";
 
         if($request->file("cover_image")){
             $name_file = $request->file("cover_image")->hashName();
@@ -67,7 +79,7 @@ class bookController extends Controller
 
         $model ->save();
 
-        return redirect('book');
+        return redirect('book')->with('success', 'Buku Berhasil di Tambahkan');
 
     }
 
@@ -77,9 +89,11 @@ class bookController extends Controller
      * @param  \App\Models\book  $book
      * @return \Illuminate\Http\Response
      */
-    public function show(book $book)
+    public function show($bk)
     {
-        return view("Showbook" , ["buku" => $book]);
+       
+    $book = book::findOrFail($bk);
+    return view('books.show',["buku" => $book]);
     }
 
     /**
@@ -88,9 +102,11 @@ class bookController extends Controller
      * @param  \App\Models\book  $book
      * @return \Illuminate\Http\Response
      */
-    public function edit(book $book)
+    public function edit($id)
     {
-        //
+        
+        $buku = book::find($id);
+        return view('books.edit',compact(['buku']));
     }
 
     /**
@@ -100,9 +116,35 @@ class bookController extends Controller
      * @param  \App\Models\book  $book
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, book $book)
+    public function update($id, Request $request)
     {
-        //
+        $request->validate([
+            "title" => "required",
+            "author" => "required",
+            "publisher"=> "required",
+            "publication_date" => "required",
+            "status" => "required"
+        ]);
+
+
+        $buku = book::find($id);
+        $buku->update();
+        $buku ->title = $request-> title;
+        $buku ->author = $request-> author;
+        $buku ->publisher = $request-> publisher;
+        $buku ->publication_date = $request-> publication_date;
+        $buku ->status = $request-> status;
+
+        if($request->file("cover_image")){
+            $name_file = $request->file("cover_image")->hashName();
+            // Storage::put("coverImg/$name_file" , $request->file("cover_image") , "public");
+            $request->file("cover_image")->storePubliclyAs("coverImg" , $name_file);
+            $buku ->cover_image = $name_file;
+        }
+
+        $buku->save();
+
+        return redirect('book')->with('success', 'Buku Berhasil di Update');;
     }
 
     /**
@@ -114,7 +156,10 @@ class bookController extends Controller
     public function destroy($id)
     {
         // $model = book::find($id);
+        // dd($model);
         // $model->delete();
-        // return redirect('book');
+        book::find($id)->delete();
+        return redirect('book')->with('success', 'Buku Berhasil di Hapus');
+        
     }
 }

@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@600&family=Tiro+Devanagari+Hindi:ital@1&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Montserrat ;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+body{
+    background-color: #665a48;
+}
+nav{
+    width: 100%;
+    background-color: #665a48;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    color: rgb(218, 214, 214);
+    font-size: 1.5vw;
+    text-decoration: none;
+    margin-right: 40px;
+    padding: 6px;
+}
+nav ul li a:hover{
+    background-color: rgb(206, 203, 197);
+    color: #665a48 ;
+    border-radius: 20px;
+    
+}
+.logout{
+    color: rgb(218, 214, 214);
+    font-size: 1.5vw;
+    margin-right: 50px;
+    padding: 6px;
+    background-color: #665a48;
+    border: none;
+}
+.logout:hover{
+    background-color: rgb(206, 203, 197);
+    color: #665a48 ;
+    border-radius: 20px;
+}
+.kotak{
+    background-color: #c8dbbe;
+    width: 89vw;
+    height: 100%;
+    margin: auto;
+    border-radius: 5px;
+    padding-bottom: 15px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.judul{
+    color: black;
+    font-size: 35px;
+  margin-left: 5%;
+}
+.addbook{
+    margin-right: 10%;
+    padding-top: 10px;
+}
+.addbook a{
+    text-decoration: none;
+    border: #000000 solid 3px;
+    color: black;
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 7px 50px;
+}
+.addbook :hover{
+    color:#000000;
+    background-color: #caa26b;
+}
+.card1{
+    margin-top: 3px;
+    width: 200px;
+    height: 20em;
+    border: #000000 solid 5px;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+img{
+    border-radius: 7px;
+}
+.isi{
+    display: flex;
+    gap: 5em 5em;
+    flex-wrap: wrap;
+    width: 90%;
+   margin: auto;
+}
+.title{
+    font-size: 20px;
+}
+.author{
+    font-size: 15px;
+    margin: 0;
+}
+.button{
+    border: #080808 solid 2px;
+    border-radius: 7px;
+    background-color: #caa26b;
+    text-decoration: none;
+    color: #000000;
+    margin-left: 2em;
+    padding: 4px;
+}
+.kotak2{
+    background-color: #c8dbbe;
+    width: 89vw;
+    height: 100%;
+    margin: auto;
+    border-radius: 5px;
+    padding-bottom: 15px;
+}
+.c{
+    display: flex;
+}
+.kiri img{
+    border: 2px solid;
+    width: 20vw;
+    height: 40vh;
+    margin: 27px 0 0 2em;
+
+}
+.kanan{
+    /* margin:27px 0 0 2em; */
+    padding: 27px 3%;
+    display: grid;
+    gap: 10px;
+}
+.p{
+    font-family: sans-serif;
+    margin-top: 3px;
+    font-size: 27px;
+}
+.borrow{
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    border: 2px solid ;
+    border-radius: 23px;
+    padding: 13px;
+    background-color:  #c8dbbe;
+}
+.borrow:hover{
+    color: #000000;
+    background-color: #caa26b;
+}
+.button2{
+    margin-left: 70%;
+    display: flex;
+}
+.edit{
+    margin-right: 3px;
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 10px;
+}
+ .delete {
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #c8dbbe;
+}
+.delete:hover{
+    color: #000000;
+    background-color: #caa26b;
+}
+.edit:hover{
+    color: #000000;
+    background-color: #caa26b;
+}
+
+.terbit{
+    font-family: sans-serif;
+    margin-top: 10px;
+    font-size: 30px;
+}
+.status{
+    margin-top: 20px;
+    font-size: 32px;
+}

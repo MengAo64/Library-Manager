@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@600&family=Tiro+Devanagari+Hindi:ital@1&display=swap');
+*{    padding: 0px;
+    box-sizing: border-box;
+    font-family: Montserrat ;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+body{
+    background-color: #665a48;
+}
+nav{
+    width: 100%;
+    background-color: #665a48;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    color: rgb(218, 214, 214);
+    font-size: 1.5vw;
+    text-decoration: none;
+    margin-right: 40px;
+    padding: 6px;
+}
+nav ul li a:hover{
+    background-color: rgb(206, 203, 197);
+    color: #665a48 ;
+    border-radius: 20px;
+    
+}
+.logout{
+    color: rgb(218, 214, 214);
+    font-size: 1.5vw;
+    margin-right: 50px;
+    padding: 6px;
+    background-color: #665a48;
+    border: none;
+}
+.logout:hover{
+    background-color: rgb(206, 203, 197);
+    color: #665a48 ;
+    border-radius: 20px;
+}
+form{
+    display: grid;
+}
+label{
+    text-align: right;
+    padding: 0.5em 2em 0.5em 0;
+    width: 170px;
+    float: left;
+}
+select{
+    margin-top: 16px;
+    width: 170px;
+}
+.input-date {
+    margin-top: 16px;
+    width: 170px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.kotak{
+    background-color: #c8dbbe;
+    width: 89vw;
+    height: 100%;
+    margin: auto;
+    border-radius: 5px;
+    padding-bottom: 15px;
+}
+.add{
+    text-align: center;
+}
+.input{
+    display: grid;
+    width: 40vw;
+    padding-top: 20px;
+    justify-content: center;
+}
+.input-borrower{
+    border-radius: 7px;
+    font-size: 20px
+}
+.record-borrower{
+    font-size: 25px;
+}
+.input-book{
+    border-radius: 7px;
+    font-size: 18px
+}
+.record-book{
+    font-size: 25px;
+}
+.input-date{
+    border-radius: 7px;
+    font-size: 18px
+}
+.record-date{
+    font-size: 25px;
+}
+
+.judultitle{
+    font-size: 24px;
+    float: left;
+}
+.stat{
+    font-size: 19px;
+}
+
+.input1{
+    padding-top: 16px;
+}
+.btn-submit{
+    padding: 5px 25px;
+    float: right;
+    font-size: 25px;
+    margin-right: 50px;
+    border-radius: 25px;
+    border: 2px black solid;     
+}
+.btn-submit:hover{
+    color:#000000;
+    background-color: #caa26b;
+
+}

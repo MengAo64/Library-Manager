@@ -1,10 +1,14 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Models\member;
 use App\Models\record;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\bookController;
+use App\Http\Controllers\RecordController;
 use App\Http\Controllers\memberController;
+use App\Http\Controllers\sweetController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Storage;
@@ -19,77 +23,48 @@ use Illuminate\Support\Facades\Storage;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-// Route::get('/index', function () {
-//     $member = member::with(["record"])->get();
-//     $record = record::with(["member" , "book"])->get()[0];
-//     dd($member);
-//     return view('index');
-// });
-
+Route::get('/home', function () {
+    return view('Home');
+});
 Route::get('/', function () {
     return view('Home');
 });
 
-// Route::get('/home', function () {
+
+// Buat Tampilan Login
+// Route::get('/signup', function () {
+//     return view('Login.sign-up');
+// });
+
+Route::get('/login',[AuthController::class,'login']);
+
+Route::get('/register', [AuthController::class, 'register']);
+
+Route::post('/register', [AuthController::class,'registerStore']);
+
+Route::post('/login', [AuthController::class,'loginStore'])->name("login");
+
+Route::post('/logout', [AuthController::class,'logout'])->name("logout");
+
+
+Route::middleware(['auth'])->group(function () {
+    // buat tampilan Dashboard
+
+// Route::get('/', function () {
 //     return view('Home');
 // });
-// Route::get('/book', function () {
-//     return view('indexbook');
-// });
+
+// buat tampilan buku
+Route::get('/book',[bookController::class,'index']);
+Route::get('/book/create',[bookController::class,'create']);
+Route::get('/book/show/{id}',[bookController::class,'show']);
+
+Route::post('/book/store',[bookController::class,'store']);
+Route::get('/book/edit/{id}',[bookController::class,'edit']);
+Route::post('/book/delete',[bookController::class,'delete']);
 
 
-Route::get('/', [bookController::class, 'index']);
-
-Route::get('/addmember', function () {
-    return view('addmember');
-});
-Route::get('/member', function () {
-    return view('member');
-});
-
-// Route::get('/book', [bookController::class, 'h']);
-// Route::get('/member', [memberController::class, 'member']);
-//Route get => member => indexmember
-//Route get => member => create
-//Route post => member => addmember
-//Route get => member/{id} => show
-//Route put => member/{id} => update
-//Route delete => member/{id} => delete
-//Route get => member/{id}/edit +> edit
-
-// Route::get('/record', [memberController::class, 'index']);
-// Route::get('/record/show_api', [memberController::class, 'show api']);
-
-
-
-
-
-Route::get('/addbook', function () {
-    return view('createbook');
-});
-Route::get('/cmember', function () {
-    return view('createmember');
-});
-
-
-// Route::get('/show', function () {
-//     return view('Showbook');
-// });
-// Route::get('/show/{id}', [bookController::class , "show"]);
-
-Route::get('/Showmember', function () {
-    return view('showmember');
-});
-
-
-
-// Route::get('/addmember', function () {
-//     return view('addmember');
-// });
-
-// Route::post('/member');
-
+Route::resource('/book', bookController::class );
 Route::get('/coverimg/{path}', function ($path) {
     $path = storage_path('app/coverImg/' . $path);
  
@@ -106,14 +81,23 @@ Route::get('/coverimg/{path}', function ($path) {
     return $response; ;
 });
 
-// Route::post('/book',[bookController::class, "store"] );
-// Route::post('/member',[memberController::class, "store"] );
-
-Route::resource('book', bookController::class );
+// buat Tampilan Member
+Route::get('/member',[memberController::class,'index']);
+Route::get('/member/create',[memberController::class,'create']);
+Route::get('/member/show/{id}',[memberController::class,'show']);
+Route::post('/member/store',[memberController::class,'store']);
+Route::get('/member/edit/{id}',[memberController::class,'edit']);
+Route::post('/member/delete',[memberController::class,'delete']);
 Route::resource('member', memberController::class );
-Route::get('/member/{id}/edit',[memberController::class,'edit']);
-Route::put('/member/{id}',[memberController::class,'update']);
-Route::delete('/member/{id}',[memberController::class,'destroy']);
-// Route::get(memberController::class);
 
-// Route::get('/book/{id}', [UserController::class, 'show']);
+// Buat tampilan Record
+Route::get('/record',[recordController::class,'index']);
+Route::get('/record/create',[recordController::class,'create']);
+Route::get('/record/show/{id}',[recordController::class,'show']);
+Route::post('/record/store',[recordController::class,'store']);
+Route::get('/record/edit/{id}',[recordController::class,'edit']);
+Route::post('/record/delete',[recordController::class,'delete']);
+Route::resource('record', recordController::class );
+});
+
+
