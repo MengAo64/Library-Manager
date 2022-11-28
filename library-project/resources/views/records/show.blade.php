@@ -15,7 +15,7 @@ Library | Show Member
             <br> <br>
 
     
-    <div class="icon" style="display: inline-block;"><img src="{{asset("img/history.png")}}" alt="gambar buku"  style="margin:1px -100px 0 270px; height:150px; "> </div>
+    <div class="icon" style="display: inline-block;"><img src="{{ $record->book->cover_image ? '/coverimg/' . $record->book->cover_image :  asset("img/placeholder.jpg") }}" alt="gambar buku"  style="margin:1px -100px 0 270px; height:165px; "> </div>
             <div class="kotak-input-record">
                 <div class="nama-add"><span class="input-group-text nama-inp">Borrower = {{ $record -> member -> name}}</span>
                 </div>
