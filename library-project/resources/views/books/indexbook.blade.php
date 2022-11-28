@@ -17,7 +17,7 @@ Library | Books
             <a href="/book/create">AddBook</a>
         </div>
     </div>
-        <div class="isi">
+        <div class="isi justify-content-center">
         @foreach ($buku as $b)
         <a href="book/show/{{ $b->id }}"  style="text-decoration: none; color:black;">
             <div class="card1">
